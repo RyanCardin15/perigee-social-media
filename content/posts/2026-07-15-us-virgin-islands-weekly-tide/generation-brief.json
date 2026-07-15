@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-15-us-virgin-islands-weekly-tide",
+  "createdAt": "2026-07-15T20:38:07.488Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "9751639",
+      "name": "CHARLOTTE AMALIE, ST. THOMAS ISLAND",
+      "displayName": "Charlotte Amalie, St. Thomas Island",
+      "stateCode": "VI",
+      "stateName": "U.S. Virgin Islands",
+      "stateSlug": "us-virgin-islands",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 1.145,
+      "stationPath": "/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639",
+      "stateCalendarPath": "/king-tides/us-virgin-islands/2026"
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-07-15 14:05",
+        "v": -0.18,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 23:02",
+        "v": 1.032,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 14:59",
+        "v": -0.03,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 23:32",
+        "v": 0.951,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 16:02",
+        "v": 0.144,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 23:50",
+        "v": 0.849,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 07:35",
+        "v": 0.313,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 11:33",
+        "v": 0.407,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 17:17",
+        "v": 0.317,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 23:54",
+        "v": 0.74,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 07:45",
+        "v": 0.265,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 14:43",
+        "v": 0.525,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 18:45",
+        "v": 0.463,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 23:47",
+        "v": 0.642,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 08:00",
+        "v": 0.198,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 16:01",
+        "v": 0.653,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 20:53",
+        "v": 0.552,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 23:12",
+        "v": 0.568,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 08:18",
+        "v": 0.124,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 16:53",
+        "v": 0.749,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-15 23:02",
+        "v": 1.032,
+        "type": "H",
+        "dateKey": "2026-07-15",
+        "dateLabel": "July 15, 2026",
+        "timeLabel": "11:02 PM"
+      },
+      "lowest": {
+        "t": "2026-07-15 14:05",
+        "v": -0.18,
+        "type": "L",
+        "dateKey": "2026-07-15",
+        "dateLabel": "July 15, 2026",
+        "timeLabel": "2:05 PM"
+      },
+      "rangeFt": 1.212,
+      "thresholdFt": 1.145,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "U.S. Virgin Islands: your tide week ahead",
+          "Predicted high · 1.03 ft",
+          "11:02 PM · July 15, 2026",
+          "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "1.03 ft",
+          "above local MLLW",
+          "11:02 PM",
+          "July 15, 2026",
+          "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "1.21 ft",
+          "Highest prediction · 1.03 ft",
+          "11:02 PM · July 15, 2026",
+          "Lowest prediction · -0.18 ft",
+          "2:05 PM · July 15, 2026",
+          "Station-local time · feet above local MLLW",
+          "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "54a82eff9159ab3075e645fd22c8a1b649ed82b2cd0838b52f77f3529edaebfd",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "U.S. Virgin Islands: your tide week ahead",
+        "Predicted high · 1.03 ft",
+        "11:02 PM · July 15, 2026",
+        "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-15-us-virgin-islands-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"U.S. Virgin Islands: your tide week ahead\"\n\"Predicted high · 1.03 ft\"\n\"11:02 PM · July 15, 2026\"\n\"Charlotte Amalie, St. Thomas Island · NOAA 9751639\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "1.03 ft",
+        "above local MLLW",
+        "11:02 PM",
+        "July 15, 2026",
+        "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-15-us-virgin-islands-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"1.03 ft\"\n\"above local MLLW\"\n\"11:02 PM\"\n\"July 15, 2026\"\n\"Charlotte Amalie, St. Thomas Island · NOAA 9751639\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 15, 2026 | 2:05 PM | low | -0.180 ft MLLW\nJuly 15, 2026 | 11:02 PM | high | 1.032 ft MLLW\nJuly 16, 2026 | 2:59 PM | low | -0.030 ft MLLW\nJuly 16, 2026 | 11:32 PM | high | 0.951 ft MLLW\nJuly 17, 2026 | 4:02 PM | low | 0.144 ft MLLW\nJuly 17, 2026 | 11:50 PM | high | 0.849 ft MLLW\nJuly 18, 2026 | 7:35 AM | low | 0.313 ft MLLW\nJuly 18, 2026 | 11:33 AM | high | 0.407 ft MLLW\nJuly 18, 2026 | 5:17 PM | low | 0.317 ft MLLW\nJuly 18, 2026 | 11:54 PM | high | 0.740 ft MLLW\nJuly 19, 2026 | 7:45 AM | low | 0.265 ft MLLW\nJuly 19, 2026 | 2:43 PM | high | 0.525 ft MLLW\nJuly 19, 2026 | 6:45 PM | low | 0.463 ft MLLW\nJuly 19, 2026 | 11:47 PM | high | 0.642 ft MLLW\nJuly 20, 2026 | 8:00 AM | low | 0.198 ft MLLW\nJuly 20, 2026 | 4:01 PM | high | 0.653 ft MLLW\nJuly 20, 2026 | 8:53 PM | low | 0.552 ft MLLW\nJuly 20, 2026 | 11:12 PM | high | 0.568 ft MLLW\nJuly 21, 2026 | 8:18 AM | low | 0.124 ft MLLW\nJuly 21, 2026 | 4:53 PM | high | 0.749 ft MLLW",
+      "dataSeries": [
+        "July 15, 2026 | 2:05 PM | low | -0.180 ft MLLW",
+        "July 15, 2026 | 11:02 PM | high | 1.032 ft MLLW",
+        "July 16, 2026 | 2:59 PM | low | -0.030 ft MLLW",
+        "July 16, 2026 | 11:32 PM | high | 0.951 ft MLLW",
+        "July 17, 2026 | 4:02 PM | low | 0.144 ft MLLW",
+        "July 17, 2026 | 11:50 PM | high | 0.849 ft MLLW",
+        "July 18, 2026 | 7:35 AM | low | 0.313 ft MLLW",
+        "July 18, 2026 | 11:33 AM | high | 0.407 ft MLLW",
+        "July 18, 2026 | 5:17 PM | low | 0.317 ft MLLW",
+        "July 18, 2026 | 11:54 PM | high | 0.740 ft MLLW",
+        "July 19, 2026 | 7:45 AM | low | 0.265 ft MLLW",
+        "July 19, 2026 | 2:43 PM | high | 0.525 ft MLLW",
+        "July 19, 2026 | 6:45 PM | low | 0.463 ft MLLW",
+        "July 19, 2026 | 11:47 PM | high | 0.642 ft MLLW",
+        "July 20, 2026 | 8:00 AM | low | 0.198 ft MLLW",
+        "July 20, 2026 | 4:01 PM | high | 0.653 ft MLLW",
+        "July 20, 2026 | 8:53 PM | low | 0.552 ft MLLW",
+        "July 20, 2026 | 11:12 PM | high | 0.568 ft MLLW",
+        "July 21, 2026 | 8:18 AM | low | 0.124 ft MLLW",
+        "July 21, 2026 | 4:53 PM | high | 0.749 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-15-us-virgin-islands-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 15, 2026 | 2:05 PM | low | -0.180 ft MLLW\nJuly 15, 2026 | 11:02 PM | high | 1.032 ft MLLW\nJuly 16, 2026 | 2:59 PM | low | -0.030 ft MLLW\nJuly 16, 2026 | 11:32 PM | high | 0.951 ft MLLW\nJuly 17, 2026 | 4:02 PM | low | 0.144 ft MLLW\nJuly 17, 2026 | 11:50 PM | high | 0.849 ft MLLW\nJuly 18, 2026 | 7:35 AM | low | 0.313 ft MLLW\nJuly 18, 2026 | 11:33 AM | high | 0.407 ft MLLW\nJuly 18, 2026 | 5:17 PM | low | 0.317 ft MLLW\nJuly 18, 2026 | 11:54 PM | high | 0.740 ft MLLW\nJuly 19, 2026 | 7:45 AM | low | 0.265 ft MLLW\nJuly 19, 2026 | 2:43 PM | high | 0.525 ft MLLW\nJuly 19, 2026 | 6:45 PM | low | 0.463 ft MLLW\nJuly 19, 2026 | 11:47 PM | high | 0.642 ft MLLW\nJuly 20, 2026 | 8:00 AM | low | 0.198 ft MLLW\nJuly 20, 2026 | 4:01 PM | high | 0.653 ft MLLW\nJuly 20, 2026 | 8:53 PM | low | 0.552 ft MLLW\nJuly 20, 2026 | 11:12 PM | high | 0.568 ft MLLW\nJuly 21, 2026 | 8:18 AM | low | 0.124 ft MLLW\nJuly 21, 2026 | 4:53 PM | high | 0.749 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Charlotte Amalie, St. Thomas Island · NOAA 9751639\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "1.21 ft",
+        "Highest prediction · 1.03 ft",
+        "11:02 PM · July 15, 2026",
+        "Lowest prediction · -0.18 ft",
+        "2:05 PM · July 15, 2026",
+        "Station-local time · feet above local MLLW",
+        "Charlotte Amalie, St. Thomas Island · NOAA 9751639",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-15-us-virgin-islands-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"1.21 ft\"\n\"Highest prediction · 1.03 ft\"\n\"11:02 PM · July 15, 2026\"\n\"Lowest prediction · -0.18 ft\"\n\"2:05 PM · July 15, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Charlotte Amalie, St. Thomas Island · NOAA 9751639\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-15-us-virgin-islands-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}

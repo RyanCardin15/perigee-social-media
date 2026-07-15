@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-15-us-virgin-islands-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "9751639",
+    "name": "CHARLOTTE AMALIE, ST. THOMAS ISLAND",
+    "displayName": "Charlotte Amalie, St. Thomas Island",
+    "stateCode": "VI",
+    "stateName": "U.S. Virgin Islands",
+    "stateSlug": "us-virgin-islands",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 1.145,
+    "stationPath": "/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639",
+    "stateCalendarPath": "/king-tides/us-virgin-islands/2026"
+  },
+  "window": {
+    "start": "2026-07-15",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260715&range=168&datum=MLLW&station=9751639&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/9751639/predictions?interval=hilo&begin_date=2026-07-15&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-15-us-virgin-islands-weekly-tide",
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Charlotte Amalie, St. Thomas Island, NOAA station 9751639.",
+      "sha256": "e12586401c9f5b9db70fb5a5134982d39c3b7f6fcdb71d243a341f213d40d118"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 1.03 feet above local MLLW at 11:02 PM on July 15, 2026.",
+      "sha256": "01b420069a42f2a607ce18dcc8ef15aa0e3407b9abbc2c9c632404257034176b"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Charlotte Amalie, St. Thomas Island, based on matched NOAA and Perigee data.",
+      "sha256": "51dbae0331b1c3b707c0f1ec80997a517ec550f0ba32e0996fd34de67c6f30a8"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9751639.",
+      "sha256": "b8761431c617865c59649907b720ef3968376f4471c5cf9167095d76735daad8"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "3f6d8301989b833aae7c74255ca6951b877aadedd8fcfff6523ff5830cbdd6ef"
+    }
+  ]
+}

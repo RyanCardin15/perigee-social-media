@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 3,
+  "id": "2026-07-15-us-virgin-islands-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-15",
+  "generatedAt": "2026-07-15T20:38:07.486Z",
+  "station": {
+    "id": "9751639",
+    "name": "CHARLOTTE AMALIE, ST. THOMAS ISLAND",
+    "displayName": "Charlotte Amalie, St. Thomas Island",
+    "stateCode": "VI",
+    "stateName": "U.S. Virgin Islands",
+    "stateSlug": "us-virgin-islands",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 1.145,
+    "stationPath": "/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639",
+    "stateCalendarPath": "/king-tides/us-virgin-islands/2026"
+  },
+  "window": {
+    "start": "2026-07-15",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-15T20:38:07.480Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260715&range=168&datum=MLLW&station=9751639&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "db8e900553e072cae204a68b43c8003130059023c8cca78fe5b827a24ef3ee92"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/9751639/predictions?interval=hilo&begin_date=2026-07-15&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "db8e900553e072cae204a68b43c8003130059023c8cca78fe5b827a24ef3ee92"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "ad083b41ec39c620e9740bb7e870149a21771eae1b190ca4010828d8152f6d04"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-15 14:05",
+        "v": -0.18,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 23:02",
+        "v": 1.032,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 14:59",
+        "v": -0.03,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 23:32",
+        "v": 0.951,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 16:02",
+        "v": 0.144,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 23:50",
+        "v": 0.849,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 07:35",
+        "v": 0.313,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 11:33",
+        "v": 0.407,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 17:17",
+        "v": 0.317,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 23:54",
+        "v": 0.74,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 07:45",
+        "v": 0.265,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 14:43",
+        "v": 0.525,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 18:45",
+        "v": 0.463,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 23:47",
+        "v": 0.642,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 08:00",
+        "v": 0.198,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 16:01",
+        "v": 0.653,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 20:53",
+        "v": 0.552,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 23:12",
+        "v": 0.568,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 08:18",
+        "v": 0.124,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 16:53",
+        "v": 0.749,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-15 23:02",
+        "v": 1.032,
+        "type": "H",
+        "dateKey": "2026-07-15",
+        "dateLabel": "July 15, 2026",
+        "timeLabel": "11:02 PM"
+      },
+      "lowest": {
+        "t": "2026-07-15 14:05",
+        "v": -0.18,
+        "type": "L",
+        "dateKey": "2026-07-15",
+        "dateLabel": "July 15, 2026",
+        "timeLabel": "2:05 PM"
+      },
+      "rangeFt": 1.212,
+      "thresholdFt": 1.145,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-15-us-virgin-islands-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "U.S. Virgin Islands: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Charlotte Amalie, St. Thomas Island",
+    "caption": "Charlotte Amalie, St. Thomas Island: the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.03 ft above local MLLW at 11:02 PM on July 15, 2026. The lowest is -0.18 ft, a predicted range of 1.21 ft at NOAA station 9751639.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #NOAA #TideChart #usvirginislands",
+    "ctaUrl": "https://perigeetides.com/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-15-us-virgin-islands-weekly-tide",
+    "ctaDisplay": "perigeetides.com/tides/us-virgin-islands/charlotte-amalie-st-thomas-island-9751639",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Charlotte Amalie, St. Thomas Island, NOAA station 9751639.",
+      "Highest predicted tide card: 1.03 feet above local MLLW at 11:02 PM on July 15, 2026.",
+      "Seven-day high and low tide prediction chart for Charlotte Amalie, St. Thomas Island, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9751639.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Charlotte Amalie, St. Thomas Island, NOAA station 9751639.",
+        "sha256": "e12586401c9f5b9db70fb5a5134982d39c3b7f6fcdb71d243a341f213d40d118",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "d501054cb0a931449cc4bf975a5019703168a15a4204d0c8dbdb49fd3cdbda1f",
+        "sourceSha256": "d468c2a5aaf7d7174bc34517837211a714c8f7ebec0e649b20fb5dcf9e00e7fa",
+        "sourceFormat": "png",
+        "sourceWidth": 1080,
+        "sourceHeight": 1350,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-15T21:21:54.934Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 1.03 feet above local MLLW at 11:02 PM on July 15, 2026.",
+        "sha256": "01b420069a42f2a607ce18dcc8ef15aa0e3407b9abbc2c9c632404257034176b",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "7f97f635ba82df47c6c38228121c20659c7b6c916d28b7c21d4ff863bb5e553d",
+        "sourceSha256": "88375979b6067b2f4b51d4e82d209a605a1ae447f17d00f5d9fed84426effb8e",
+        "sourceFormat": "png",
+        "sourceWidth": 1080,
+        "sourceHeight": 1350,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-15T21:21:54.952Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Charlotte Amalie, St. Thomas Island, based on matched NOAA and Perigee data.",
+        "sha256": "51dbae0331b1c3b707c0f1ec80997a517ec550f0ba32e0996fd34de67c6f30a8",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "378f5a33824053b11e5666289818704e188f9de765f8ca4e8d5fcec37e25fb09",
+        "sourceSha256": "625ff2f0bfe3d8778f18bf4ea92af0726b87fe9b6d58c7502a2fcde2a35fa4d8",
+        "sourceFormat": "png",
+        "sourceWidth": 1080,
+        "sourceHeight": 1350,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-15T21:21:54.968Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9751639.",
+        "sha256": "b8761431c617865c59649907b720ef3968376f4471c5cf9167095d76735daad8",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "76d250c0e0fe52fefdfef4953613fc76e86f01ccdbea22edef9393fe4060c4b4",
+        "sourceSha256": "f3c17ce9dbd20b8ef9cfc1e2eb3dcd516a97b38d7c1436d1cca2ffdd1a3b4095",
+        "sourceFormat": "png",
+        "sourceWidth": 1080,
+        "sourceHeight": 1350,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-15T21:21:54.984Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "3f6d8301989b833aae7c74255ca6951b877aadedd8fcfff6523ff5830cbdd6ef",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "af9efc8dcd61804a262836a8f85e0adfc88c0983f5b4c4382fdc3d33fad36af2",
+        "sourceSha256": "2059bb42c41d1fa73f3ddf1f1fbf3af5567bd242040a363c0d981a59760d2838",
+        "sourceFormat": "png",
+        "sourceWidth": 1080,
+        "sourceHeight": 1350,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-15T21:21:55.002Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-us-virgin-islands-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-15T21:25:21.465Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-15T21:27:29.009Z",
+    "report": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/validation.json"
+  }
+}
