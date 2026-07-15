@@ -1,5 +1,5 @@
-import { createHash } from "node:crypto";
-import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { createHash, randomUUID } from "node:crypto";
+import { chmod, mkdir, open, readFile, rename, rm, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 
 export function parseArgs(argv) {
@@ -95,6 +95,35 @@ export async function atomicWriteJson(path, value) {
   const temp = `${path}.tmp`;
   await writeFile(temp, `${JSON.stringify(value, null, 2)}\n`, "utf8");
   await rename(temp, path);
+}
+
+export async function atomicWritePrivateFile(path, value) {
+  await mkdir(dirname(path), { recursive: true, mode: 0o700 });
+  const temporaryPath = `${path}.${process.pid}.${randomUUID()}.tmp`;
+  let fileHandle;
+  try {
+    fileHandle = await open(temporaryPath, "wx", 0o600);
+    await fileHandle.writeFile(value);
+    await fileHandle.sync();
+    await fileHandle.close();
+    fileHandle = undefined;
+    await rename(temporaryPath, path);
+    await chmod(path, 0o600);
+
+    const directoryHandle = await open(dirname(path), "r");
+    try {
+      await directoryHandle.sync();
+    } finally {
+      await directoryHandle.close();
+    }
+  } finally {
+    await fileHandle?.close().catch(() => {});
+    await rm(temporaryPath, { force: true }).catch(() => {});
+  }
+}
+
+export async function atomicWritePrivateJson(path, value) {
+  await atomicWritePrivateFile(path, `${JSON.stringify(value, null, 2)}\n`);
 }
 
 export async function loadEnvLocal(path) {

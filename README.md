@@ -22,11 +22,12 @@ Publishing is intentionally a separate, explicit gate:
 
 ```bash
 cp .env.example .env.local
-# Fill the Instagram account ID and long-lived access token locally.
+# Fill the Instagram account ID locally. Provide the long-lived token on stdin;
+# the install command never echoes it or places it in shell history.
+( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run token:install -- --confirm )
 npm run check:env
-npm run account:verify
-npm run token:record -- --confirm
 npm run token:status
+npm run account:verify
 npm run publish -- --manifest content/posts/<post-id>/manifest.json --confirm
 ```
 
@@ -36,8 +37,8 @@ remote-byte mismatches, and duplicate post IDs. It journals container and
 publish state so an ambiguous API response is reconciled on the next run
 without resubmitting the post.
 
-Long-lived Instagram tokens expire after roughly 60 days. Check lifecycle
-metadata with `npm run token:status` and rotate an eligible token with
-`npm run token:refresh -- --confirm`. Both `.env.local` and token metadata stay
-outside Git. See the skill references for factual language and Meta API
-requirements.
+Long-lived Instagram tokens expire after roughly 60 days. The install command
+records lifecycle metadata. Check it with `npm run token:status` and rotate an
+eligible token with `npm run token:refresh -- --confirm`. Both `.env.local` and
+token metadata stay outside Git. See the skill references for factual language
+and Meta API requirements.

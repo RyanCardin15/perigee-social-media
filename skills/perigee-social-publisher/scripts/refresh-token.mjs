@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 
-import { chmod, mkdir, readFile, rename, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import { PROJECT_ROOT, pathExists } from "./lib/paths.mjs";
-import { atomicWriteJson, loadEnvLocal, parseArgs, sha256 } from "./lib/utils.mjs";
+import {
+  atomicWritePrivateFile,
+  atomicWritePrivateJson,
+  loadEnvLocal,
+  parseArgs,
+  sha256,
+} from "./lib/utils.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 if (!args.confirm) throw new Error("Token refresh requires the explicit --confirm gate.");
@@ -51,28 +57,26 @@ if (!Number.isFinite(expiresInSeconds) || expiresInSeconds < 86400) {
 const source = await readFile(envPath, "utf8");
 const replacement = `INSTAGRAM_ACCESS_TOKEN=${JSON.stringify(refreshedToken)}`;
 const tokenLine = /^INSTAGRAM_ACCESS_TOKEN=.*$/m;
-if (!tokenLine.test(source)) throw new Error(".env.local must contain an INSTAGRAM_ACCESS_TOKEN line.");
+const tokenAssignments = source.match(/^INSTAGRAM_ACCESS_TOKEN=.*$/gm) || [];
+if (tokenAssignments.length !== 1) {
+  throw new Error(".env.local must contain exactly one INSTAGRAM_ACCESS_TOKEN line.");
+}
 const updatedSource = source.replace(tokenLine, replacement);
-const temporaryEnvPath = `${envPath}.tmp`;
-await writeFile(temporaryEnvPath, updatedSource.endsWith("\n") ? updatedSource : `${updatedSource}\n`, {
-  encoding: "utf8",
-  mode: 0o600,
-});
-await rename(temporaryEnvPath, envPath);
-await chmod(envPath, 0o600);
+await atomicWritePrivateFile(
+  envPath,
+  updatedSource.endsWith("\n") ? updatedSource : `${updatedSource}\n`,
+);
 
 const refreshedAt = new Date();
 const expiresAt = new Date(refreshedAt.valueOf() + expiresInSeconds * 1000);
 const metadataPath = resolve(PROJECT_ROOT, "state/private/instagram-token.json");
-await mkdir(dirname(metadataPath), { recursive: true });
-await atomicWriteJson(metadataPath, {
+await atomicWritePrivateJson(metadataPath, {
   schemaVersion: 1,
   refreshedAt: refreshedAt.toISOString(),
   expiresAt: expiresAt.toISOString(),
   expiresInSeconds,
   tokenSha256: sha256(refreshedToken),
 });
-await chmod(metadataPath, 0o600);
 
 console.log(JSON.stringify({
   passed: true,

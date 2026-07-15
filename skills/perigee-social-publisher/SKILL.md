@@ -37,10 +37,10 @@ and interpretation traceable to authoritative data.
    token lifecycle before the first publish:
 
    ```bash
+   ( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run token:install -- --confirm )
    npm run check:env
-   npm run account:verify
-   npm run token:record -- --confirm
    npm run token:status
+   npm run account:verify
    ```
 
 10. Publish only with an explicit gate:
@@ -66,6 +66,10 @@ and interpretation traceable to authoritative data.
 - Never store access tokens, app secrets, passwords, verification codes, or
   exact private user data in manifests, Git, captions, logs, or automation
   prompts.
+- Install a newly generated token only through `npm run token:install -- --confirm`
+  on piped stdin. Interactive pasting is rejected; the command
+  writes atomically with mode `0600`, records lifecycle metadata, and never
+  echoes the credential.
 - Do not automate account signup, terms acceptance, CAPTCHA, age verification,
   identity challenges, or developer registration. Hand those steps to the
   account owner and resume after completion.

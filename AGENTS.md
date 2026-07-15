@@ -17,6 +17,8 @@ repository as part of a publishing run.
 - `npm run stage -- --manifest <path>` copies verified JPEGs into `public/`.
 - `npm run account:verify` checks the configured Business identity and live
   publishing quota without exposing the token.
+- `npm run token:install -- --confirm` reads a newly generated token only from
+  piped stdin, writes it privately, and records its lifecycle metadata.
 - `npm run token:status` checks private expiry metadata.
 - `npm run token:refresh -- --confirm` rotates an eligible long-lived token.
 - `npm run publish -- --manifest <path> --confirm` performs the external Meta
