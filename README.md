@@ -24,10 +24,20 @@ Publishing is intentionally a separate, explicit gate:
 cp .env.example .env.local
 # Fill the Instagram account ID and long-lived access token locally.
 npm run check:env
+npm run account:verify
+npm run token:record -- --confirm
+npm run token:status
 npm run publish -- --manifest content/posts/<post-id>/manifest.json --confirm
 ```
 
 Do not paste tokens into chat, captions, manifests, Git history, or logs. The
-publisher refuses drafts, failed validation, inaccessible public media, and
-duplicate post IDs. See the skill references for factual language and Meta API
+publisher refuses drafts, failed validation, wrong accounts, exhausted quota,
+remote-byte mismatches, and duplicate post IDs. It journals container and
+publish state so an ambiguous API response is reconciled on the next run
+without resubmitting the post.
+
+Long-lived Instagram tokens expire after roughly 60 days. Check lifecycle
+metadata with `npm run token:status` and rotate an eligible token with
+`npm run token:refresh -- --confirm`. Both `.env.local` and token metadata stay
+outside Git. See the skill references for factual language and Meta API
 requirements.

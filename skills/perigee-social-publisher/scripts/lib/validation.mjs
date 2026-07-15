@@ -8,7 +8,7 @@ function check(name, passed, detail) {
   return { name, passed: Boolean(passed), detail };
 }
 
-export async function validateManifest(manifest, manifestPath, config) {
+export async function validateManifest(manifest, manifestPath, config, { allowStaleSource = false } = {}) {
   const checks = [];
   const errors = [];
   const push = (entry) => {
@@ -28,6 +28,23 @@ export async function validateManifest(manifest, manifestPath, config) {
   push(check("threshold", manifest.data?.metrics?.thresholdFt === manifest.station?.kingTideThresholdFt, "Manifest threshold differs from the checked-in almanac."));
 
   const caption = manifest.creative?.caption || "";
+  const contentType = manifest.creative?.contentType;
+  const manualReviewTypes = config.publishing?.manualReviewTypes || [];
+  const autoPublishTypes = config.publishing?.autoPublishTypes || [];
+  const requiresManualReview = manualReviewTypes.includes(contentType);
+  const allowsAutomaticReview = autoPublishTypes.includes(contentType);
+  const contentTypeKnown = requiresManualReview !== allowsAutomaticReview;
+  const expectedApprovalPolicy = requiresManualReview
+    ? "manual"
+    : allowsAutomaticReview
+      ? "automatic-after-validation"
+      : null;
+  push(check("content-type-policy", contentTypeKnown, "Content type must belong to exactly one review policy."));
+  push(check(
+    "approval-policy",
+    contentTypeKnown && manifest.approval?.policy === expectedApprovalPolicy,
+    `Approval policy must be ${expectedApprovalPolicy || "configured"} for ${contentType || "unknown content"}.`,
+  ));
   const requiredTerms = ["prediction", "MLLW", manifest.station?.id, "NOAA", "not for navigation"];
   for (const term of requiredTerms) {
     push(check(`caption-${String(term).toLowerCase().replaceAll(" ", "-")}`, caption.toLowerCase().includes(String(term).toLowerCase()), `Caption must include “${term}”.`));
@@ -51,6 +68,11 @@ export async function validateManifest(manifest, manifestPath, config) {
 
   const slides = manifest.creative?.slides || [];
   push(check("slide-count", slides.length === 5, "Instagram carousel must contain five slides."));
+  push(check(
+    "slide-order",
+    JSON.stringify(slides.map((slide) => slide.order)) === JSON.stringify([1, 2, 3, 4, 5]),
+    "Carousel slides must be unique and ordered exactly 1 through 5.",
+  ));
   const manifestDir = dirname(resolve(manifestPath));
   for (const slide of slides) {
     const slidePath = resolve(PROJECT_ROOT, slide.file || "");
@@ -70,7 +92,13 @@ export async function validateManifest(manifest, manifestPath, config) {
   const generatedAt = Date.parse(manifest.generatedAt || "");
   const fetchedAt = Date.parse(manifest.sources?.fetchedAt || "");
   push(check("generated-at", Number.isFinite(generatedAt) && generatedAt <= Date.now() + 300000, "generatedAt is invalid or in the future."));
-  push(check("fresh-source", Number.isFinite(fetchedAt) && Date.now() - fetchedAt <= 21600000, "Prediction data is more than six hours old."));
+  push(check(
+    "fresh-source",
+    Number.isFinite(fetchedAt) && (allowStaleSource || Date.now() - fetchedAt <= 21600000),
+    allowStaleSource
+      ? "Prediction timestamp must remain valid during publication recovery."
+      : "Prediction data is more than six hours old.",
+  ));
 
   const report = {
     schemaVersion: 1,

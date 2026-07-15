@@ -15,6 +15,10 @@ repository as part of a publishing run.
   nothing when no qualifying event exists.
 - `npm run validate -- --manifest <path>` reruns all factual and asset gates.
 - `npm run stage -- --manifest <path>` copies verified JPEGs into `public/`.
+- `npm run account:verify` checks the configured Business identity and live
+  publishing quota without exposing the token.
+- `npm run token:status` checks private expiry metadata.
+- `npm run token:refresh -- --confirm` rotates an eligible long-lived token.
 - `npm run publish -- --manifest <path> --confirm` performs the external Meta
   API write after public hosting and credentials are configured.
 
@@ -32,6 +36,9 @@ Never commit `.env.local`, access tokens, app secrets, passwords, email codes,
 or account recovery material. Do not print secrets during diagnostics. Generated
 public manifests may contain only public source URLs, station data, captions,
 alt text, and asset checksums.
+
+Never delete a publication journal to force a retry. Rerun the same publisher
+command so an ambiguous Meta response is reconciled without a duplicate post.
 
 ## Git hygiene
 

@@ -12,6 +12,10 @@
     "validate": "node skills/perigee-social-publisher/scripts/validate.mjs",
     "stage": "node skills/perigee-social-publisher/scripts/stage.mjs",
     "check:env": "node skills/perigee-social-publisher/scripts/check-env.mjs",
+    "account:verify": "node skills/perigee-social-publisher/scripts/verify-account.mjs",
+    "token:record": "node skills/perigee-social-publisher/scripts/record-token.mjs",
+    "token:status": "node skills/perigee-social-publisher/scripts/token-status.mjs",
+    "token:refresh": "node skills/perigee-social-publisher/scripts/refresh-token.mjs",
     "publish": "node skills/perigee-social-publisher/scripts/publish.mjs",
     "test": "node --test tests/*.test.mjs"
   },

@@ -8,6 +8,7 @@ await loadEnvLocal(resolve(PROJECT_ROOT, ".env.local"));
 const required = [
   "INSTAGRAM_API_VERSION",
   "INSTAGRAM_ACCOUNT_ID",
+  "INSTAGRAM_ACCOUNT_HANDLE",
   "INSTAGRAM_ACCESS_TOKEN",
   "PUBLIC_MEDIA_BASE_URL",
 ];

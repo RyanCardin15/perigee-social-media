@@ -4,4 +4,6 @@ node_modules/
 .env.*
 !.env.example
 tmp/
+state/locks/
+state/private/
 npm-debug.log*

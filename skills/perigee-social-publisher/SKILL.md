@@ -1,6 +1,6 @@
 ---
 name: perigee-social-publisher
-description: Prepare, validate, stage, and publish factual Perigee Tides social posts from NOAA and Perigee data. Use for scheduled Instagram content, weekly tide carousels, king-tide prediction posts, tide education, caption and alt-text generation, social asset validation, or Meta Content Publishing API delivery for Perigee.
+description: Prepare, validate, stage, publish, recover, and maintain authorization for factual Perigee Tides Instagram posts from NOAA and Perigee data. Use for scheduled weekly tide carousels, king-tide predictions, tide education, caption and alt-text generation, social asset validation, Meta Content Publishing API delivery, account verification, ambiguous-publish recovery, publishing quota checks, or long-lived Instagram token maintenance for Perigee.
 ---
 
 # Perigee Social Publisher
@@ -12,8 +12,8 @@ and interpretation traceable to authoritative data.
 
 1. Read `references/content-contract.md` before writing or approving copy.
 2. Read `references/meta-api.md` before configuring or repairing publication.
-3. Check `state/publishing-ledger.jsonl` and do not recreate or republish an
-   existing post ID.
+3. Check `state/publishing-ledger.jsonl` and `state/publishing/<post-id>.json`.
+   Do not recreate or republish an existing post ID.
 4. Run the appropriate preparation mode from the project root:
 
    ```bash
@@ -27,19 +27,31 @@ and interpretation traceable to authoritative data.
 6. Inspect all rendered slides. Keep factual text, axes, and chart geometry
    deterministic. Do not ask an image model to draw numbers, labels, charts,
    station geography, warnings, or provider marks.
-7. Stage verified JPEGs with `npm run stage -- --manifest <path>`. Public URLs
-   must return `200` and `image/jpeg` before API publication.
+7. Stage verified JPEGs with `npm run stage -- --manifest <path>`. The publisher
+   must GET each public URL, require JPEG over HTTPS, and match the remote bytes
+   to the local SHA-256 before API publication.
 8. Apply the review policy in `config/pipeline.json`. Require a human for
    observations, advisories, flooding claims, or safety incidents. A matched,
    prediction-only weekly or king-tide post may publish automatically.
-9. Publish only with an explicit gate:
+9. Verify secure configuration, the exact Business account, live quota, and
+   token lifecycle before the first publish:
+
+   ```bash
+   npm run check:env
+   npm run account:verify
+   npm run token:record -- --confirm
+   npm run token:status
+   ```
+
+10. Publish only with an explicit gate:
 
    ```bash
    npm run publish -- --manifest <path> --confirm
    ```
 
-10. Verify the returned media ID, live permalink, caption, slide order, and
-    ledger entry. Do not report success from container creation alone.
+11. Verify the returned media ID, live permalink, caption, slide order,
+    publication journal, and ledger entry. Do not report success from container
+    creation alone.
 
 ## Required boundaries
 
@@ -57,6 +69,8 @@ and interpretation traceable to authoritative data.
 - Do not automate account signup, terms acceptance, CAPTCHA, age verification,
   identity challenges, or developer registration. Hand those steps to the
   account owner and resume after completion.
+- Require `/me` to match the configured account ID, username, and `Business`
+  type before creating a media container.
 
 ## Failure handling
 
@@ -68,6 +82,18 @@ and interpretation traceable to authoritative data.
   successful outcome.
 - Refresh long-lived Instagram authorization before expiry; never replace a
   failed token with browser scraping or password automation.
+- If publication returns an ambiguous result, preserve the per-post journal and
+  rerun the same command. Let it reconcile recent account media and resume live
+  verification. Never delete the journal or resubmit through another path.
+- If a per-post lock exists, stop. Another publisher owns that attempt.
+
+## Token maintenance
+
+- Run `npm run token:status` on a schedule.
+- When the status is `refresh-due`, run `npm run token:refresh -- --confirm`.
+- Keep `.env.local` and `state/private/` outside Git. Never print the token.
+- If refresh fails or the token is expired, publish nothing and request human
+  reauthorization through Instagram Login.
 
 ## Exit criteria
 

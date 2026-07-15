@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "postId": "2026-07-15-golden-gate-king-tide",
-  "validatedAt": "2026-07-15T18:12:51.738Z",
+  "validatedAt": "2026-07-15T18:41:45.678Z",
   "passed": true,
   "checks": [
     {
@@ -38,6 +38,16 @@
       "name": "threshold",
       "passed": true,
       "detail": "Manifest threshold differs from the checked-in almanac."
+    },
+    {
+      "name": "content-type-policy",
+      "passed": true,
+      "detail": "Content type must belong to exactly one review policy."
+    },
+    {
+      "name": "approval-policy",
+      "passed": true,
+      "detail": "Approval policy must be automatic-after-validation for king-tide-prediction."
     },
     {
       "name": "caption-prediction",
@@ -88,6 +98,11 @@
       "name": "slide-count",
       "passed": true,
       "detail": "Instagram carousel must contain five slides."
+    },
+    {
+      "name": "slide-order",
+      "passed": true,
+      "detail": "Carousel slides must be unique and ordered exactly 1 through 5."
     },
     {
       "name": "slide-1-path",
