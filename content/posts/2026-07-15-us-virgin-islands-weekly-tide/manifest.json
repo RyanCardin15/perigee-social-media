@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "2026-07-15-us-virgin-islands-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-15",
   "generatedAt": "2026-07-15T20:38:07.486Z",
@@ -303,14 +303,15 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-15T21:25:21.465Z"
+    "status": "published",
+    "mediaId": "17885512755433596",
+    "permalink": "https://www.instagram.com/p/Da1CpM5Gwbq/",
+    "stagedAt": "2026-07-15T21:25:21.465Z",
+    "publishedAt": "2026-07-15T21:34:51+0000"
   },
   "validation": {
     "passed": true,
-    "validatedAt": "2026-07-15T21:27:29.009Z",
+    "validatedAt": "2026-07-15T21:40:25.186Z",
     "report": "content/posts/2026-07-15-us-virgin-islands-weekly-tide/validation.json"
   }
 }
