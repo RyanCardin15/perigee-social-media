@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "2026-07-15-golden-gate-king-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "launch",
   "requestedDate": "2026-07-15",
   "generatedAt": "2026-07-15T18:11:52.374Z",
@@ -284,14 +284,15 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-15T18:12:51.880Z"
+    "status": "published",
+    "mediaId": "17871878034553245",
+    "permalink": "https://www.instagram.com/p/Da00NqUm81P/",
+    "stagedAt": "2026-07-15T18:12:51.880Z",
+    "publishedAt": "2026-07-15T19:27:45+0000"
   },
   "validation": {
     "passed": true,
-    "validatedAt": "2026-07-15T18:41:45.678Z",
+    "validatedAt": "2026-07-15T19:26:16.516Z",
     "report": "content/posts/2026-07-15-golden-gate-king-tide/validation.json"
   }
 }
