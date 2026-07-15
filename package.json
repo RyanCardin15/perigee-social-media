@@ -9,6 +9,7 @@
   },
   "scripts": {
     "social:prepare": "node skills/perigee-social-publisher/scripts/prepare.mjs",
+    "social:compose": "node skills/perigee-social-publisher/scripts/compose.mjs",
     "validate": "node skills/perigee-social-publisher/scripts/validate.mjs",
     "stage": "node skills/perigee-social-publisher/scripts/stage.mjs",
     "check:env": "node skills/perigee-social-publisher/scripts/check-env.mjs",

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { createCreative } from "../skills/perigee-social-publisher/scripts/lib/creative.mjs";
+import { createVisualBrief, DESIGN_SYSTEM_VERSION, IMAGE_GENERATOR } from "../skills/perigee-social-publisher/scripts/lib/design-system.mjs";
 import { selectCandidate } from "../skills/perigee-social-publisher/scripts/lib/data.mjs";
 import { formatStationLocal, parseArgs } from "../skills/perigee-social-publisher/scripts/lib/utils.mjs";
 
@@ -100,4 +101,33 @@ test("king-tide creative preserves prediction and MLLW boundaries", () => {
   assert.doesNotMatch(creative.caption, /\b(safe|guaranteed|real-time)\b/i);
   assert.equal(creative.altTexts.length, 5);
   assert.equal(new URL(creative.ctaUrl).searchParams.get("utm_source"), "instagram");
+});
+
+test("visual brief requires Codex artwork and keeps facts out of the pixels", () => {
+  const manifest = {
+    id: "2026-07-15-golden-gate-king-tide",
+    station: { id: row.stationId, displayName: "San Francisco (Golden Gate)" },
+    data: {
+      kingTideCluster: row.kingTideClusters[0],
+      metrics: { highest: { v: 7.198, dateLabel: "July 13, 2026", timeLabel: "11:01 PM" } },
+    },
+    creative: { contentType: "king-tide-prediction" },
+  };
+  const brief = createVisualBrief(manifest, {
+    brand: {
+      palette: {
+        inkDark: "#071d2a",
+        tide: "#0099a8",
+        paper: "#faf9f4",
+        magenta: "#c41e6a",
+      },
+    },
+    publishing: { width: 1080, height: 1350 },
+  });
+  assert.equal(brief.designSystemVersion, DESIGN_SYSTEM_VERSION);
+  assert.equal(brief.requiredGenerator.generatedBy, "codex");
+  assert.equal(brief.requiredGenerator.generator, IMAGE_GENERATOR);
+  assert.equal(brief.asset.embeddedFactualContent, false);
+  assert.match(brief.prompt, /no text, numbers, letters, logos/i);
+  assert.match(brief.prompt, /non-documentary/i);
 });

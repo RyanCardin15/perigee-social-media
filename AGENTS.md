@@ -10,9 +10,13 @@ repository as part of a publishing run.
 ## Commands
 
 - `npm test` runs the deterministic unit suite.
-- `npm run social:prepare -- --mode weekly --date YYYY-MM-DD` creates a post.
+- `npm run social:prepare -- --mode weekly --date YYYY-MM-DD` freezes matched
+  data and writes the Codex image brief for a post.
 - `npm run social:prepare -- --mode event-watch --date YYYY-MM-DD` publishes
   nothing when no qualifying event exists.
+- `npm run social:compose -- --manifest <path> --artwork <path>` attaches a
+  reviewed Codex-generated editorial image, renders the carousel, and validates
+  it.
 - `npm run validate -- --manifest <path>` reruns all factual and asset gates.
 - `npm run stage -- --manifest <path>` copies verified JPEGs into `public/`.
 - `npm run account:verify` checks the configured Business identity and live
@@ -31,6 +35,11 @@ source precision in manifests, render display values deterministically, use
 station-local time and local MLLW, and never treat a prediction as an
 observation or flood forecast. Follow
 `skills/perigee-social-publisher/SKILL.md` and its content contract.
+
+Codex built-in image generation is the only approved source for editorial
+artwork. Generate from the post's `creative-brief.json`. Image models must not
+draw text, numbers, charts, axes, maps, station geography, warnings, or provider
+marks; those remain deterministic renderer responsibilities.
 
 ## Security
 

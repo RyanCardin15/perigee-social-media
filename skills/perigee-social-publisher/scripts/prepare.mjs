@@ -3,6 +3,7 @@
 import { mkdir, readFile } from "node:fs/promises";
 import { relative, resolve } from "node:path";
 import { createCreative } from "./lib/creative.mjs";
+import { createVisualBrief, DESIGN_SYSTEM_VERSION } from "./lib/design-system.mjs";
 import {
   deriveMetrics,
   fetchMatchedPredictions,
@@ -10,7 +11,6 @@ import {
   selectCandidate,
 } from "./lib/data.mjs";
 import { LEDGER_PATH, PROJECT_ROOT, loadConfig, pathExists } from "./lib/paths.mjs";
-import { renderSlides } from "./lib/render.mjs";
 import {
   assertDateKey,
   atomicWriteJson,
@@ -18,7 +18,6 @@ import {
   parseArgs,
   sha256,
 } from "./lib/utils.mjs";
-import { validateManifest } from "./lib/validation.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const mode = String(args.mode || "event-watch");
@@ -56,9 +55,9 @@ if (await pathExists(LEDGER_PATH)) {
 
 await mkdir(postDir, { recursive: true });
 const manifest = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: creative.postId,
-  status: "draft",
+  status: "awaiting-artwork",
   mode,
   requestedDate: dateKey,
   generatedAt: new Date().toISOString(),
@@ -96,6 +95,9 @@ const manifest = {
   },
   creative: {
     ...creative,
+    designSystemVersion: DESIGN_SYSTEM_VERSION,
+    visualBrief: "creative-brief.json",
+    artwork: null,
     slides: [],
   },
   approval: {
@@ -113,26 +115,14 @@ const manifest = {
   validation: null,
 };
 
-manifest.creative.slides = await renderSlides(manifest, postDir, config);
-await atomicWriteJson(manifestPath, manifest);
-
-const report = await validateManifest(manifest, manifestPath, config);
-manifest.validation = {
-  passed: report.passed,
-  validatedAt: report.validatedAt,
-  report: relative(PROJECT_ROOT, resolve(postDir, "validation.json")),
-};
-manifest.status = report.passed ? "validated" : "blocked";
-await atomicWriteJson(resolve(postDir, "validation.json"), report);
+const brief = createVisualBrief(manifest, config);
+await atomicWriteJson(resolve(postDir, "creative-brief.json"), brief);
 await atomicWriteJson(manifestPath, manifest);
 
 console.log(JSON.stringify({
   status: manifest.status,
   postId: manifest.id,
   manifest: relative(PROJECT_ROOT, manifestPath),
-  slides: manifest.creative.slides.map((slide) => slide.file),
-  checks: report.checks.length,
-  errors: report.errors,
+  brief: relative(PROJECT_ROOT, resolve(postDir, "creative-brief.json")),
+  next: `Generate the editorial artwork with Codex built-in image generation, then run npm run social:compose -- --manifest ${relative(PROJECT_ROOT, manifestPath)} --artwork <path>.`,
 }, null, 2));
-
-if (!report.passed) process.exitCode = 1;

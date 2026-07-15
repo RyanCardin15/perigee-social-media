@@ -136,7 +136,7 @@ test("publisher executes and verifies the complete Instagram carousel flow", { t
       permalink: "https://www.instagram.com/p/perigee-mock/",
       caption: expectedCaption,
       media_type: "CAROUSEL_ALBUM",
-      timestamp: "2026-07-15T20:00:00+0000",
+      timestamp: new Date().toISOString(),
       children: {
         data: expectedSlides.map((slide) => ({ media_type: "IMAGE", alt_text: slide.altText })),
       },

@@ -12,11 +12,14 @@
     "palette": {
       "paper": "#faf9f4",
       "paperRaised": "#ffffff",
+      "inkDark": "#071d2a",
       "shoal": "#e4eeea",
       "ink": "#16303e",
       "inkSoft": "#3e5a68",
       "inkFaint": "#566d77",
       "magenta": "#c41e6a",
+      "magentaLight": "#ff70ad",
+      "magentaWash": "#f8e1eb",
       "tide": "#0099a8",
       "brass": "#a06a0a"
     }

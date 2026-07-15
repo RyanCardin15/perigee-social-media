@@ -14,7 +14,9 @@ and interpretation traceable to authoritative data.
 2. Read `references/meta-api.md` before configuring or repairing publication.
 3. Check `state/publishing-ledger.jsonl` and `state/publishing/<post-id>.json`.
    Do not recreate or republish an existing post ID.
-4. Run the appropriate preparation mode from the project root:
+4. Run the appropriate preparation mode from the project root. This freezes
+   the matched data and writes `creative-brief.json`; it intentionally stops at
+   `awaiting-artwork`:
 
    ```bash
    npm run social:prepare -- --mode weekly --date YYYY-MM-DD
@@ -22,18 +24,29 @@ and interpretation traceable to authoritative data.
    npm run social:prepare -- --mode launch --date 2026-07-15
    ```
 
-5. Inspect the generated manifest and validation report. Stop if Perigee and
-   NOAA values do not match point-for-point or any validation fails.
-6. Inspect all rendered slides. Keep factual text, axes, and chart geometry
-   deterministic. Do not ask an image model to draw numbers, labels, charts,
-   station geography, warnings, or provider marks.
-7. Stage verified JPEGs with `npm run stage -- --manifest <path>`. The publisher
+5. Use Codex built-in image generation with the exact prompt in
+   `creative-brief.json`. Codex must inspect the result against the brief. Do
+   not call image generation programmatically from the publishing scripts or
+   substitute stock search or another generator. Generated artwork is a
+   non-documentary editorial metaphor only.
+6. Compose the post with the reviewed image:
+
+   ```bash
+   npm run social:compose -- --manifest content/posts/<post-id>/manifest.json --artwork <codex-generated-image>
+   ```
+
+7. Inspect the manifest, validation report, and all rendered slides. Stop if
+   Perigee and NOAA values do not match point-for-point or any validation fails.
+   Keep factual text, axes, and chart geometry deterministic. Do not ask the
+   image model to draw numbers, labels, charts, maps, station geography,
+   warnings, or provider marks.
+8. Stage verified JPEGs with `npm run stage -- --manifest <path>`. The publisher
    must GET each public URL, require JPEG over HTTPS, and match the remote bytes
    to the local SHA-256 before API publication.
-8. Apply the review policy in `config/pipeline.json`. Require a human for
+9. Apply the review policy in `config/pipeline.json`. Require a human for
    observations, advisories, flooding claims, or safety incidents. A matched,
    prediction-only weekly or king-tide post may publish automatically.
-9. Verify secure configuration, the exact Business account, live quota, and
+10. Verify secure configuration, the exact Business account, live quota, and
    token lifecycle before the first publish:
 
    ```bash
@@ -43,13 +56,13 @@ and interpretation traceable to authoritative data.
    npm run account:verify
    ```
 
-10. Publish only with an explicit gate:
+11. Publish only with an explicit gate:
 
    ```bash
    npm run publish -- --manifest <path> --confirm
    ```
 
-11. Verify the returned media ID, live permalink, caption, slide order,
+12. Verify the returned media ID, live permalink, caption, slide order,
     publication journal, and ledger entry. Do not report success from container
     creation alone.
 

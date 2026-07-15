@@ -1,22 +1,36 @@
 # Perigee Social Media
 
-This workspace turns NOAA-backed tide data into deterministic Perigee social
+This workspace turns NOAA-backed tide data into distinctive Perigee social
 assets, validates every factual claim, stages public JPEGs, and publishes an
 Instagram carousel through Meta's authorized Content Publishing API.
 
 The reusable operating contract is
-`skills/perigee-social-publisher/SKILL.md`. Generated text and charts never come
-from an image model; heights, dates, labels, and the plotted curve are rendered
-from matched Perigee and NOAA responses.
+`skills/perigee-social-publisher/SKILL.md`. [Perigee Feed System v1](design-system/FEED_SYSTEM.md)
+defines the visual identity. Codex generates one text-free, non-documentary
+editorial image from the verified data brief; all text, numbers, marks, and
+charts are rendered deterministically from matched Perigee and NOAA responses.
+The checked-in [Golden Gate preview](design-system/examples/golden-gate-v1/slides/01-cover.jpg)
+shows the production direction without changing the already-published post.
+For copy-paste Codex prompts and the manual handoff, use the
+[social post operator runbook](docs/OPERATOR_RUNBOOK.md).
 
 ## Local workflow
 
 ```bash
 npm install
-npm run social:prepare -- --mode launch --date 2026-07-15
-npm run validate -- --manifest content/posts/2026-07-15-golden-gate-king-tide/manifest.json
-npm run stage -- --manifest content/posts/2026-07-15-golden-gate-king-tide/manifest.json
+npm run token:status
+npm run account:verify
+npm run social:prepare -- --mode weekly --date YYYY-MM-DD
+npm run social:compose -- --manifest content/posts/<post-id>/manifest.json --artwork <codex-generated-image>
+npm run validate -- --manifest content/posts/<post-id>/manifest.json
 ```
+
+`social:prepare` stops at `awaiting-artwork` and writes
+`creative-brief.json`. Give that prompt to Codex built-in image generation,
+inspect the result against the checklist, and pass the selected file to
+`social:compose`. The compose command records Codex provenance and refuses
+published manifests. Validation rejects missing, changed, unreviewed, or
+non-Codex artwork.
 
 Publishing is intentionally a separate, explicit gate:
 
