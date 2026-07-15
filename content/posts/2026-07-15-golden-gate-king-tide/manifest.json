@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-15-golden-gate-king-tide",
+  "status": "staged",
+  "mode": "launch",
+  "requestedDate": "2026-07-15",
+  "generatedAt": "2026-07-15T18:11:52.374Z",
+  "station": {
+    "id": "9414290",
+    "name": "SAN FRANCISCO (Golden Gate)",
+    "displayName": "San Francisco (Golden Gate)",
+    "stateCode": "CA",
+    "stateName": "California",
+    "stateSlug": "california",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 7.077,
+    "stationPath": "/tides/california/san-francisco-golden-gate-9414290",
+    "stateCalendarPath": "/king-tides/california/2026"
+  },
+  "window": {
+    "start": "2026-07-12",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-15T18:11:52.362Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260712&range=168&datum=MLLW&station=9414290&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "0f8ac82b2a417f4f7f5e7730f69622a599d9ec08addde0ebc63dbda3ea307754"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/9414290/predictions?interval=hilo&begin_date=2026-07-12&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "0f8ac82b2a417f4f7f5e7730f69622a599d9ec08addde0ebc63dbda3ea307754"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "c9d630fd6de3a532f6908eefac1712d98dc1949fd18a64c39430ed9f466e2315"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-12 04:27",
+        "v": -1.207,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-12 11:54",
+        "v": 4.635,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-12 15:50",
+        "v": 3.189,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-12 22:06",
+        "v": 7.149,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-13 05:18",
+        "v": -1.518,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-13 12:41",
+        "v": 4.863,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-13 16:49",
+        "v": 3.063,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-13 23:01",
+        "v": 7.198,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-14 06:06",
+        "v": -1.631,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-14 13:24",
+        "v": 5.042,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-14 17:46",
+        "v": 2.853,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-14 23:55",
+        "v": 7.074,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-15 06:52",
+        "v": -1.541,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 14:05",
+        "v": 5.198,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-15 18:43",
+        "v": 2.61,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 00:48",
+        "v": 6.754,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 07:36",
+        "v": -1.252,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 14:45",
+        "v": 5.348,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 19:41",
+        "v": 2.369,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 01:41",
+        "v": 6.245,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 08:19",
+        "v": -0.781,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 15:25",
+        "v": 5.491,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 20:42",
+        "v": 2.139,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 02:35",
+        "v": 5.593,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 09:00",
+        "v": -0.157,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 16:04",
+        "v": 5.618,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 21:46",
+        "v": 1.911,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-13 23:01",
+        "v": 7.198,
+        "type": "H",
+        "dateKey": "2026-07-13",
+        "dateLabel": "July 13, 2026",
+        "timeLabel": "11:01 PM"
+      },
+      "lowest": {
+        "t": "2026-07-14 06:06",
+        "v": -1.631,
+        "type": "L",
+        "dateKey": "2026-07-14",
+        "dateLabel": "July 14, 2026",
+        "timeLabel": "6:06 AM"
+      },
+      "rangeFt": 8.829,
+      "thresholdFt": 7.077,
+      "thresholdCrossings": [
+        {
+          "t": "2026-07-12 22:06",
+          "v": 7.149,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-13 23:01",
+          "v": 7.198,
+          "type": "H"
+        }
+      ]
+    },
+    "kingTideCluster": {
+      "startKey": "2026-07-12",
+      "endKey": "2026-07-13",
+      "label": "Jul 12–13",
+      "peakHeight": 7.198,
+      "peakDateKey": "2026-07-13",
+      "peakTimeLabel": "11:01 PM"
+    }
+  },
+  "creative": {
+    "postId": "2026-07-15-golden-gate-king-tide",
+    "contentType": "king-tide-prediction",
+    "temporalFrame": "recap",
+    "headline": "Golden Gate crossed a king-tide threshold",
+    "eyebrow": "PERIGEE TIDES · KING-TIDE SIGNAL",
+    "stationName": "San Francisco (Golden Gate)",
+    "caption": "Golden Gate crossed Perigee's king-tide threshold this week. 🌊\n\nAt NOAA station 9414290, the astronomical prediction reached 7.198 ft above local MLLW at 11:01 PM on July 13, 2026 (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is 7.077 ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\nExplore the California 2026 calendar at the link in bio.\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KingTides #california #NOAA #TideChart",
+    "ctaUrl": "https://perigeetides.com/king-tides/california/2026?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-15-golden-gate-king-tide",
+    "ctaDisplay": "perigeetides.com/king-tides/california/2026",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides title card: Golden Gate crossed a king-tide threshold during Jul 12–13, 2026.",
+      "Data card for NOAA station 9414290: predicted high 7.20 feet above local MLLW at 11:01 PM on July 13, 2026, station-local time.",
+      "Seven-day high and low tide prediction chart for San Francisco (Golden Gate), based on matched NOAA and Perigee data. A line marks the 7.077-foot Perigee king-tide threshold.",
+      "Explanation of Perigee's station-specific top-one-percent king-tide definition, with the 7.077-foot threshold and nearby predicted highs.",
+      "Source and limitations card: NOAA CO-OPS astronomical prediction at one station, not an observation or flood forecast; weather can change observed water levels."
+    ],
+    "slides": [
+      {
+        "order": 1,
+        "file": "content/posts/2026-07-15-golden-gate-king-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides title card: Golden Gate crossed a king-tide threshold during Jul 12–13, 2026.",
+        "sha256": "b3438d1ab8d328d037795d586bc7bfb8f89eecb4a8b026793881951ca806b7bd",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "file": "content/posts/2026-07-15-golden-gate-king-tide/slides/02-peak.jpg",
+        "altText": "Data card for NOAA station 9414290: predicted high 7.20 feet above local MLLW at 11:01 PM on July 13, 2026, station-local time.",
+        "sha256": "bb5da86383f953427d00b77d1a2ed11ef664579839321dfa11ea7ff91d2f7b82",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "file": "content/posts/2026-07-15-golden-gate-king-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for San Francisco (Golden Gate), based on matched NOAA and Perigee data. A line marks the 7.077-foot Perigee king-tide threshold.",
+        "sha256": "ba2c558aa0a7a05fa307789d6ae514e4b20ac6d3b1e804ddc3d9baad75eed916",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "file": "content/posts/2026-07-15-golden-gate-king-tide/slides/04-threshold.jpg",
+        "altText": "Explanation of Perigee's station-specific top-one-percent king-tide definition, with the 7.077-foot threshold and nearby predicted highs.",
+        "sha256": "d50cafe5e6a4b11db15415b4d84bdfcfd6919f96f393d99166127620ce49cc38",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/04-threshold.jpg"
+      },
+      {
+        "order": 5,
+        "file": "content/posts/2026-07-15-golden-gate-king-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical prediction at one station, not an observation or flood forecast; weather can change observed water levels.",
+        "sha256": "b55c548763e69061ae909dc7793481f18b12610aa76a11dfd88564f357e15fc5",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-15T18:12:51.880Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-15T18:12:51.738Z",
+    "report": "content/posts/2026-07-15-golden-gate-king-tide/validation.json"
+  }
+}

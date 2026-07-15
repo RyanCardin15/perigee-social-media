@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-15-golden-gate-king-tide",
+  "validatedAt": "2026-07-15T18:12:51.738Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "schema",
+      "passed": true,
+      "detail": "Manifest schemaVersion must be 1."
+    },
+    {
+      "name": "status",
+      "passed": true,
+      "detail": "Unknown manifest status."
+    },
+    {
+      "name": "provider-match",
+      "passed": true,
+      "detail": "Perigee and NOAA digests must match."
+    },
+    {
+      "name": "provider-digests",
+      "passed": true,
+      "detail": "Provider digests differ."
+    },
+    {
+      "name": "prediction-count",
+      "passed": true,
+      "detail": "Expected at least eight high/low predictions."
+    },
+    {
+      "name": "highest-value",
+      "passed": true,
+      "detail": "Derived highest prediction does not match source data."
+    },
+    {
+      "name": "threshold",
+      "passed": true,
+      "detail": "Manifest threshold differs from the checked-in almanac."
+    },
+    {
+      "name": "caption-prediction",
+      "passed": true,
+      "detail": "Caption must include “prediction”."
+    },
+    {
+      "name": "caption-mllw",
+      "passed": true,
+      "detail": "Caption must include “MLLW”."
+    },
+    {
+      "name": "caption-9414290",
+      "passed": true,
+      "detail": "Caption must include “9414290”."
+    },
+    {
+      "name": "caption-noaa",
+      "passed": true,
+      "detail": "Caption must include “NOAA”."
+    },
+    {
+      "name": "caption-not-for-navigation",
+      "passed": true,
+      "detail": "Caption must include “not for navigation”."
+    },
+    {
+      "name": "prohibited-claims",
+      "passed": true,
+      "detail": "Caption contains a prohibited claim."
+    },
+    {
+      "name": "caption-length",
+      "passed": true,
+      "detail": "Caption must be 1–2200 characters."
+    },
+    {
+      "name": "cta",
+      "passed": true,
+      "detail": "CTA must be an attributed perigeetides.com HTTPS URL."
+    },
+    {
+      "name": "no-secrets",
+      "passed": true,
+      "detail": "Manifest appears to contain an access token or app secret."
+    },
+    {
+      "name": "slide-count",
+      "passed": true,
+      "detail": "Instagram carousel must contain five slides."
+    },
+    {
+      "name": "slide-1-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-1-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-1-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-1-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after render."
+    },
+    {
+      "name": "slide-1-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-2-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-2-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-2-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-2-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after render."
+    },
+    {
+      "name": "slide-2-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-3-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-3-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-3-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-3-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after render."
+    },
+    {
+      "name": "slide-3-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-4-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-4-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-4-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-4-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after render."
+    },
+    {
+      "name": "slide-4-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-5-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-5-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-5-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-5-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after render."
+    },
+    {
+      "name": "slide-5-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "generated-at",
+      "passed": true,
+      "detail": "generatedAt is invalid or in the future."
+    },
+    {
+      "name": "fresh-source",
+      "passed": true,
+      "detail": "Prediction data is more than six hours old."
+    }
+  ],
+  "errors": []
+}

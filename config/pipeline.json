@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "brand": {
+    "name": "Perigee Tides",
+    "accountHandleCandidates": [
+      "perigeetides",
+      "perigee.tides",
+      "perigeetidesapp"
+    ],
+    "website": "https://perigeetides.com",
+    "bio": "NOAA tide predictions, coastal planning windows and king-tide calendars. Planning aid — not for navigation.",
+    "palette": {
+      "paper": "#faf9f4",
+      "paperRaised": "#ffffff",
+      "shoal": "#e4eeea",
+      "ink": "#16303e",
+      "inkSoft": "#3e5a68",
+      "inkFaint": "#566d77",
+      "magenta": "#c41e6a",
+      "tide": "#0099a8",
+      "brass": "#a06a0a"
+    }
+  },
+  "sources": {
+    "noaaApplication": "PerigeeSocial",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt"
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "width": 1080,
+    "height": 1350,
+    "jpegQuality": 92,
+    "manualReviewTypes": [
+      "observed-flooding",
+      "marine-advisory",
+      "safety-incident"
+    ],
+    "autoPublishTypes": [
+      "weekly-tide",
+      "king-tide-prediction",
+      "tide-education"
+    ]
+  },
+  "campaign": {
+    "source": "instagram",
+    "medium": "organic_social",
+    "profileCampaign": "instagram_profile",
+    "postCampaignPrefix": "ig_"
+  },
+  "launchPost": {
+    "stationId": "9414290",
+    "windowStart": "2026-07-12",
+    "windowHours": 168,
+    "clusterStart": "2026-07-12",
+    "clusterEnd": "2026-07-13"
+  }
+}

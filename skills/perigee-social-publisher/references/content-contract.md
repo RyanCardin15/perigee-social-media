@@ -1,0 +1,47 @@
+# Perigee social content contract
+
+## Source truth
+
+- Fetch astronomical tide predictions from both the Perigee API and NOAA
+  CO-OPS for the same station, date window, datum, units, interval, and station
+  timezone. Require point-for-point agreement before publication.
+- Preserve three-decimal source values in the manifest. Round display heights
+  to two decimals and never reuse a local MLLW height for another station.
+- Treat a station as a representative comparison point, not a beach, city,
+  harbor, state maximum, or flood forecast.
+- Plot only returned data. Decorative sine waves may appear as background
+  texture but must never be presented as the station trace.
+
+## Required language
+
+Prediction posts must include:
+
+- “predicted” near the primary height or time;
+- station name and NOAA station ID;
+- station-local time;
+- feet above local MLLW;
+- NOAA CO-OPS attribution;
+- “Planning aid — not for navigation or a substitute for official advisories,
+  local procedures, or operator judgment.”
+
+King-tide posts must say that Perigee uses the station's top 1% of predicted
+annual high tides. Never imply that NOAA defines one universal king-tide
+threshold. Explain that wind, pressure, waves, rainfall, and other effects can
+move observed water above or below an astronomical prediction.
+
+## Voice and claims
+
+Lead with the useful fact, then evidence and the next action. Stay calm,
+specific, candid, and concise. Do not manufacture urgency, certainty, safety,
+scarcity, savings, testimonials, or engagement claims.
+
+Prohibited claims include “safe,” “unsafe,” “all clear,” “guaranteed,”
+“real-time,” “perfect conditions,” and “navigation-grade.”
+
+## Accessibility
+
+- Use high contrast and do not rely on color alone.
+- Provide one alt-text entry per carousel slide. Name the chart and its key
+  numeric takeaway without copying the whole caption.
+- Render 1080×1350 JPEG feed assets. Keep critical text inside 90-pixel side
+  and 100-pixel top/bottom safe areas.

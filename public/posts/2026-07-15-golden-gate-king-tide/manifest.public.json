@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-15-golden-gate-king-tide",
+  "contentType": "king-tide-prediction",
+  "station": {
+    "id": "9414290",
+    "name": "SAN FRANCISCO (Golden Gate)",
+    "displayName": "San Francisco (Golden Gate)",
+    "stateCode": "CA",
+    "stateName": "California",
+    "stateSlug": "california",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 7.077,
+    "stationPath": "/tides/california/san-francisco-golden-gate-9414290",
+    "stateCalendarPath": "/king-tides/california/2026"
+  },
+  "window": {
+    "start": "2026-07-12",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260712&range=168&datum=MLLW&station=9414290&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/9414290/predictions?interval=hilo&begin_date=2026-07-12&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/king-tides/california/2026?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-15-golden-gate-king-tide",
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/01-cover.jpg",
+      "altText": "Perigee Tides title card: Golden Gate crossed a king-tide threshold during Jul 12–13, 2026.",
+      "sha256": "b3438d1ab8d328d037795d586bc7bfb8f89eecb4a8b026793881951ca806b7bd"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/02-peak.jpg",
+      "altText": "Data card for NOAA station 9414290: predicted high 7.20 feet above local MLLW at 11:01 PM on July 13, 2026, station-local time.",
+      "sha256": "bb5da86383f953427d00b77d1a2ed11ef664579839321dfa11ea7ff91d2f7b82"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for San Francisco (Golden Gate), based on matched NOAA and Perigee data. A line marks the 7.077-foot Perigee king-tide threshold.",
+      "sha256": "ba2c558aa0a7a05fa307789d6ae514e4b20ac6d3b1e804ddc3d9baad75eed916"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/04-threshold.jpg",
+      "altText": "Explanation of Perigee's station-specific top-one-percent king-tide definition, with the 7.077-foot threshold and nearby predicted highs.",
+      "sha256": "d50cafe5e6a4b11db15415b4d84bdfcfd6919f96f393d99166127620ce49cc38"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-15-golden-gate-king-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical prediction at one station, not an observation or flood forecast; weather can change observed water levels.",
+      "sha256": "b55c548763e69061ae909dc7793481f18b12610aa76a11dfd88564f357e15fc5"
+    }
+  ]
+}

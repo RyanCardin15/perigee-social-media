@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perigee Social Publisher"
+  short_description: "Generate, validate, and publish tide posts"
+  default_prompt: "Use $perigee-social-publisher to prepare and publish the next verified Perigee tide post."
