@@ -14,9 +14,10 @@ repository as part of a publishing run.
   data and writes the Codex image brief for a post.
 - `npm run social:prepare -- --mode event-watch --date YYYY-MM-DD` publishes
   nothing when no qualifying event exists.
-- `npm run social:compose -- --manifest <path> --artwork <path>` attaches a
-  reviewed Codex-generated editorial image, renders the carousel, and validates
-  it.
+- `npm run social:attach -- --manifest <path> --slide-1 <path> ... --slide-5
+  <path> --confirm-reviewed` attaches five reviewed, complete Codex-generated
+  slide images, normalizes them to publishable JPEGs without overlays, and
+  validates them.
 - `npm run validate -- --manifest <path>` reruns all factual and asset gates.
 - `npm run stage -- --manifest <path>` copies verified JPEGs into `public/`.
 - `npm run account:verify` checks the configured Business identity and live
@@ -31,15 +32,20 @@ repository as part of a publishing run.
 ## Data and content rules
 
 Require point-for-point agreement between Perigee and NOAA CO-OPS. Preserve
-source precision in manifests, render display values deterministically, use
-station-local time and local MLLW, and never treat a prediction as an
-observation or flood forecast. Follow
+source precision in manifests and generation briefs, use station-local time and
+local MLLW, and never treat a prediction as an observation or flood forecast.
+Follow
 `skills/perigee-social-publisher/SKILL.md` and its content contract.
 
-Codex built-in image generation is the only approved source for editorial
-artwork. Generate from the post's `creative-brief.json`. Image models must not
-draw text, numbers, charts, axes, maps, station geography, warnings, or provider
-marks; those remain deterministic renderer responsibilities.
+Codex built-in image generation is the only approved source for finished post
+slides. Generate all five complete slides from the exact prompts in the post's
+`generation-brief.json`; the model owns the background, typography, factual data
+presentation, chart, information design, and every visible word. Do not use SVG,
+HTML, canvas, templates, deterministic text/chart overlays, composited
+backgrounds, stock art, or another image generator. Codex must visually inspect
+each result against the exact text and data, regenerate any inaccurate slide,
+and attach only the reviewed image outputs. Post-generation processing is
+limited to orientation, 1080×1350 sizing, and JPEG encoding for Meta delivery.
 
 ## Security
 

@@ -1,21 +1,23 @@
 # Social post operator runbook
 
-The simplest way to create a post is to open Codex in this repository and give
-it one of the prompts below. Codex must perform the image-generation step; the
-Node scripts intentionally cannot substitute an image model or stock asset.
+The simplest manual workflow is to open Codex in this repository and use one of
+the prompts below. Codex must generate every complete slide itself; the Node
+scripts cannot substitute a renderer, template, stock asset, shell/API image
+generator, or background-compositing step.
 
 ## Create a validated draft
 
-Use this when you want to review the carousel before anything is staged or
-published:
-
 ```text
 Use $perigee-social-publisher. Create a validated weekly tide draft for
-YYYY-MM-DD. Run the authorization preflight, check the publication ledger,
-prepare the post, read its exact creative-brief.json, generate the editorial
-artwork yourself with Codex built-in image generation, inspect it against the
-brief, compose and validate all five slides, and show me the result. Stop after
-status=validated. Do not stage, commit, push, or publish.
+YYYY-MM-DD. Run authorization preflight, check the publication ledger, and run
+social:prepare. Read the exact generation-brief.json. For each of its five slide
+prompts, call Codex built-in image generation directly to create the entire
+finished slide: background, typography, data, chart or information design, and
+all visible copy. Inspect every result against its EXACT TEXT, DATA SERIES, and
+reviewChecklist; regenerate any inaccurate or illegible slide. Attach the five
+reviewed image outputs with social:attach --confirm-reviewed and require
+status=validated. Show me all five final slides. Stop without staging,
+committing, pushing, or publishing.
 ```
 
 For a king-tide check, replace “weekly tide draft” with “event-watch post.” A
@@ -23,21 +25,23 @@ quiet event-watch result is success and should create nothing.
 
 ## Create and publish
 
-Use this only when you want Codex to carry the validated post through the live
-publishing gates:
-
 ```text
 Use $perigee-social-publisher. Create and publish the verified weekly tide post
-for YYYY-MM-DD. Follow Perigee Feed System v1: run authorization and ledger
-preflight, prepare, generate new artwork yourself with Codex built-in image
-generation from the exact creative brief, inspect it, compose, validate, and
-visually inspect all five slides. Only if every gate passes, stage, commit and
-push only this post and its public assets, verify the hosted JPEG checksums,
-publish with the gated Meta command, verify the live post and ledger, then
-commit and push the publication state. Never reuse reference or prior artwork.
+for YYYY-MM-DD. Follow Perigee Feed System v2: run authorization and ledger
+preflight, prepare, then use Codex built-in image generation directly for each
+of the five exact prompts in generation-brief.json. Each output must be the
+complete final slide with its background, type, factual data presentation,
+chart or information design, and visible copy. Inspect every character, number,
+chart point, safe area, and prediction boundary; regenerate failures. Do not use
+SVG, PNG overlays, templates, deterministic composition, stock art, a shell/API
+image generator, or prior assets. Attach only the five reviewed image outputs
+with --confirm-reviewed, validate, and visually inspect the final JPEGs. Only
+if every gate passes, stage, commit and push only this post and its public
+assets, verify public checksums, publish with the gated Meta command, verify the
+live post and ledger, then commit and push the publication state.
 ```
 
-## Run the first step yourself
+## Run preparation yourself
 
 From `/Users/ryancardin/Src/Perigee/Perigee Social Media`:
 
@@ -47,14 +51,16 @@ npm run account:verify
 npm run social:prepare -- --mode weekly --date YYYY-MM-DD
 ```
 
-Preparation prints the manifest and brief paths and stops at
-`awaiting-artwork`. Then tell Codex:
+Preparation prints the manifest and `generation-brief.json` paths and stops at
+`awaiting-generation`. Then tell Codex:
 
 ```text
-Read <post-directory>/creative-brief.json. Generate the artwork yourself with
-Codex built-in image generation, inspect it against every reviewChecklist item,
-run social:compose with the selected image, and show me all five slides. Stop
-after status=validated; do not publish.
+Read <post-directory>/generation-brief.json. Generate all five complete slide
+images yourself with Codex built-in image generation, one exact prompt per
+call. Inspect each image against its exact text, data series, safe area, and
+review checklist; regenerate failures. Run social:attach --confirm-reviewed with
+the five reviewed image output paths and show me the final carousel. Stop after
+status=validated.
 ```
 
 To check for a noteworthy king-tide event instead:
@@ -66,13 +72,14 @@ npm run social:prepare -- --mode event-watch --date YYYY-MM-DD
 ## Status guide
 
 - `quiet`: no qualifying event; create and publish nothing.
-- `awaiting-artwork`: data is frozen and Codex must generate the image.
-- `validated`: artwork, facts, slides, alt text, and hashes passed; safe to
-  review.
+- `awaiting-generation`: data is frozen and Codex must generate five finished
+  slide images.
+- `validated`: generated slide provenance, facts, alt text, and hashes passed;
+  safe to review.
 - `staged`: public assets were copied but the post is not yet published.
 - `published`: Meta response, live post, journal, and ledger all agree.
 - `blocked`: stop and resolve the named gate; do not bypass or delete state.
 
 Never use `--force` for a post that appears in `state/publishing-ledger.jsonl`
-or `state/publishing/`. Never reuse the checked-in design reference as post
-artwork.
+or `state/publishing/`. Never reuse a prior generated slide or the checked-in v1
+reference carousel.

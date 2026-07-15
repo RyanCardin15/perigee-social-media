@@ -1,4 +1,4 @@
 interface:
   display_name: "Perigee Social Publisher"
   short_description: "Generate, validate, and publish tide posts"
-  default_prompt: "Use $perigee-social-publisher to prepare the next verified Perigee tide post, generate new editorial artwork yourself with Codex built-in image generation from its exact creative brief, inspect and compose all five slides, validate every gate, and ask before staging or publishing."
+  default_prompt: "Use $perigee-social-publisher to prepare the next verified Perigee tide post, generate all five complete finished slides yourself with Codex built-in image generation from the exact data-bound prompts in generation-brief.json, inspect every word, number, chart point, and factual boundary, attach only accurate image outputs, validate every gate, and ask before staging or publishing."

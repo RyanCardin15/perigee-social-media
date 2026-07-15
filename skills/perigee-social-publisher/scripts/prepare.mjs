@@ -3,7 +3,7 @@
 import { mkdir, readFile } from "node:fs/promises";
 import { relative, resolve } from "node:path";
 import { createCreative } from "./lib/creative.mjs";
-import { createVisualBrief, DESIGN_SYSTEM_VERSION } from "./lib/design-system.mjs";
+import { createGenerationBrief, DESIGN_SYSTEM_VERSION } from "./lib/design-system.mjs";
 import {
   deriveMetrics,
   fetchMatchedPredictions,
@@ -55,9 +55,9 @@ if (await pathExists(LEDGER_PATH)) {
 
 await mkdir(postDir, { recursive: true });
 const manifest = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   id: creative.postId,
-  status: "awaiting-artwork",
+  status: "awaiting-generation",
   mode,
   requestedDate: dateKey,
   generatedAt: new Date().toISOString(),
@@ -96,8 +96,7 @@ const manifest = {
   creative: {
     ...creative,
     designSystemVersion: DESIGN_SYSTEM_VERSION,
-    visualBrief: "creative-brief.json",
-    artwork: null,
+    generationBrief: "generation-brief.json",
     slides: [],
   },
   approval: {
@@ -115,14 +114,14 @@ const manifest = {
   validation: null,
 };
 
-const brief = createVisualBrief(manifest, config);
-await atomicWriteJson(resolve(postDir, "creative-brief.json"), brief);
+const brief = createGenerationBrief(manifest, config);
+await atomicWriteJson(resolve(postDir, "generation-brief.json"), brief);
 await atomicWriteJson(manifestPath, manifest);
 
 console.log(JSON.stringify({
   status: manifest.status,
   postId: manifest.id,
   manifest: relative(PROJECT_ROOT, manifestPath),
-  brief: relative(PROJECT_ROOT, resolve(postDir, "creative-brief.json")),
-  next: `Generate the editorial artwork with Codex built-in image generation, then run npm run social:compose -- --manifest ${relative(PROJECT_ROOT, manifestPath)} --artwork <path>.`,
+  brief: relative(PROJECT_ROOT, resolve(postDir, "generation-brief.json")),
+  next: `Generate all five complete slide images with Codex built-in image generation from the five brief prompts, inspect each result, then run npm run social:attach -- --manifest ${relative(PROJECT_ROOT, manifestPath)} --slide-1 <path> --slide-2 <path> --slide-3 <path> --slide-4 <path> --slide-5 <path> --confirm-reviewed.`,
 }, null, 2));

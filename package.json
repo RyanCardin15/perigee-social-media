@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Deterministic, NOAA-backed social publishing for Perigee Tides.",
+  "description": "Codex-generated, NOAA-backed social publishing for Perigee Tides.",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
     "social:prepare": "node skills/perigee-social-publisher/scripts/prepare.mjs",
-    "social:compose": "node skills/perigee-social-publisher/scripts/compose.mjs",
+    "social:attach": "node skills/perigee-social-publisher/scripts/attach.mjs",
     "validate": "node skills/perigee-social-publisher/scripts/validate.mjs",
     "stage": "node skills/perigee-social-publisher/scripts/stage.mjs",
     "check:env": "node skills/perigee-social-publisher/scripts/check-env.mjs",

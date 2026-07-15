@@ -9,8 +9,10 @@
   to two decimals and never reuse a local MLLW height for another station.
 - Treat a station as a representative comparison point, not a beach, city,
   harbor, state maximum, or flood forecast.
-- Plot only returned data. Decorative sine waves may appear as background
-  texture but must never be presented as the station trace.
+- Give image generation only the point-for-point matched returned data. When a
+  slide includes a tide curve, the prompt must enumerate every point and Codex
+  must visually verify the generated curve against that series. Decorative
+  curves must never be presented as the station trace.
 
 ## Required language
 
@@ -45,3 +47,8 @@ Prohibited claims include “safe,” “unsafe,” “all clear,” “guarante
   numeric takeaway without copying the whole caption.
 - Render 1080×1350 JPEG feed assets. Keep critical text inside 90-pixel side
   and 100-pixel top/bottom safe areas.
+- Generate the entire slide as one image: background, type, data presentation,
+  chart or information design, and visible copy. Do not add deterministic
+  overlays or composite generated backgrounds with rendered PNG/SVG assets.
+- Inspect every generated string and number verbatim. Regenerate a slide with
+  clipped, warped, misspelled, omitted, invented, or inaccurate content.

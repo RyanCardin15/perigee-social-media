@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
+import { mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
 import test from "node:test";
+import sharp from "sharp";
 import { createCreative } from "../skills/perigee-social-publisher/scripts/lib/creative.mjs";
-import { createVisualBrief, DESIGN_SYSTEM_VERSION, IMAGE_GENERATOR } from "../skills/perigee-social-publisher/scripts/lib/design-system.mjs";
+import { attachGeneratedSlides, createGenerationBrief, DESIGN_SYSTEM_VERSION, IMAGE_GENERATOR } from "../skills/perigee-social-publisher/scripts/lib/design-system.mjs";
 import { selectCandidate } from "../skills/perigee-social-publisher/scripts/lib/data.mjs";
 import { formatStationLocal, parseArgs } from "../skills/perigee-social-publisher/scripts/lib/utils.mjs";
 
@@ -103,23 +107,44 @@ test("king-tide creative preserves prediction and MLLW boundaries", () => {
   assert.equal(new URL(creative.ctaUrl).searchParams.get("utm_source"), "instagram");
 });
 
-test("visual brief requires Codex artwork and keeps facts out of the pixels", () => {
+test("generation brief requires Codex to generate every complete factual slide", () => {
   const manifest = {
     id: "2026-07-15-golden-gate-king-tide",
-    station: { id: row.stationId, displayName: "San Francisco (Golden Gate)" },
+    station: {
+      id: row.stationId,
+      displayName: "San Francisco (Golden Gate)",
+      kingTideThresholdFt: 7.077,
+    },
     data: {
       kingTideCluster: row.kingTideClusters[0],
-      metrics: { highest: { v: 7.198, dateLabel: "July 13, 2026", timeLabel: "11:01 PM" } },
+      predictions: [
+        { t: "2026-07-12 04:27", v: -1.207, type: "L" },
+        { t: "2026-07-13 23:01", v: 7.198, type: "H" },
+        { t: "2026-07-14 23:44", v: 7.101, type: "H" },
+      ],
+      metrics: {
+        highest: { v: 7.198, dateLabel: "July 13, 2026", timeLabel: "11:01 PM" },
+        lowest: { v: -1.207, dateLabel: "July 12, 2026", timeLabel: "4:27 AM" },
+        rangeFt: 8.405,
+        thresholdFt: 7.077,
+      },
     },
-    creative: { contentType: "king-tide-prediction" },
+    creative: {
+      contentType: "king-tide-prediction",
+      eyebrow: "PERIGEE TIDES · KING-TIDE SIGNAL",
+      headline: "Golden Gate crossed a king-tide threshold",
+      ctaDisplay: "perigeetides.com/king-tides/california/2026",
+      disclaimer: "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    },
   };
-  const brief = createVisualBrief(manifest, {
+  const brief = createGenerationBrief(manifest, {
     brand: {
       palette: {
         inkDark: "#071d2a",
         tide: "#0099a8",
         paper: "#faf9f4",
         magenta: "#c41e6a",
+        brass: "#a06a0a",
       },
     },
     publishing: { width: 1080, height: 1350 },
@@ -127,7 +152,60 @@ test("visual brief requires Codex artwork and keeps facts out of the pixels", ()
   assert.equal(brief.designSystemVersion, DESIGN_SYSTEM_VERSION);
   assert.equal(brief.requiredGenerator.generatedBy, "codex");
   assert.equal(brief.requiredGenerator.generator, IMAGE_GENERATOR);
-  assert.equal(brief.asset.embeddedFactualContent, false);
-  assert.match(brief.prompt, /no text, numbers, letters, logos/i);
-  assert.match(brief.prompt, /non-documentary/i);
+  assert.equal(brief.output.count, 5);
+  assert.equal(brief.output.deterministicOverlaysAllowed, false);
+  assert.deepEqual(brief.output.generatedContentIncludes, ["background", "typography", "data", "chart", "information-design", "all-visible-copy"]);
+  assert.equal(brief.slides.length, 5);
+  assert.match(brief.slides[0].prompt, /entire finished Perigee Tides slide/i);
+  assert.match(brief.slides[0].prompt, /Predicted high · 7\.20 ft/);
+  assert.match(brief.slides[2].prompt, /Perigee top-1% threshold · 7\.077 ft/);
+  assert.match(brief.slides[2].prompt, /July 13, 2026 \| 11:01 PM \| high \| 7\.198 ft MLLW/);
+  assert.match(brief.slides[4].prompt, /Prediction ≠ observation/);
+});
+
+test("attachment uses generated image outputs without overlays or compositing", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "perigee-generated-slides-"));
+  try {
+    const slidePaths = [];
+    for (let order = 1; order <= 5; order += 1) {
+      const path = join(directory, `source-${order}.png`);
+      await sharp({
+        create: {
+          width: 800,
+          height: 1000,
+          channels: 3,
+          background: { r: order * 20, g: 80, b: 120 },
+        },
+      }).png().toFile(path);
+      slidePaths.push(path);
+    }
+    const manifestPath = join(directory, "manifest.json");
+    const manifest = {
+      creative: { altTexts: Array.from({ length: 5 }, (_, index) => `Accessible description for complete generated slide number ${index + 1}.`) },
+    };
+    const brief = {
+      promptVersion: "test-full-generation",
+      slides: Array.from({ length: 5 }, (_, index) => ({ order: index + 1, role: `role-${index + 1}`, prompt: `prompt-${index + 1}` })),
+    };
+    const slides = await attachGeneratedSlides({
+      manifest,
+      manifestPath,
+      slidePaths,
+      brief,
+      config: { publishing: { width: 1080, height: 1350, jpegQuality: 92 } },
+    });
+
+    assert.equal(slides.length, 5);
+    for (const slide of slides) {
+      const metadata = await sharp(resolve(process.cwd(), slide.file)).metadata();
+      assert.equal(metadata.format, "jpeg");
+      assert.equal(metadata.width, 1080);
+      assert.equal(metadata.height, 1350);
+      assert.equal(slide.generatedBy, "codex");
+      assert.equal(slide.embeddedFactualContent, true);
+      assert.equal(slide.normalization, "orientation-resize-jpeg-only; no overlays or compositing");
+    }
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
 });

@@ -1,18 +1,16 @@
 # Perigee Social Media
 
-This workspace turns NOAA-backed tide data into distinctive Perigee social
-assets, validates every factual claim, stages public JPEGs, and publishes an
-Instagram carousel through Meta's authorized Content Publishing API.
+This workspace turns point-for-point matched Perigee and NOAA tide data into
+complete Codex-generated Instagram slides, validates their provenance and
+factual contract, stages public JPEGs, and publishes through Meta's authorized
+Content Publishing API.
 
 The reusable operating contract is
-`skills/perigee-social-publisher/SKILL.md`. [Perigee Feed System v1](design-system/FEED_SYSTEM.md)
-defines the visual identity. Codex generates one text-free, non-documentary
-editorial image from the verified data brief; all text, numbers, marks, and
-charts are rendered deterministically from matched Perigee and NOAA responses.
-The checked-in [Golden Gate preview](design-system/examples/golden-gate-v1/slides/01-cover.jpg)
-shows the production direction without changing the already-published post.
-For copy-paste Codex prompts and the manual handoff, use the
-[social post operator runbook](docs/OPERATOR_RUNBOOK.md).
+`skills/perigee-social-publisher/SKILL.md`. [Perigee Feed System v2](design-system/FEED_SYSTEM.md)
+defines the visual identity. Codex built-in image generation creates every
+finished slide: background, typography, data presentation, chart, information
+design, and all visible copy. The pipeline does not build posts with SVG, PNG
+overlays, templates, or a deterministic renderer.
 
 ## Local workflow
 
@@ -21,23 +19,25 @@ npm install
 npm run token:status
 npm run account:verify
 npm run social:prepare -- --mode weekly --date YYYY-MM-DD
-npm run social:compose -- --manifest content/posts/<post-id>/manifest.json --artwork <codex-generated-image>
+npm run social:attach -- --manifest content/posts/<post-id>/manifest.json \
+  --slide-1 <codex-image> --slide-2 <codex-image> --slide-3 <codex-image> \
+  --slide-4 <codex-image> --slide-5 <codex-image> --confirm-reviewed
 npm run validate -- --manifest content/posts/<post-id>/manifest.json
 ```
 
-`social:prepare` stops at `awaiting-artwork` and writes
-`creative-brief.json`. Give that prompt to Codex built-in image generation,
-inspect the result against the checklist, and pass the selected file to
-`social:compose`. The compose command records Codex provenance and refuses
-published manifests. Validation rejects missing, changed, unreviewed, or
-non-Codex artwork.
+`social:prepare` stops at `awaiting-generation` and writes
+`generation-brief.json` with five exact, data-bound prompts. Run Codex built-in
+image generation separately for each prompt. Inspect every generated word,
+number, chart point, safe area, and prediction boundary; regenerate failures.
+`social:attach --confirm-reviewed` accepts only the five reviewed image outputs
+and limits post-processing to orientation, 1080×1350 sizing, and JPEG encoding.
+Validation records the prompt and source-image checksums and rejects missing or
+non-Codex provenance.
 
-Publishing is intentionally a separate, explicit gate:
+Publishing remains a separate explicit gate:
 
 ```bash
 cp .env.example .env.local
-# Fill the Instagram account ID locally. Provide the long-lived token on stdin;
-# the install command never echoes it or places it in shell history.
 ( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run token:install -- --confirm )
 npm run check:env
 npm run token:status
@@ -45,14 +45,12 @@ npm run account:verify
 npm run publish -- --manifest content/posts/<post-id>/manifest.json --confirm
 ```
 
-Do not paste tokens into chat, captions, manifests, Git history, or logs. The
+Never paste tokens into chat, captions, manifests, Git history, or logs. The
 publisher refuses drafts, failed validation, wrong accounts, exhausted quota,
-remote-byte mismatches, and duplicate post IDs. It journals container and
-publish state so an ambiguous API response is reconciled on the next run
-without resubmitting the post.
+remote-byte mismatches, and duplicate post IDs. It journals publication state
+so ambiguous Meta responses can be reconciled without duplicate posts.
 
 Long-lived Instagram tokens expire after roughly 60 days. The install command
 records lifecycle metadata. Check it with `npm run token:status` and rotate an
 eligible token with `npm run token:refresh -- --confirm`. Both `.env.local` and
-token metadata stay outside Git. See the skill references for factual language
-and Meta API requirements.
+token metadata stay outside Git.

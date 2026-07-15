@@ -15,8 +15,8 @@ and interpretation traceable to authoritative data.
 3. Check `state/publishing-ledger.jsonl` and `state/publishing/<post-id>.json`.
    Do not recreate or republish an existing post ID.
 4. Run the appropriate preparation mode from the project root. This freezes
-   the matched data and writes `creative-brief.json`; it intentionally stops at
-   `awaiting-artwork`:
+   the matched data and writes `generation-brief.json`; it intentionally stops
+   at `awaiting-generation`:
 
    ```bash
    npm run social:prepare -- --mode weekly --date YYYY-MM-DD
@@ -24,22 +24,27 @@ and interpretation traceable to authoritative data.
    npm run social:prepare -- --mode launch --date 2026-07-15
    ```
 
-5. Use Codex built-in image generation with the exact prompt in
-   `creative-brief.json`. Codex must inspect the result against the brief. Do
-   not call image generation programmatically from the publishing scripts or
-   substitute stock search or another generator. Generated artwork is a
-   non-documentary editorial metaphor only.
-6. Compose the post with the reviewed image:
+5. Use Codex built-in image generation once for each of the five exact slide
+   prompts in `generation-brief.json`. Every output must be a complete finished
+   slide: background, typography, factual data, chart or information design,
+   and all visible copy. Codex must inspect every character, number, chart
+   point, safe area, and factual boundary against the brief, and regenerate any
+   failed slide. Do not call image generation programmatically from the
+   publishing scripts or substitute SVG, HTML, canvas, templates, stock search,
+   another generator, deterministic overlays, or reused artwork.
+6. Attach the five reviewed image outputs:
 
    ```bash
-   npm run social:compose -- --manifest content/posts/<post-id>/manifest.json --artwork <codex-generated-image>
+   npm run social:attach -- --manifest content/posts/<post-id>/manifest.json \
+     --slide-1 <codex-image> --slide-2 <codex-image> --slide-3 <codex-image> \
+     --slide-4 <codex-image> --slide-5 <codex-image> --confirm-reviewed
    ```
 
-7. Inspect the manifest, validation report, and all rendered slides. Stop if
-   Perigee and NOAA values do not match point-for-point or any validation fails.
-   Keep factual text, axes, and chart geometry deterministic. Do not ask the
-   image model to draw numbers, labels, charts, maps, station geography,
-   warnings, or provider marks.
+7. Inspect the manifest, validation report, and all five finished slides. Stop
+   if Perigee and NOAA values do not match point-for-point, any in-image text or
+   plotted data differs from the frozen brief, or any validation fails. The
+   attach step may only orient, resize, and JPEG-encode the generated output; it
+   must not add or composite content.
 8. Stage verified JPEGs with `npm run stage -- --manifest <path>`. The publisher
    must GET each public URL, require JPEG over HTTPS, and match the remote bytes
    to the local SHA-256 before API publication.

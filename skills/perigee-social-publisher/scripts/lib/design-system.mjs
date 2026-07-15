@@ -1,11 +1,14 @@
-import { copyFile, mkdir } from "node:fs/promises";
+import { mkdir, rename, rm } from "node:fs/promises";
 import { relative, resolve } from "node:path";
 import sharp from "sharp";
 import { PROJECT_ROOT } from "./paths.mjs";
 import { formatStationLocal, sha256, sha256File } from "./utils.mjs";
 
-export const DESIGN_SYSTEM_VERSION = "perigee-feed-v1";
+export const DESIGN_SYSTEM_VERSION = "perigee-feed-v2-full-generation";
+export const LEGACY_DESIGN_SYSTEM_VERSION = "perigee-feed-v1";
 export const IMAGE_GENERATOR = "openai-imagegen-built-in";
+
+const SLIDE_NAMES = ["01-cover.jpg", "02-peak.jpg", "03-curve.jpg", "04-meaning.jpg", "05-source.jpg"];
 
 function peakFor(manifest) {
   const cluster = manifest.data?.kingTideCluster;
@@ -23,48 +26,175 @@ function peakFor(manifest) {
   };
 }
 
-function isNight(timeLabel) {
-  const match = /^(\d{1,2}):\d{2} (AM|PM)$/.exec(timeLabel || "");
-  if (!match) return false;
-  let hour = Number(match[1]) % 12;
-  if (match[2] === "PM") hour += 12;
-  return hour >= 19 || hour < 6;
+function sharedPrompt(manifest, config, order) {
+  return [
+    "Use case: infographic-diagram",
+    `Asset type: finished Instagram carousel slide ${order} of 5, portrait 4:5`,
+    "Primary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.",
+    `Brand: premium coastal field guide; deep ocean ink ${config.brand.palette.inkDark}, warm foam ${config.brand.palette.paper}, tide teal ${config.brand.palette.tide}, signal magenta ${config.brand.palette.magenta}, threshold brass ${config.brand.palette.brass}; sophisticated editorial photography and information design.`,
+    "Composition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.",
+    "Typography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.",
+    "Accuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.",
+    "Data boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.",
+    "Constraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.",
+    `Continuity key: ${manifest.id}; slide ${order} of 5.`,
+  ].join("\n");
 }
 
-export function createVisualBrief(manifest, config) {
-  const peak = peakFor(manifest);
-  const night = isNight(peak.timeLabel);
-  const signal = manifest.creative.contentType === "king-tide-prediction" ? "king-tide signal" : "weekly tide outlook";
-  const prompt = [
-    "Use case: ads-marketing",
-    "Asset type: Instagram carousel editorial background, portrait 4:5",
-    `Primary request: create an arresting, premium editorial ocean image for Perigee Tides' ${signal}. Use the verified data only to set the emotional register: a predicted high of ${peak.value.toFixed(3)} ft above local MLLW at ${peak.timeLabel} on ${peak.dateLabel}, at one NOAA station.`,
-    "Scene/backdrop: an abstract, close coastal-water study with sculptural tidal folds and a clear sense of vertical movement; metaphorical and non-documentary, never a depiction of current or forecast conditions",
-    "Subject: ocean surface and luminous water texture only",
-    "Style/medium: sophisticated editorial photography blended with restrained fine-art realism; tactile, cinematic, contemporary, highly polished",
-    "Composition/framing: portrait 4:5; strong focal texture in the upper-right and lower half; preserve calm negative space through the upper-left and center-left for deterministic headline overlay; crop-safe edge detail",
-    `Lighting/mood: ${night ? "deep moonlit atmosphere with a controlled silver glow" : "soft coastal daylight with a controlled pearlescent glow"}; compelling and calm, never ominous or sensational`,
-    `Color palette: deep ink ${config.brand.palette.inkDark || "#071d2a"}, ocean teal ${config.brand.palette.tide}, warm foam ${config.brand.palette.paper}, tiny controlled glints of signal magenta ${config.brand.palette.magenta}`,
-    "Materials/textures: real water microtexture, translucent folds, subtle grain, crisp highlights, rich shadow detail",
-    "Constraints: absolutely no text, numbers, letters, logos, marks, labels, charts, axes, maps, landmarks, boats, people, animals, buildings, flooding, storm damage, warnings, or recognizable geography; no watermark; this is an editorial metaphor, not evidence",
-    "Avoid: generic stock sunset, tropical turquoise, giant wave, disaster imagery, fantasy seascape, lens flare, oversaturation, symmetrical poster layout, fake UI",
-  ].join("\n");
+function exactTextBlock(lines) {
+  return ["EXACT TEXT — reproduce only these strings:", ...lines.map((line) => `\"${line}\"`)].join("\n");
+}
 
+function predictionSeries(manifest) {
+  return manifest.data.predictions.map((prediction) => {
+    const local = formatStationLocal(prediction.t);
+    return `${local.dateLabel} | ${local.timeLabel} | ${prediction.type === "H" ? "high" : "low"} | ${prediction.v.toFixed(3)} ft MLLW`;
+  });
+}
+
+function slideSpecs(manifest, config) {
+  const peak = peakFor(manifest);
+  const isKingTide = manifest.creative.contentType === "king-tide-prediction";
+  const highest = manifest.data.metrics.highest;
+  const lowest = manifest.data.metrics.lowest;
+  const threshold = manifest.data.metrics.thresholdFt;
+  const commonStation = `${manifest.station.displayName} · NOAA ${manifest.station.id}`;
+  const stationTime = "Station-local time · feet above local MLLW";
+  const predictionData = predictionSeries(manifest);
+  const topHighs = manifest.data.predictions
+    .filter((prediction) => prediction.type === "H")
+    .sort((left, right) => right.v - left.v)
+    .slice(0, 3)
+    .map((prediction) => {
+      const local = formatStationLocal(prediction.t);
+      return `${local.dateLabel.replace(/, \d{4}$/, "")} · ${local.timeLabel} · ${prediction.v.toFixed(3)} ft`;
+    });
+
+  const slides = [
+    {
+      order: 1,
+      role: "hook",
+      exactText: [
+        "PERIGEE TIDES",
+        manifest.creative.eyebrow,
+        manifest.creative.headline,
+        `Predicted high · ${peak.value.toFixed(2)} ft`,
+        `${peak.timeLabel} · ${peak.dateLabel}`,
+        commonStation,
+        "1 / 5",
+      ],
+      direction: "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+    },
+    {
+      order: 2,
+      role: "primary-fact",
+      exactText: [
+        "PREDICTED HIGH",
+        `${peak.value.toFixed(2)} ft`,
+        "above local MLLW",
+        peak.timeLabel,
+        peak.dateLabel,
+        commonStation,
+        stationTime,
+        "Astronomical prediction",
+        "2 / 5",
+      ],
+      direction: "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+    },
+    {
+      order: 3,
+      role: "prediction-series",
+      exactText: [
+        "7-DAY TIDE OUTLOOK",
+        commonStation,
+        "Matched NOAA + Perigee astronomical predictions",
+        stationTime,
+        ...(isKingTide ? [`Perigee top-1% threshold · ${threshold.toFixed(3)} ft`] : []),
+        "3 / 5",
+      ],
+      direction: `Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. ${isKingTide ? "Include a clearly labeled horizontal threshold at the exact supplied value." : "Emphasize the weekly range without adding a threshold."}\nDATA SERIES — plot exactly:\n${predictionData.join("\n")}`,
+      dataSeries: predictionData,
+    },
+    isKingTide
+      ? {
+          order: 4,
+          role: "meaning",
+          exactText: [
+            "WHY IT MATTERS",
+            "Perigee's station-specific definition",
+            "TOP 1%",
+            "of this station's predicted annual highs",
+            `2026 threshold · ${threshold.toFixed(3)} ft MLLW`,
+            ...topHighs,
+            "NOAA does not define one universal king-tide threshold.",
+            "4 / 5",
+          ],
+          direction: "Create an editorial explainer with TOP 1% as the visual anchor and the three exact nearby predicted highs as a clean ranked list. Keep the station-specific definition unmistakable.",
+        }
+      : {
+          order: 4,
+          role: "meaning",
+          exactText: [
+            "WEEKLY RANGE",
+            `${manifest.data.metrics.rangeFt.toFixed(2)} ft`,
+            `Highest prediction · ${highest.v.toFixed(2)} ft`,
+            `${highest.timeLabel} · ${highest.dateLabel}`,
+            `Lowest prediction · ${lowest.v.toFixed(2)} ft`,
+            `${lowest.timeLabel} · ${lowest.dateLabel}`,
+            stationTime,
+            commonStation,
+            "4 / 5",
+          ],
+          direction: "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+        },
+    {
+      order: 5,
+      role: "source-and-action",
+      exactText: [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        isKingTide ? "EXPLORE THE FULL CALENDAR" : "OPEN THE FULL STATION CHART",
+        manifest.creative.ctaDisplay,
+        "NOAA CO-OPS",
+        manifest.creative.disclaimer,
+        "5 / 5",
+      ],
+      direction: "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+    },
+  ];
+
+  return slides.map((slide) => ({
+    ...slide,
+    outputFile: SLIDE_NAMES[slide.order - 1],
+    prompt: [sharedPrompt(manifest, config, slide.order), slide.direction, exactTextBlock(slide.exactText)].join("\n\n"),
+    reviewChecklist: [
+      "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+      "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+      "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+      "The image is one complete generated slide with no deterministic overlay or composited background.",
+      "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography.",
+    ],
+  }));
+}
+
+export function createGenerationBrief(manifest, config) {
+  const slides = slideSpecs(manifest, config);
   const facts = {
-    stationId: manifest.station.id,
-    stationName: manifest.station.displayName,
+    station: manifest.station,
     contentType: manifest.creative.contentType,
-    predictedHighFtMllw: Number(peak.value.toFixed(3)),
-    predictedHighDate: peak.dateLabel,
-    predictedHighTime: peak.timeLabel,
-    stationLocalTime: true,
-    predictionNotObservation: true,
+    predictions: manifest.data.predictions,
+    metrics: manifest.data.metrics,
+    kingTideCluster: manifest.data.kingTideCluster,
+    slideText: slides.map(({ order, exactText }) => ({ order, exactText })),
   };
 
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     designSystemVersion: DESIGN_SYSTEM_VERSION,
-    promptVersion: `${DESIGN_SYSTEM_VERSION}-editorial-ocean-v1`,
+    promptVersion: `${DESIGN_SYSTEM_VERSION}-carousel-v1`,
     postId: manifest.id,
     createdAt: new Date().toISOString(),
     requiredGenerator: {
@@ -72,60 +202,80 @@ export function createVisualBrief(manifest, config) {
       generator: IMAGE_GENERATOR,
       mode: "built-in",
     },
-    asset: {
-      role: "editorial-background",
+    output: {
+      role: "five-complete-carousel-slides",
+      count: 5,
       targetAspectRatio: "4:5",
       targetWidth: config.publishing.width,
       targetHeight: config.publishing.height,
-      minimumWidth: 1000,
-      minimumHeight: 1000,
-      embeddedFactualContent: false,
+      publicationFormat: "jpeg",
+      generatedContentIncludes: ["background", "typography", "data", "chart", "information-design", "all-visible-copy"],
+      deterministicOverlaysAllowed: false,
     },
     facts,
     factsSha256: sha256(JSON.stringify(facts)),
-    prompt,
-    reviewChecklist: [
-      "No embedded text, numbers, logos, charts, maps, landmarks, or provider marks.",
-      "No visual claim of flooding, weather, observed water level, or actual local conditions.",
-      "Enough quiet negative space remains for deterministic headline composition.",
-      "The palette and finish match Perigee Feed System v1.",
-    ],
+    slides,
   };
 }
 
-export async function attachGeneratedArtwork({ manifest, manifestPath, artworkPath, brief }) {
-  if (!artworkPath) throw new Error("Pass --artwork <path> to a Codex-generated image.");
-  const absoluteSource = resolve(PROJECT_ROOT, artworkPath);
-  const metadata = await sharp(absoluteSource).metadata();
-  if (!["jpeg", "png", "webp"].includes(metadata.format)) {
-    throw new Error("Artwork must be JPEG, PNG, or WebP.");
+export async function attachGeneratedSlides({ manifest, manifestPath, slidePaths, brief, config }) {
+  if (!Array.isArray(slidePaths) || slidePaths.length !== 5 || slidePaths.some((path) => !path)) {
+    throw new Error("Pass all five Codex-generated images with --slide-1 through --slide-5.");
   }
-  if ((metadata.width || 0) < brief.asset.minimumWidth || (metadata.height || 0) < brief.asset.minimumHeight) {
-    throw new Error(`Artwork must be at least ${brief.asset.minimumWidth}×${brief.asset.minimumHeight}px.`);
-  }
-  const extension = metadata.format === "jpeg" ? ".jpg" : `.${metadata.format}`;
-  const postDir = resolve(manifestPath, "..");
-  const artworkDir = resolve(postDir, "artwork");
-  const destination = resolve(artworkDir, `editorial-source${extension}`);
-  await mkdir(artworkDir, { recursive: true });
-  if (absoluteSource !== destination) await copyFile(absoluteSource, destination);
 
-  return {
-    designSystemVersion: DESIGN_SYSTEM_VERSION,
-    promptVersion: brief.promptVersion,
-    generatedBy: "codex",
-    generator: IMAGE_GENERATOR,
-    mode: "built-in",
-    file: relative(PROJECT_ROOT, destination),
-    sha256: await sha256File(destination),
-    width: metadata.width,
-    height: metadata.height,
-    format: metadata.format,
-    embeddedFactualContent: false,
-    promptSha256: sha256(brief.prompt),
-    reviewedAgainstBrief: true,
-    attachedAt: new Date().toISOString(),
-  };
+  const slidesDir = resolve(manifestPath, "..", "slides");
+  await mkdir(slidesDir, { recursive: true });
+  const attached = [];
+
+  for (let index = 0; index < slidePaths.length; index += 1) {
+    const source = resolve(PROJECT_ROOT, slidePaths[index]);
+    const metadata = await sharp(source).metadata();
+    if (!["jpeg", "png", "webp"].includes(metadata.format)) {
+      throw new Error(`Slide ${index + 1} image output must be JPEG, PNG, or WebP.`);
+    }
+    if ((metadata.width || 0) < 768 || (metadata.height || 0) < 960) {
+      throw new Error(`Slide ${index + 1} image output is too small for a 1080×1350 feed asset.`);
+    }
+    const sourceSha256 = await sha256File(source);
+
+    const spec = brief.slides[index];
+    if (spec.order !== index + 1) throw new Error("Generation brief slide order is invalid.");
+    const destination = resolve(slidesDir, SLIDE_NAMES[index]);
+    const temporaryDestination = `${destination}.${process.pid}.tmp.jpg`;
+    try {
+      await sharp(source)
+        .rotate()
+        .resize(config.publishing.width, config.publishing.height, { fit: "cover", position: "centre" })
+        .jpeg({ quality: config.publishing.jpegQuality, chromaSubsampling: "4:4:4" })
+        .toFile(temporaryDestination);
+      await rename(temporaryDestination, destination);
+    } finally {
+      await rm(temporaryDestination, { force: true });
+    }
+
+    attached.push({
+      order: index + 1,
+      role: spec.role,
+      file: relative(PROJECT_ROOT, destination),
+      altText: manifest.creative.altTexts[index],
+      sha256: await sha256File(destination),
+      generatedBy: "codex",
+      generator: IMAGE_GENERATOR,
+      mode: "built-in",
+      promptVersion: brief.promptVersion,
+      promptSha256: sha256(spec.prompt),
+      sourceSha256,
+      sourceFormat: metadata.format,
+      sourceWidth: metadata.width,
+      sourceHeight: metadata.height,
+      embeddedFactualContent: true,
+      reviewedAgainstBrief: true,
+      normalization: "orientation-resize-jpeg-only; no overlays or compositing",
+      attachedAt: new Date().toISOString(),
+    });
+  }
+
+  return attached;
 }
 
 function toTwentyFourHour(timeLabel) {
