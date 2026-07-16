@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 3,
+  "id": "2026-07-16-guam-king-tide-prediction",
+  "status": "staged",
+  "mode": "event-watch",
+  "requestedDate": "2026-07-16",
+  "generatedAt": "2026-07-16T13:18:25.574Z",
+  "station": {
+    "id": "1630000",
+    "name": "APRA HARBOR, GUAM",
+    "displayName": "Apra Harbor, Guam",
+    "stateCode": "GU",
+    "stateName": "Guam",
+    "stateSlug": "guam",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.762,
+    "stationPath": "/stations/1630000",
+    "stateCalendarPath": null
+  },
+  "window": {
+    "start": "2026-07-12",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-16T13:18:25.562Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260712&range=168&datum=MLLW&station=1630000&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "0f4f1231b6d3c11a1156e06412ab2c257b6ec2341e3d0961c6548cf78f3c8d77"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/1630000/predictions?interval=hilo&begin_date=2026-07-12&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "0f4f1231b6d3c11a1156e06412ab2c257b6ec2341e3d0961c6548cf78f3c8d77"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "8c56d0974359884ffd7d1b131e58d2ef1c317bbc2f1105993cefb040b77a7fb6"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-12 04:00",
+        "v": 2.705,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-12 11:43",
+        "v": -0.401,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-12 19:22",
+        "v": 2.568,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-12 23:58",
+        "v": 1.985,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-13 04:59",
+        "v": 2.762,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-13 12:39",
+        "v": -0.573,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-13 20:12",
+        "v": 2.66,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-14 01:02",
+        "v": 1.961,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-14 05:58",
+        "v": 2.822,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-14 13:33",
+        "v": -0.64,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-14 20:57",
+        "v": 2.699,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-15 02:00",
+        "v": 1.883,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 06:54",
+        "v": 2.851,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-15 14:25",
+        "v": -0.591,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 21:39",
+        "v": 2.702,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 02:54",
+        "v": 1.764,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 07:50",
+        "v": 2.816,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 15:14",
+        "v": -0.425,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 22:19",
+        "v": 2.689,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 03:48",
+        "v": 1.615,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 08:45",
+        "v": 2.7,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 16:00",
+        "v": -0.158,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 22:57",
+        "v": 2.668,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 04:42",
+        "v": 1.442,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 09:42",
+        "v": 2.514,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 16:43",
+        "v": 0.184,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 23:31",
+        "v": 2.642,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-15 06:54",
+        "v": 2.851,
+        "type": "H",
+        "dateKey": "2026-07-15",
+        "dateLabel": "July 15, 2026",
+        "timeLabel": "6:54 AM"
+      },
+      "lowest": {
+        "t": "2026-07-14 13:33",
+        "v": -0.64,
+        "type": "L",
+        "dateKey": "2026-07-14",
+        "dateLabel": "July 14, 2026",
+        "timeLabel": "1:33 PM"
+      },
+      "rangeFt": 3.491,
+      "thresholdFt": 2.762,
+      "thresholdCrossings": [
+        {
+          "t": "2026-07-13 04:59",
+          "v": 2.762,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-14 05:58",
+          "v": 2.822,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-15 06:54",
+          "v": 2.851,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-16 07:50",
+          "v": 2.816,
+          "type": "H"
+        }
+      ]
+    },
+    "kingTideCluster": {
+      "startKey": "2026-07-13",
+      "endKey": "2026-07-16",
+      "label": "Jul 13–16",
+      "peakHeight": 2.851,
+      "peakDateKey": "2026-07-15",
+      "peakTimeLabel": "6:54 AM"
+    }
+  },
+  "creative": {
+    "postId": "2026-07-16-guam-king-tide-prediction",
+    "contentType": "king-tide-prediction",
+    "temporalFrame": "recap",
+    "headline": "Apra Harbor, Guam crossed a king-tide threshold",
+    "eyebrow": "PERIGEE TIDES · KING-TIDE SIGNAL",
+    "stationName": "Apra Harbor, Guam",
+    "caption": "Apra Harbor, Guam crossed Perigee's king-tide threshold this week. 🌊\n\nAt NOAA station 1630000, the astronomical prediction reached 2.851 ft above local MLLW at 6:54 AM on July 15, 2026 (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is 2.762 ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\nOpen the full Apra Harbor, Guam station chart at the link in bio.\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KingTides #guam #NOAA #TideChart",
+    "ctaUrl": "https://perigeetides.com/stations/1630000?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-16-guam-king-tide-prediction",
+    "ctaDisplay": "perigeetides.com/stations/1630000",
+    "ctaLabel": "OPEN THE FULL STATION CHART",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides title card: Apra Harbor, Guam crossed a king-tide threshold during Jul 13–16, 2026.",
+      "Data card for NOAA station 1630000: predicted high 2.85 feet above local MLLW at 6:54 AM on July 15, 2026, station-local time.",
+      "Seven-day high and low tide prediction chart for Apra Harbor, Guam, based on matched NOAA and Perigee data. A line marks the 2.762-foot Perigee king-tide threshold.",
+      "Explanation of Perigee's station-specific top-one-percent king-tide definition, with the 2.762-foot threshold and nearby predicted highs.",
+      "Source and limitations card: NOAA CO-OPS astronomical prediction at one station, not an observation or flood forecast; weather can change observed water levels."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-16-guam-king-tide-prediction/slides/01-cover.jpg",
+        "altText": "Perigee Tides title card: Apra Harbor, Guam crossed a king-tide threshold during Jul 13–16, 2026.",
+        "sha256": "19f857af9dc9b5759f870403d9330285659e3e16af0eb37d93954126d17b34a2",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "9bb5523bf920b38ec28f571ba0aa403d40760a211cf65f20554c94558cacc676",
+        "sourceSha256": "169ad1de0afd61b0b0bcefdec6071fa4c5fe6228c14543e2832ef0e7b1c34bd6",
+        "sourceFormat": "png",
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T14:54:58.897Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-guam-king-tide-prediction/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-16-guam-king-tide-prediction/slides/02-peak.jpg",
+        "altText": "Data card for NOAA station 1630000: predicted high 2.85 feet above local MLLW at 6:54 AM on July 15, 2026, station-local time.",
+        "sha256": "02cb683f5f0e15a65baff14c2acba6cdca974476eef30f18812b8a8b0b6ffe62",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "29ed31fa6e6d102005ea88e7ce8231f58e0bc01df1a46a8db3926a7b3b1a9c0b",
+        "sourceSha256": "7689ef7ce05d20027738fd07cab34ce57e2bd53816258dc0e1e052227f256f25",
+        "sourceFormat": "png",
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T14:54:58.923Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-guam-king-tide-prediction/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-16-guam-king-tide-prediction/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Apra Harbor, Guam, based on matched NOAA and Perigee data. A line marks the 2.762-foot Perigee king-tide threshold.",
+        "sha256": "446a9bce40fc277b62ba2f87ff7afa17ee968c93ed5bbb2c0717006f4ec49609",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "d649b7068f7b38e804ce716adff2ad6e9e1a05c1bcf935396685f89487a6702b",
+        "sourceSha256": "4ea322aa850ade2520cb76f25d194152dfd677983aa563da2d8dcce8600381bd",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T14:54:58.950Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-guam-king-tide-prediction/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-16-guam-king-tide-prediction/slides/04-meaning.jpg",
+        "altText": "Explanation of Perigee's station-specific top-one-percent king-tide definition, with the 2.762-foot threshold and nearby predicted highs.",
+        "sha256": "a9668fe1acb7a2947a87737c566c8744d873b7c00f2c59ac375482f4f4bb4619",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "1d738a6cd04c97a074e73f5fe0944ae48322d99d69b7b5b0c7c06cce6d258cce",
+        "sourceSha256": "0e9e463eefe8662d6d4bda59a5136a84dd5b76c6cf600f34239eaab3d02a1f99",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T14:54:58.979Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-guam-king-tide-prediction/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-16-guam-king-tide-prediction/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical prediction at one station, not an observation or flood forecast; weather can change observed water levels.",
+        "sha256": "ae1a6ac79d8106a632f92db33b155fdc33dfb2eba4a02498d9ab98e265cb9d75",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "797c116c0f6c0ff65cb25d2a9b0ffbbdcd292c69810ba2ca8db2933132a8fefc",
+        "sourceSha256": "7cae0bad7a61b2bf093764fed53a8dac077902b3c4c1346cd11e25abac5b9d3e",
+        "sourceFormat": "png",
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T14:54:59.004Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-guam-king-tide-prediction/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-16T14:56:23.192Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-16T14:54:59.147Z",
+    "report": "content/posts/2026-07-16-guam-king-tide-prediction/validation.json"
+  }
+}

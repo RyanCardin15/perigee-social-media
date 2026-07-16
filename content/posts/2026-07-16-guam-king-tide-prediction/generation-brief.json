@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-16-guam-king-tide-prediction",
+  "createdAt": "2026-07-16T13:18:25.575Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "1630000",
+      "name": "APRA HARBOR, GUAM",
+      "displayName": "Apra Harbor, Guam",
+      "stateCode": "GU",
+      "stateName": "Guam",
+      "stateSlug": "guam",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 2.762,
+      "stationPath": "/stations/1630000",
+      "stateCalendarPath": null
+    },
+    "contentType": "king-tide-prediction",
+    "predictions": [
+      {
+        "t": "2026-07-12 04:00",
+        "v": 2.705,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-12 11:43",
+        "v": -0.401,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-12 19:22",
+        "v": 2.568,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-12 23:58",
+        "v": 1.985,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-13 04:59",
+        "v": 2.762,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-13 12:39",
+        "v": -0.573,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-13 20:12",
+        "v": 2.66,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-14 01:02",
+        "v": 1.961,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-14 05:58",
+        "v": 2.822,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-14 13:33",
+        "v": -0.64,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-14 20:57",
+        "v": 2.699,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-15 02:00",
+        "v": 1.883,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 06:54",
+        "v": 2.851,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-15 14:25",
+        "v": -0.591,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-15 21:39",
+        "v": 2.702,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 02:54",
+        "v": 1.764,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 07:50",
+        "v": 2.816,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 15:14",
+        "v": -0.425,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 22:19",
+        "v": 2.689,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 03:48",
+        "v": 1.615,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 08:45",
+        "v": 2.7,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 16:00",
+        "v": -0.158,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 22:57",
+        "v": 2.668,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 04:42",
+        "v": 1.442,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 09:42",
+        "v": 2.514,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 16:43",
+        "v": 0.184,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 23:31",
+        "v": 2.642,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-15 06:54",
+        "v": 2.851,
+        "type": "H",
+        "dateKey": "2026-07-15",
+        "dateLabel": "July 15, 2026",
+        "timeLabel": "6:54 AM"
+      },
+      "lowest": {
+        "t": "2026-07-14 13:33",
+        "v": -0.64,
+        "type": "L",
+        "dateKey": "2026-07-14",
+        "dateLabel": "July 14, 2026",
+        "timeLabel": "1:33 PM"
+      },
+      "rangeFt": 3.491,
+      "thresholdFt": 2.762,
+      "thresholdCrossings": [
+        {
+          "t": "2026-07-13 04:59",
+          "v": 2.762,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-14 05:58",
+          "v": 2.822,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-15 06:54",
+          "v": 2.851,
+          "type": "H"
+        },
+        {
+          "t": "2026-07-16 07:50",
+          "v": 2.816,
+          "type": "H"
+        }
+      ]
+    },
+    "kingTideCluster": {
+      "startKey": "2026-07-13",
+      "endKey": "2026-07-16",
+      "label": "Jul 13–16",
+      "peakHeight": 2.851,
+      "peakDateKey": "2026-07-15",
+      "peakTimeLabel": "6:54 AM"
+    },
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · KING-TIDE SIGNAL",
+          "Apra Harbor, Guam crossed a king-tide threshold",
+          "Predicted high · 2.85 ft",
+          "6:54 AM · July 15, 2026",
+          "Apra Harbor, Guam · NOAA 1630000",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "2.85 ft",
+          "above local MLLW",
+          "6:54 AM",
+          "July 15, 2026",
+          "Apra Harbor, Guam · NOAA 1630000",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Apra Harbor, Guam · NOAA 1630000",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "Perigee top-1% threshold · 2.762 ft",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WHY IT MATTERS",
+          "Perigee's station-specific definition",
+          "TOP 1%",
+          "of this station's predicted annual highs",
+          "2026 threshold · 2.762 ft MLLW",
+          "July 15 · 6:54 AM · 2.851 ft",
+          "July 14 · 5:58 AM · 2.822 ft",
+          "July 16 · 7:50 AM · 2.816 ft",
+          "NOAA does not define one universal king-tide threshold.",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/stations/1630000",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "fa1de23f3eb2a44c0a2c1dd9824e37872fdb7b3ab8afa28573b784042d84dc3f",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · KING-TIDE SIGNAL",
+        "Apra Harbor, Guam crossed a king-tide threshold",
+        "Predicted high · 2.85 ft",
+        "6:54 AM · July 15, 2026",
+        "Apra Harbor, Guam · NOAA 1630000",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-guam-king-tide-prediction; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · KING-TIDE SIGNAL\"\n\"Apra Harbor, Guam crossed a king-tide threshold\"\n\"Predicted high · 2.85 ft\"\n\"6:54 AM · July 15, 2026\"\n\"Apra Harbor, Guam · NOAA 1630000\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "2.85 ft",
+        "above local MLLW",
+        "6:54 AM",
+        "July 15, 2026",
+        "Apra Harbor, Guam · NOAA 1630000",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-guam-king-tide-prediction; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"2.85 ft\"\n\"above local MLLW\"\n\"6:54 AM\"\n\"July 15, 2026\"\n\"Apra Harbor, Guam · NOAA 1630000\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Apra Harbor, Guam · NOAA 1630000",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "Perigee top-1% threshold · 2.762 ft",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Include a clearly labeled horizontal threshold at the exact supplied value.\nDATA SERIES — plot exactly:\nJuly 12, 2026 | 4:00 AM | high | 2.705 ft MLLW\nJuly 12, 2026 | 11:43 AM | low | -0.401 ft MLLW\nJuly 12, 2026 | 7:22 PM | high | 2.568 ft MLLW\nJuly 12, 2026 | 11:58 PM | low | 1.985 ft MLLW\nJuly 13, 2026 | 4:59 AM | high | 2.762 ft MLLW\nJuly 13, 2026 | 12:39 PM | low | -0.573 ft MLLW\nJuly 13, 2026 | 8:12 PM | high | 2.660 ft MLLW\nJuly 14, 2026 | 1:02 AM | low | 1.961 ft MLLW\nJuly 14, 2026 | 5:58 AM | high | 2.822 ft MLLW\nJuly 14, 2026 | 1:33 PM | low | -0.640 ft MLLW\nJuly 14, 2026 | 8:57 PM | high | 2.699 ft MLLW\nJuly 15, 2026 | 2:00 AM | low | 1.883 ft MLLW\nJuly 15, 2026 | 6:54 AM | high | 2.851 ft MLLW\nJuly 15, 2026 | 2:25 PM | low | -0.591 ft MLLW\nJuly 15, 2026 | 9:39 PM | high | 2.702 ft MLLW\nJuly 16, 2026 | 2:54 AM | low | 1.764 ft MLLW\nJuly 16, 2026 | 7:50 AM | high | 2.816 ft MLLW\nJuly 16, 2026 | 3:14 PM | low | -0.425 ft MLLW\nJuly 16, 2026 | 10:19 PM | high | 2.689 ft MLLW\nJuly 17, 2026 | 3:48 AM | low | 1.615 ft MLLW\nJuly 17, 2026 | 8:45 AM | high | 2.700 ft MLLW\nJuly 17, 2026 | 4:00 PM | low | -0.158 ft MLLW\nJuly 17, 2026 | 10:57 PM | high | 2.668 ft MLLW\nJuly 18, 2026 | 4:42 AM | low | 1.442 ft MLLW\nJuly 18, 2026 | 9:42 AM | high | 2.514 ft MLLW\nJuly 18, 2026 | 4:43 PM | low | 0.184 ft MLLW\nJuly 18, 2026 | 11:31 PM | high | 2.642 ft MLLW",
+      "dataSeries": [
+        "July 12, 2026 | 4:00 AM | high | 2.705 ft MLLW",
+        "July 12, 2026 | 11:43 AM | low | -0.401 ft MLLW",
+        "July 12, 2026 | 7:22 PM | high | 2.568 ft MLLW",
+        "July 12, 2026 | 11:58 PM | low | 1.985 ft MLLW",
+        "July 13, 2026 | 4:59 AM | high | 2.762 ft MLLW",
+        "July 13, 2026 | 12:39 PM | low | -0.573 ft MLLW",
+        "July 13, 2026 | 8:12 PM | high | 2.660 ft MLLW",
+        "July 14, 2026 | 1:02 AM | low | 1.961 ft MLLW",
+        "July 14, 2026 | 5:58 AM | high | 2.822 ft MLLW",
+        "July 14, 2026 | 1:33 PM | low | -0.640 ft MLLW",
+        "July 14, 2026 | 8:57 PM | high | 2.699 ft MLLW",
+        "July 15, 2026 | 2:00 AM | low | 1.883 ft MLLW",
+        "July 15, 2026 | 6:54 AM | high | 2.851 ft MLLW",
+        "July 15, 2026 | 2:25 PM | low | -0.591 ft MLLW",
+        "July 15, 2026 | 9:39 PM | high | 2.702 ft MLLW",
+        "July 16, 2026 | 2:54 AM | low | 1.764 ft MLLW",
+        "July 16, 2026 | 7:50 AM | high | 2.816 ft MLLW",
+        "July 16, 2026 | 3:14 PM | low | -0.425 ft MLLW",
+        "July 16, 2026 | 10:19 PM | high | 2.689 ft MLLW",
+        "July 17, 2026 | 3:48 AM | low | 1.615 ft MLLW",
+        "July 17, 2026 | 8:45 AM | high | 2.700 ft MLLW",
+        "July 17, 2026 | 4:00 PM | low | -0.158 ft MLLW",
+        "July 17, 2026 | 10:57 PM | high | 2.668 ft MLLW",
+        "July 18, 2026 | 4:42 AM | low | 1.442 ft MLLW",
+        "July 18, 2026 | 9:42 AM | high | 2.514 ft MLLW",
+        "July 18, 2026 | 4:43 PM | low | 0.184 ft MLLW",
+        "July 18, 2026 | 11:31 PM | high | 2.642 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-guam-king-tide-prediction; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Include a clearly labeled horizontal threshold at the exact supplied value.\nDATA SERIES — plot exactly:\nJuly 12, 2026 | 4:00 AM | high | 2.705 ft MLLW\nJuly 12, 2026 | 11:43 AM | low | -0.401 ft MLLW\nJuly 12, 2026 | 7:22 PM | high | 2.568 ft MLLW\nJuly 12, 2026 | 11:58 PM | low | 1.985 ft MLLW\nJuly 13, 2026 | 4:59 AM | high | 2.762 ft MLLW\nJuly 13, 2026 | 12:39 PM | low | -0.573 ft MLLW\nJuly 13, 2026 | 8:12 PM | high | 2.660 ft MLLW\nJuly 14, 2026 | 1:02 AM | low | 1.961 ft MLLW\nJuly 14, 2026 | 5:58 AM | high | 2.822 ft MLLW\nJuly 14, 2026 | 1:33 PM | low | -0.640 ft MLLW\nJuly 14, 2026 | 8:57 PM | high | 2.699 ft MLLW\nJuly 15, 2026 | 2:00 AM | low | 1.883 ft MLLW\nJuly 15, 2026 | 6:54 AM | high | 2.851 ft MLLW\nJuly 15, 2026 | 2:25 PM | low | -0.591 ft MLLW\nJuly 15, 2026 | 9:39 PM | high | 2.702 ft MLLW\nJuly 16, 2026 | 2:54 AM | low | 1.764 ft MLLW\nJuly 16, 2026 | 7:50 AM | high | 2.816 ft MLLW\nJuly 16, 2026 | 3:14 PM | low | -0.425 ft MLLW\nJuly 16, 2026 | 10:19 PM | high | 2.689 ft MLLW\nJuly 17, 2026 | 3:48 AM | low | 1.615 ft MLLW\nJuly 17, 2026 | 8:45 AM | high | 2.700 ft MLLW\nJuly 17, 2026 | 4:00 PM | low | -0.158 ft MLLW\nJuly 17, 2026 | 10:57 PM | high | 2.668 ft MLLW\nJuly 18, 2026 | 4:42 AM | low | 1.442 ft MLLW\nJuly 18, 2026 | 9:42 AM | high | 2.514 ft MLLW\nJuly 18, 2026 | 4:43 PM | low | 0.184 ft MLLW\nJuly 18, 2026 | 11:31 PM | high | 2.642 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Apra Harbor, Guam · NOAA 1630000\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"Perigee top-1% threshold · 2.762 ft\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WHY IT MATTERS",
+        "Perigee's station-specific definition",
+        "TOP 1%",
+        "of this station's predicted annual highs",
+        "2026 threshold · 2.762 ft MLLW",
+        "July 15 · 6:54 AM · 2.851 ft",
+        "July 14 · 5:58 AM · 2.822 ft",
+        "July 16 · 7:50 AM · 2.816 ft",
+        "NOAA does not define one universal king-tide threshold.",
+        "4 / 5"
+      ],
+      "direction": "Create an editorial explainer with TOP 1% as the visual anchor and the three exact nearby predicted highs as a clean ranked list. Keep the station-specific definition unmistakable.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-guam-king-tide-prediction; slide 4 of 5.\n\nCreate an editorial explainer with TOP 1% as the visual anchor and the three exact nearby predicted highs as a clean ranked list. Keep the station-specific definition unmistakable.\n\nEXACT TEXT — reproduce only these strings:\n\"WHY IT MATTERS\"\n\"Perigee's station-specific definition\"\n\"TOP 1%\"\n\"of this station's predicted annual highs\"\n\"2026 threshold · 2.762 ft MLLW\"\n\"July 15 · 6:54 AM · 2.851 ft\"\n\"July 14 · 5:58 AM · 2.822 ft\"\n\"July 16 · 7:50 AM · 2.816 ft\"\n\"NOAA does not define one universal king-tide threshold.\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/stations/1630000",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-guam-king-tide-prediction; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/stations/1630000\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}
