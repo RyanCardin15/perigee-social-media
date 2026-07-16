@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "id": "2026-07-16-guam-king-tide-prediction",
-  "status": "staged",
+  "status": "published",
   "mode": "event-watch",
   "requestedDate": "2026-07-16",
   "generatedAt": "2026-07-16T13:18:25.574Z",
@@ -367,10 +367,11 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-16T14:56:23.192Z"
+    "status": "published",
+    "mediaId": "17864283729639374",
+    "permalink": "https://www.instagram.com/p/Da27EASlXgS/",
+    "stagedAt": "2026-07-16T14:56:23.192Z",
+    "publishedAt": "2026-07-16T15:06:05+0000"
   },
   "validation": {
     "passed": true,
