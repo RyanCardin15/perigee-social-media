@@ -156,7 +156,7 @@ function slideSpecs(manifest, config) {
         "Astronomical prediction at one NOAA station",
         "Not an observed water level or flood forecast",
         "Wind, pressure, waves and rain can move observed water",
-        isKingTide ? "EXPLORE THE FULL CALENDAR" : "OPEN THE FULL STATION CHART",
+        manifest.creative.ctaLabel || (isKingTide ? "EXPLORE THE FULL CALENDAR" : "OPEN THE FULL STATION CHART"),
         manifest.creative.ctaDisplay,
         "NOAA CO-OPS",
         manifest.creative.disclaimer,
@@ -245,7 +245,7 @@ export async function attachGeneratedSlides({ manifest, manifestPath, slidePaths
     try {
       await sharp(source)
         .rotate()
-        .resize(config.publishing.width, config.publishing.height, { fit: "cover", position: "centre" })
+        .resize(config.publishing.width, config.publishing.height, { fit: "fill" })
         .jpeg({ quality: config.publishing.jpegQuality, chromaSubsampling: "4:4:4" })
         .toFile(temporaryDestination);
       await rename(temporaryDestination, destination);

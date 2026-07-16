@@ -26,7 +26,8 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
       : `${dateKey}-${row.stateSlug}-${slugify(contentType)}`;
   const highest = metrics.highest;
   const threshold = row.kingTideThresholdFt;
-  const destinationPath = cluster ? row.stateCalendarPath : row.stationPath;
+  const hasStateCalendar = Boolean(cluster && row.stateCalendarPath);
+  const destinationPath = hasStateCalendar ? row.stateCalendarPath : row.stationPath;
   const ctaUrl = campaignUrl(destinationPath, postId, config);
 
   if (contentType === "king-tide-prediction") {
@@ -36,17 +37,21 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
       ? `${shortStationName(stationName)} crossed Perigee's king-tide threshold this week.`
       : `${shortStationName(stationName)} is predicted to cross Perigee's king-tide threshold.`;
     const verb = recap ? "reached" : "is predicted to reach";
-    const caption = `${lead} 🌊\n\nAt NOAA station ${row.stationId}, the astronomical prediction ${verb} ${cluster.peakHeight.toFixed(3)} ft above local MLLW at ${cluster.peakTimeLabel} on ${timing.dateLabel} (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is ${threshold.toFixed(3)} ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\nExplore the ${row.stateName} 2026 calendar at the link in bio.\n\nNOAA CO-OPS • ${disclaimer()}\n\n#PerigeeTides #KingTides #${slugify(row.stateName).replaceAll("-", "")} #NOAA #TideChart`;
+    const action = hasStateCalendar
+      ? `Explore the ${row.stateName} 2026 calendar at the link in bio.`
+      : `Open the full ${stationName} station chart at the link in bio.`;
+    const caption = `${lead} 🌊\n\nAt NOAA station ${row.stationId}, the astronomical prediction ${verb} ${cluster.peakHeight.toFixed(3)} ft above local MLLW at ${cluster.peakTimeLabel} on ${timing.dateLabel} (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is ${threshold.toFixed(3)} ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\n${action}\n\nNOAA CO-OPS • ${disclaimer()}\n\n#PerigeeTides #KingTides #${slugify(row.stateName).replaceAll("-", "")} #NOAA #TideChart`;
     return {
       postId,
       contentType,
       temporalFrame,
-      headline: recap ? "Golden Gate crossed a king-tide threshold" : `${row.stateName} king-tide window ahead`,
+      headline: recap ? `${shortStationName(stationName)} crossed a king-tide threshold` : `${row.stateName} king-tide window ahead`,
       eyebrow: "PERIGEE TIDES · KING-TIDE SIGNAL",
       stationName,
       caption,
       ctaUrl,
       ctaDisplay: `${config.brand.website.replace("https://", "")}${destinationPath}`,
+      ctaLabel: hasStateCalendar ? "EXPLORE THE FULL CALENDAR" : "OPEN THE FULL STATION CHART",
       disclaimer: disclaimer(),
       altTexts: [
         `Perigee Tides title card: ${shortStationName(stationName)} ${recap ? "crossed" : "is predicted to cross"} a king-tide threshold during ${cluster.label}, 2026.`,

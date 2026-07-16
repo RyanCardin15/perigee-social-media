@@ -9,6 +9,13 @@ function check(name, passed, detail) {
   return { name, passed: Boolean(passed), detail };
 }
 
+export function containsSecret(value) {
+  const serialized = String(value);
+  const providerToken = /(IGQV[A-Za-z0-9_-]{20,}|EAA[A-Za-z0-9_-]{20,})/;
+  const namedSecret = /(access[_-]?token|app[_-]?secret)\s*["':=]+\s*[A-Za-z0-9_-]{12,}/i;
+  return providerToken.test(serialized) || namedSecret.test(serialized);
+}
+
 export async function validateManifest(manifest, manifestPath, config, { allowStaleSource = false } = {}) {
   const checks = [];
   const errors = [];
@@ -63,9 +70,7 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
   }
   push(check("cta", ctaValid, "CTA must be an attributed perigeetides.com HTTPS URL."));
 
-  const serialized = JSON.stringify(manifest);
-  const secretPattern = /(IGQV[A-Za-z0-9_-]{20,}|EAA[A-Za-z0-9_-]{20,}|access[_-]?token\s*["':=]+\s*[A-Za-z0-9_-]{12,}|app[_-]?secret\s*["':=]+\s*[A-Za-z0-9_-]{12,})/i;
-  push(check("no-secrets", !secretPattern.test(serialized), "Manifest appears to contain an access token or app secret."));
+  push(check("no-secrets", !containsSecret(JSON.stringify(manifest)), "Manifest appears to contain an access token or app secret."));
 
   const slides = manifest.creative?.slides || [];
   push(check("slide-count", slides.length === 5, "Instagram carousel must contain five slides."));

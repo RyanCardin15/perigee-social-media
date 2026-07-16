@@ -8,6 +8,7 @@ import { createCreative } from "../skills/perigee-social-publisher/scripts/lib/c
 import { attachGeneratedSlides, createGenerationBrief, DESIGN_SYSTEM_VERSION, IMAGE_GENERATOR } from "../skills/perigee-social-publisher/scripts/lib/design-system.mjs";
 import { selectCandidate } from "../skills/perigee-social-publisher/scripts/lib/data.mjs";
 import { formatStationLocal, parseArgs } from "../skills/perigee-social-publisher/scripts/lib/utils.mjs";
+import { containsSecret } from "../skills/perigee-social-publisher/scripts/lib/validation.mjs";
 
 const row = {
   stateCode: "CA",
@@ -48,6 +49,12 @@ test("argument parser accepts inline values and flags", () => {
     date: "2026-07-15",
     force: true,
   });
+});
+
+test("secret detection does not confuse lowercase SHA-256 prefixes with Meta tokens", () => {
+  assert.equal(containsSecret('{"sourceSha256":"eaab1234567890abcdef1234567890abcdef1234567890abcdef1234567890ab"}'), false);
+  assert.equal(containsSecret('{"sourceSha256":"EAA1234567890abcdef1234567890abcdef"}'), true);
+  assert.equal(containsSecret('{"access_token":"secretvalue1234567890"}'), true);
 });
 
 test("station-local formatter never applies the machine timezone", () => {
@@ -105,6 +112,43 @@ test("king-tide creative preserves prediction and MLLW boundaries", () => {
   assert.doesNotMatch(creative.caption, /\b(safe|guaranteed|real-time)\b/i);
   assert.equal(creative.altTexts.length, 5);
   assert.equal(new URL(creative.ctaUrl).searchParams.get("utm_source"), "instagram");
+});
+
+test("king-tide creative uses the actual station and falls back when no state calendar exists", () => {
+  const guamRow = {
+    ...row,
+    stateCode: "GU",
+    stateName: "Guam",
+    stateSlug: "guam",
+    stationId: "1630000",
+    stationName: "APRA HARBOR, GUAM",
+    stationPath: "/stations/1630000",
+    stateCalendarPath: null,
+    kingTideThresholdFt: 2.762,
+  };
+  const creative = createCreative({
+    candidate: {
+      row: guamRow,
+      cluster: { ...row.kingTideClusters[0], peakHeight: 2.851, peakDateKey: "2026-07-15", peakTimeLabel: "6:54 AM" },
+      contentType: "king-tide-prediction",
+      temporalFrame: "recap",
+    },
+    dateKey: "2026-07-16",
+    metrics: {
+      highest: { v: 2.851, t: "2026-07-15 06:54", dateLabel: "July 15, 2026", timeLabel: "6:54 AM" },
+      lowest: { v: -0.64, t: "2026-07-14 13:33", dateLabel: "July 14, 2026", timeLabel: "1:33 PM" },
+      rangeFt: 3.491,
+      thresholdFt: 2.762,
+      thresholdCrossings: [],
+    },
+    config,
+  });
+  assert.equal(creative.headline, "Apra Harbor, Guam crossed a king-tide threshold");
+  assert.equal(creative.ctaDisplay, "perigeetides.com/stations/1630000");
+  assert.equal(creative.ctaLabel, "OPEN THE FULL STATION CHART");
+  assert.equal(new URL(creative.ctaUrl).pathname, "/stations/1630000");
+  assert.match(creative.caption, /Open the full Apra Harbor, Guam station chart/);
+  assert.doesNotMatch(JSON.stringify(creative), /Golden Gate|\/null|\.comnull/);
 });
 
 test("generation brief requires Codex to generate every complete factual slide", () => {
