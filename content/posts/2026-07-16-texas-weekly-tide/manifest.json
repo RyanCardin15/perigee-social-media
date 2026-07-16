@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-07-16-texas-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-16",
   "generatedAt": "2026-07-16T15:20:43.950Z",
@@ -360,14 +360,15 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-16T15:32:28.149Z"
+    "status": "published",
+    "mediaId": "17911997550425392",
+    "permalink": "https://www.instagram.com/p/Da2_dfEoPFO/",
+    "stagedAt": "2026-07-16T15:32:28.149Z",
+    "publishedAt": "2026-07-16T15:45:30+0000"
   },
   "validation": {
     "passed": true,
-    "validatedAt": "2026-07-16T15:37:08.522Z",
+    "validatedAt": "2026-07-16T15:45:42.309Z",
     "report": "content/posts/2026-07-16-texas-weekly-tide/validation.json"
   }
 }
