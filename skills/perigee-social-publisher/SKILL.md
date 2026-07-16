@@ -24,6 +24,11 @@ and interpretation traceable to authoritative data.
    npm run social:prepare -- --mode launch --date 2026-07-15
    ```
 
+   Use `--station <seven-digit NOAA station ID>` for a requested local market
+   or deterministic dry run. Preparation must create a discovery plan with a
+   locality-first caption, local keywords, 5–10 focused hashtags, at least two
+   local hashtags, a useful engagement prompt, and an Instagram location plan.
+
 5. Use Codex built-in image generation once for each of the five exact slide
    prompts in `generation-brief.json`. Every output must be a complete finished
    slide: background, typography, factual data, chart or information design,
@@ -48,10 +53,14 @@ and interpretation traceable to authoritative data.
 8. Stage verified JPEGs with `npm run stage -- --manifest <path>`. The publisher
    must GET each public URL, require JPEG over HTTPS, and match the remote bytes
    to the local SHA-256 before API publication.
-9. Apply the review policy in `config/pipeline.json`. Require a human for
+9. For a rehearsal, run `npm run dry-run -- --manifest <path>` after staging.
+   Require `dry-run-complete`, `externalWritesPerformed: false`, five ordered
+   children, and the intended hashtag/location handling. This step must never
+   create containers, journals, ledger entries, commits, or live posts.
+10. Apply the review policy in `config/pipeline.json`. Require a human for
    observations, advisories, flooding claims, or safety incidents. A matched,
    prediction-only weekly or king-tide post may publish automatically.
-10. Verify secure configuration, the exact Business account, live quota, and
+11. Verify secure configuration, the exact Business account, live quota, and
    token lifecycle before the first publish:
 
    ```bash
@@ -61,13 +70,13 @@ and interpretation traceable to authoritative data.
    npm run account:verify
    ```
 
-11. Publish only with an explicit gate:
+12. Publish only with an explicit gate:
 
    ```bash
    npm run publish -- --manifest <path> --confirm
    ```
 
-12. Verify the returned media ID, live permalink, caption, slide order,
+13. Verify the returned media ID, live permalink, caption, slide order,
     publication journal, and ledger entry. Do not report success from container
     creation alone.
 
@@ -81,6 +90,11 @@ and interpretation traceable to authoritative data.
 - Never say safe, all clear, guaranteed, real-time, or navigation-grade.
 - Include NOAA attribution, the station ID, the prediction/observation
   boundary, and the planning-aid disclaimer.
+- Include a local market label and focused local discovery metadata without
+  implying that the station represents citywide or beach conditions.
+- Tag only an existing Instagram place. Use a configured numeric `location_id`
+  when verified; otherwise require a manual existing-place edit after publish
+  and verify it on the live post.
 - Never store access tokens, app secrets, passwords, verification codes, or
   exact private user data in manifests, Git, captions, logs, or automation
   prompts.

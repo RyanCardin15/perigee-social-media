@@ -24,7 +24,7 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
     if (!entry.passed) errors.push(`${entry.name}: ${entry.detail}`);
   };
 
-  push(check("schema", [1, 2, 3].includes(manifest.schemaVersion), "Manifest schemaVersion must be 1, 2, or 3."));
+  push(check("schema", [1, 2, 3, 4].includes(manifest.schemaVersion), "Manifest schemaVersion must be 1, 2, 3, or 4."));
   push(check("status", ["awaiting-artwork", "awaiting-generation", "draft", "validated", "staged", "published"].includes(manifest.status), "Unknown manifest status."));
   push(check("provider-match", manifest.sources?.matched === true, "Perigee and NOAA digests must match."));
   push(check("provider-digests", manifest.sources?.noaa?.sha256 === manifest.sources?.perigee?.sha256, "Provider digests differ."));
@@ -60,6 +60,27 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
   const prohibited = /\b(safe|unsafe|all clear|guaranteed|real-time|navigation-grade|perfect conditions)\b/i;
   push(check("prohibited-claims", !prohibited.test(caption), "Caption contains a prohibited claim."));
   push(check("caption-length", caption.length > 0 && caption.length <= 2200, "Caption must be 1–2200 characters."));
+
+  if (manifest.schemaVersion === 4) {
+    const discovery = manifest.creative?.discovery;
+    const hashtags = discovery?.hashtags || [];
+    const localHashtags = discovery?.localHashtags || [];
+    const uniqueHashtags = new Set(hashtags.map((value) => String(value).toLowerCase()));
+    push(check("discovery-market", typeof discovery?.market?.label === "string" && caption.includes(discovery.market.label), "Caption must lead with the configured local market label."));
+    push(check("discovery-keywords", Array.isArray(discovery?.keywords) && discovery.keywords.length >= 3 && discovery.keywords.every((value) => typeof value === "string" && value.length >= 8), "Discovery plan must include at least three local search phrases."));
+    push(check("discovery-hashtag-count", hashtags.length >= 5 && hashtags.length <= 10, "Use 5–10 focused hashtags instead of a generic or stuffed set."));
+    push(check("discovery-hashtag-format", hashtags.every((value) => /^#[A-Za-z0-9]+$/.test(value)), "Hashtags must contain only letters and numbers after #."));
+    push(check("discovery-hashtag-unique", uniqueHashtags.size === hashtags.length, "Hashtags must be unique."));
+    push(check("discovery-local-hashtags", localHashtags.length >= 2 && localHashtags.every((value) => hashtags.includes(value)), "At least two local hashtags must be present in the final set."));
+    push(check("discovery-caption-hashtags", hashtags.every((value) => caption.includes(value)), "Every approved discovery hashtag must appear in the caption."));
+    push(check("discovery-engagement", typeof discovery?.engagementPrompt === "string" && caption.includes(discovery.engagementPrompt), "Caption must include the useful local engagement prompt."));
+    const location = discovery?.locationTag;
+    const coordinatesValid = Number.isFinite(location?.latitude) && Number.isFinite(location?.longitude);
+    const locationDeliveryValid = location?.instagramLocationId
+      ? location.delivery === "content-publishing-api" && location.status === "configured" && /^\d+$/.test(location.instagramLocationId)
+      : location?.delivery === "manual-existing-place" && location?.status === "manual-required-after-publish";
+    push(check("discovery-location", typeof location?.suggestedName === "string" && location.suggestedName.length >= 3 && coordinatesValid && locationDeliveryValid, "Location plan must name an existing-place candidate, preserve station coordinates, and declare API or manual delivery."));
+  }
 
   let ctaValid = false;
   try {
@@ -101,7 +122,7 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
       push(check("artwork-readable", false, `Could not read artwork: ${error.message}`));
     }
   }
-  if (manifest.schemaVersion === 3) {
+  if ([3, 4].includes(manifest.schemaVersion)) {
     push(check("design-system", manifest.creative?.designSystemVersion === DESIGN_SYSTEM_VERSION, `Manifest must use ${DESIGN_SYSTEM_VERSION}.`));
     push(check("no-background-artwork", manifest.creative?.artwork == null, "Full-generation manifests must not attach separate background artwork."));
     const briefPath = resolve(manifestDir, manifest.creative?.generationBrief || "generation-brief.json");
@@ -129,7 +150,7 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
     const slidePath = resolve(PROJECT_ROOT, slide.file || "");
     const insidePost = slidePath.startsWith(`${manifestDir}${sep}`);
     push(check(`slide-${slide.order}-path`, insidePost, "Slide must live below its manifest directory."));
-    if (manifest.schemaVersion === 3) {
+    if ([3, 4].includes(manifest.schemaVersion)) {
       const prompt = generationBrief?.slides?.[slide.order - 1]?.prompt;
       push(check(`slide-${slide.order}-generated-by`, slide.generatedBy === "codex", "Finished slide must be generated by Codex."));
       push(check(`slide-${slide.order}-generator`, slide.generator === IMAGE_GENERATOR && slide.mode === "built-in", "Finished slide must use Codex built-in image generation."));

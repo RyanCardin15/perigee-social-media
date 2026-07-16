@@ -17,9 +17,55 @@ function disclaimer() {
   return "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.";
 }
 
+function hashtag(value) {
+  return `#${String(value).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]/gi, "")}`;
+}
+
+function createDiscovery(row, config) {
+  const locality = titleCase(String(row.stationName).split(",")[0].replace(/\([^)]*\)/g, "").trim());
+  const region = row.stateName;
+  const localHashtags = [
+    hashtag(`${locality}${row.stateCode}`),
+    hashtag(`${locality}Tides`),
+    hashtag(`${region}Coast`),
+  ];
+  const hashtags = [...new Set([
+    "#PerigeeTides",
+    ...localHashtags,
+    "#TideTimes",
+    "#CoastalPlanning",
+    "#NOAA",
+  ])];
+  const instagramLocationId = config.discovery?.locationIds?.[row.stationId] || null;
+  return {
+    market: {
+      locality,
+      region,
+      label: `${locality}, ${region}`,
+    },
+    keywords: [
+      `${locality} tide predictions`,
+      `${locality} tide times`,
+      `${region} coastal planning`,
+    ],
+    hashtags,
+    localHashtags,
+    engagementPrompt: `Save this chart for coastal planning around ${locality}. Which ${region} coast station should Perigee cover next?`,
+    locationTag: {
+      suggestedName: `${locality}, ${region}`,
+      latitude: Number.isFinite(row.latitude) ? row.latitude : null,
+      longitude: Number.isFinite(row.longitude) ? row.longitude : null,
+      instagramLocationId,
+      delivery: instagramLocationId ? "content-publishing-api" : "manual-existing-place",
+      status: instagramLocationId ? "configured" : "manual-required-after-publish",
+    },
+  };
+}
+
 export function createCreative({ candidate, dateKey, metrics, config }) {
   const { row, cluster, contentType, temporalFrame } = candidate;
   const stationName = stationDisplayName(row);
+  const discovery = createDiscovery(row, config);
   const postId =
     candidate.temporalFrame === "recap" && row.stationId === "9414290"
       ? `${dateKey}-golden-gate-king-tide`
@@ -40,7 +86,8 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
     const action = hasStateCalendar
       ? `Explore the ${row.stateName} 2026 calendar at the link in bio.`
       : `Open the full ${stationName} station chart at the link in bio.`;
-    const caption = `${lead} 🌊\n\nAt NOAA station ${row.stationId}, the astronomical prediction ${verb} ${cluster.peakHeight.toFixed(3)} ft above local MLLW at ${cluster.peakTimeLabel} on ${timing.dateLabel} (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is ${threshold.toFixed(3)} ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\n${action}\n\nNOAA CO-OPS • ${disclaimer()}\n\n#PerigeeTides #KingTides #${slugify(row.stateName).replaceAll("-", "")} #NOAA #TideChart`;
+    const kingTideHashtags = [...new Set([...discovery.hashtags.slice(0, 4), "#KingTides", ...discovery.hashtags.slice(4)])];
+    const caption = `${discovery.market.label} king-tide prediction. ${lead} 🌊\n\nAt NOAA station ${row.stationId}, the astronomical prediction ${verb} ${cluster.peakHeight.toFixed(3)} ft above local MLLW at ${cluster.peakTimeLabel} on ${timing.dateLabel} (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is ${threshold.toFixed(3)} ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\n${action}\n\n${discovery.engagementPrompt}\n\nNOAA CO-OPS • ${disclaimer()}\n\n${kingTideHashtags.join(" ")}`;
     return {
       postId,
       contentType,
@@ -49,6 +96,7 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
       eyebrow: "PERIGEE TIDES · KING-TIDE SIGNAL",
       stationName,
       caption,
+      discovery: { ...discovery, hashtags: kingTideHashtags },
       ctaUrl,
       ctaDisplay: `${config.brand.website.replace("https://", "")}${destinationPath}`,
       ctaLabel: hasStateCalendar ? "EXPLORE THE FULL CALENDAR" : "OPEN THE FULL STATION CHART",
@@ -63,7 +111,7 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
     };
   }
 
-  const caption = `${stationName}: the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at ${highest.v.toFixed(2)} ft above local MLLW at ${highest.timeLabel} on ${highest.dateLabel}. The lowest is ${metrics.lowest.v.toFixed(2)} ft, a predicted range of ${metrics.rangeFt.toFixed(2)} ft at NOAA station ${row.stationId}.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nNOAA CO-OPS • ${disclaimer()}\n\n#PerigeeTides #NOAA #TideChart #${slugify(row.stateName).replaceAll("-", "")}`;
+  const caption = `${discovery.market.label} tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at ${highest.v.toFixed(2)} ft above local MLLW at ${highest.timeLabel} on ${highest.dateLabel}. The lowest is ${metrics.lowest.v.toFixed(2)} ft, a predicted range of ${metrics.rangeFt.toFixed(2)} ft at NOAA station ${row.stationId}.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\n${discovery.engagementPrompt}\n\nNOAA CO-OPS • ${disclaimer()}\n\n${discovery.hashtags.join(" ")}`;
   return {
     postId,
     contentType,
@@ -72,6 +120,7 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
     eyebrow: "PERIGEE TIDES · WEEK AHEAD",
     stationName,
     caption,
+    discovery,
     ctaUrl,
     ctaDisplay: `${config.brand.website.replace("https://", "")}${destinationPath}`,
     disclaimer: disclaimer(),

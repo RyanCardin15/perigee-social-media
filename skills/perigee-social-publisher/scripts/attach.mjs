@@ -31,8 +31,8 @@ if (manifest.publishing?.status !== "not-published") {
 if (!["awaiting-generation", "blocked"].includes(manifest.status)) {
   throw new Error(`Refusing to attach images to ${manifest.id} from status ${manifest.status}.`);
 }
-if (manifest.schemaVersion !== 3 || manifest.creative?.designSystemVersion !== DESIGN_SYSTEM_VERSION) {
-  throw new Error(`Manifest must use schema 3 and ${DESIGN_SYSTEM_VERSION}.`);
+if (![3, 4].includes(manifest.schemaVersion) || manifest.creative?.designSystemVersion !== DESIGN_SYSTEM_VERSION) {
+  throw new Error(`Manifest must use schema 3 or 4 and ${DESIGN_SYSTEM_VERSION}.`);
 }
 
 const briefPath = resolve(manifestPath, "..", manifest.creative.generationBrief || "generation-brief.json");

@@ -22,9 +22,11 @@ import {
 const args = parseArgs(process.argv.slice(2));
 const mode = String(args.mode || "event-watch");
 const dateKey = assertDateKey(String(args.date || currentDateKey()));
+const stationId = args.station ? String(args.station) : null;
+if (stationId && !/^\d{7}$/.test(stationId)) throw new Error("--station must be a seven-digit NOAA station ID.");
 const config = await loadConfig();
 const { path: almanacPath, almanac } = await loadAlmanac();
-const candidate = selectCandidate({ mode, dateKey, config, almanac });
+const candidate = selectCandidate({ mode, dateKey, config, almanac, stationId });
 
 if (!candidate) {
   console.log(JSON.stringify({ status: "quiet", mode, date: dateKey, reason: "No king-tide cluster overlaps the next seven days." }, null, 2));
@@ -55,7 +57,7 @@ if (await pathExists(LEDGER_PATH)) {
 
 await mkdir(postDir, { recursive: true });
 const manifest = {
-  schemaVersion: 3,
+  schemaVersion: 4,
   id: creative.postId,
   status: "awaiting-generation",
   mode,
@@ -74,6 +76,8 @@ const manifest = {
     kingTideThresholdFt: candidate.row.kingTideThresholdFt,
     stationPath: candidate.row.stationPath,
     stateCalendarPath: candidate.row.stateCalendarPath,
+    latitude: candidate.row.latitude,
+    longitude: candidate.row.longitude,
   },
   window: {
     start: candidate.windowStart,

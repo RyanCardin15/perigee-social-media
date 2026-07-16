@@ -40,6 +40,20 @@ scarcity, savings, testimonials, or engagement claims.
 Prohibited claims include “safe,” “unsafe,” “all clear,” “guaranteed,”
 “real-time,” “perfect conditions,” and “navigation-grade.”
 
+## Local discovery and engagement
+
+- Lead captions with the locality and region represented by the selected NOAA
+  station, then immediately identify the station-level prediction boundary.
+- Include three natural local search phrases in the structured discovery plan.
+- Use 5–10 focused hashtags: one Perigee brand tag, at least two locality tags,
+  and a small number of relevant tide/coastal-planning tags. Do not use a long
+  generic block or unrelated trending tags.
+- Ask one useful action or question, such as saving the chart for planning or
+  requesting the next station. Do not manufacture urgency or engagement claims.
+- Suggest an existing Instagram place near the station. A verified numeric
+  location ID may be sent with the publishing container; otherwise the live
+  post requires a manual existing-place edit and verification.
+
 ## Accessibility
 
 - Use high contrast and do not rely on color alone.

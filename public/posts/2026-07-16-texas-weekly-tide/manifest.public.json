@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-16-texas-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "8771450",
+    "name": "GALVESTON, Galveston Channel",
+    "displayName": "Galveston, Galveston Channel",
+    "stateCode": "TX",
+    "stateName": "Texas",
+    "stateSlug": "texas",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.001,
+    "stationPath": "/tides/texas/galveston-galveston-channel-8771450",
+    "stateCalendarPath": "/king-tides/texas/2026",
+    "latitude": 29.309999465942383,
+    "longitude": -94.79329681396484
+  },
+  "window": {
+    "start": "2026-07-16",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260716&range=168&datum=MLLW&station=8771450&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/8771450/predictions?interval=hilo&begin_date=2026-07-16&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/texas/galveston-galveston-channel-8771450?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-16-texas-weekly-tide",
+  "discovery": {
+    "market": {
+      "locality": "Galveston",
+      "region": "Texas",
+      "label": "Galveston, Texas"
+    },
+    "keywords": [
+      "Galveston tide predictions",
+      "Galveston tide times",
+      "Texas coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#GalvestonTX",
+      "#GalvestonTides",
+      "#TexasCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#GalvestonTX",
+      "#GalvestonTides",
+      "#TexasCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Galveston. Which Texas coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Galveston, Texas",
+      "latitude": 29.309999465942383,
+      "longitude": -94.79329681396484,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Galveston, Galveston Channel, NOAA station 8771450.",
+      "sha256": "e6dd9b7057af4eeae74a8329588918b0bf53045c53ed12db6f16566a24f9ae63"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 1.32 feet above local MLLW at 7:53 AM on July 16, 2026.",
+      "sha256": "14de9229519d06862dee84084033b901b401206d732b5d4dd23ba14c13c799b1"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Galveston, Galveston Channel, based on matched NOAA and Perigee data.",
+      "sha256": "4f2d73741dae3485527999d85e359f4c2e1c411cd11894364f98bd611f449e56"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8771450.",
+      "sha256": "88b58eb377c06a4d9dcb8370257d2fe9ad79335012ec40396596a77a6d38a547"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "60defee52eaafc83c824c7964f091bd1d2549e294aef71f1bfa6ff45e09950ac"
+    }
+  ]
+}

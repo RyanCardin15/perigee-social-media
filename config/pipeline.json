@@ -53,6 +53,9 @@
     "profileCampaign": "instagram_profile",
     "postCampaignPrefix": "ig_"
   },
+  "discovery": {
+    "locationIds": {}
+  },
   "launchPost": {
     "stationId": "9414290",
     "windowStart": "2026-07-12",

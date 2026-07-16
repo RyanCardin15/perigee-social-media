@@ -23,6 +23,8 @@ npm run social:attach -- --manifest content/posts/<post-id>/manifest.json \
   --slide-1 <codex-image> --slide-2 <codex-image> --slide-3 <codex-image> \
   --slide-4 <codex-image> --slide-5 <codex-image> --confirm-reviewed
 npm run validate -- --manifest content/posts/<post-id>/manifest.json
+npm run stage -- --manifest content/posts/<post-id>/manifest.json
+npm run dry-run -- --manifest content/posts/<post-id>/manifest.json
 ```
 
 `social:prepare` stops at `awaiting-generation` and writes
@@ -33,6 +35,17 @@ number, chart point, safe area, and prediction boundary; regenerate failures.
 and limits post-processing to orientation, 1080×1350 sizing, and JPEG encoding.
 Validation records the prompt and source-image checksums and rejects missing or
 non-Codex provenance.
+
+New manifests also freeze a local-discovery plan: a locality-first caption,
+local search phrases, 5–10 focused hashtags, and an Instagram place candidate.
+To target a specific station, add `--station <NOAA station ID>` to
+`social:prepare`. Verified Instagram place IDs may be configured in
+`config/pipeline.json` under `discovery.locationIds`; otherwise the dry-run and
+scheduled workflow require a manual existing-place tag after publication.
+
+`npm run dry-run` is the final no-publish gate. It requires a staged, valid
+manifest, writes `dry-run-report.json`, previews the exact carousel payload and
+location handling, and performs no Meta or publication-state writes.
 
 Publishing remains a separate explicit gate:
 

@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-16-texas-weekly-tide",
+  "createdAt": "2026-07-16T15:20:43.953Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "8771450",
+      "name": "GALVESTON, Galveston Channel",
+      "displayName": "Galveston, Galveston Channel",
+      "stateCode": "TX",
+      "stateName": "Texas",
+      "stateSlug": "texas",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 2.001,
+      "stationPath": "/tides/texas/galveston-galveston-channel-8771450",
+      "stateCalendarPath": "/king-tides/texas/2026",
+      "latitude": 29.309999465942383,
+      "longitude": -94.79329681396484
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-07-16 07:53",
+        "v": 1.324,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 11:49",
+        "v": 1.157,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 16:49",
+        "v": 1.311,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 00:40",
+        "v": -0.232,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 08:22",
+        "v": 1.23,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 13:38",
+        "v": 0.944,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 18:20",
+        "v": 1.15,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 01:29",
+        "v": 0.084,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 08:48",
+        "v": 1.161,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 14:58",
+        "v": 0.689,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 20:04",
+        "v": 1.002,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 02:17",
+        "v": 0.415,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 09:10",
+        "v": 1.116,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 15:57",
+        "v": 0.427,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 22:10",
+        "v": 0.948,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 03:02",
+        "v": 0.731,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 09:23",
+        "v": 1.093,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 16:49",
+        "v": 0.192,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 00:33",
+        "v": 1.037,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 03:43",
+        "v": 1.004,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 09:01",
+        "v": 1.101,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 17:35",
+        "v": 0.004,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 04:31",
+        "v": 1.217,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 18:20",
+        "v": -0.133,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-16 07:53",
+        "v": 1.324,
+        "type": "H",
+        "dateKey": "2026-07-16",
+        "dateLabel": "July 16, 2026",
+        "timeLabel": "7:53 AM"
+      },
+      "lowest": {
+        "t": "2026-07-17 00:40",
+        "v": -0.232,
+        "type": "L",
+        "dateKey": "2026-07-17",
+        "dateLabel": "July 17, 2026",
+        "timeLabel": "12:40 AM"
+      },
+      "rangeFt": 1.556,
+      "thresholdFt": 2.001,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "Texas: your tide week ahead",
+          "Predicted high · 1.32 ft",
+          "7:53 AM · July 16, 2026",
+          "Galveston, Galveston Channel · NOAA 8771450",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "1.32 ft",
+          "above local MLLW",
+          "7:53 AM",
+          "July 16, 2026",
+          "Galveston, Galveston Channel · NOAA 8771450",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Galveston, Galveston Channel · NOAA 8771450",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "1.56 ft",
+          "Highest prediction · 1.32 ft",
+          "7:53 AM · July 16, 2026",
+          "Lowest prediction · -0.23 ft",
+          "12:40 AM · July 17, 2026",
+          "Station-local time · feet above local MLLW",
+          "Galveston, Galveston Channel · NOAA 8771450",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/texas/galveston-galveston-channel-8771450",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "70ae9f411a55b47f3c1a731379cb7541446877f62173b95596547a3fd63be5d3",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "Texas: your tide week ahead",
+        "Predicted high · 1.32 ft",
+        "7:53 AM · July 16, 2026",
+        "Galveston, Galveston Channel · NOAA 8771450",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-texas-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"Texas: your tide week ahead\"\n\"Predicted high · 1.32 ft\"\n\"7:53 AM · July 16, 2026\"\n\"Galveston, Galveston Channel · NOAA 8771450\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "1.32 ft",
+        "above local MLLW",
+        "7:53 AM",
+        "July 16, 2026",
+        "Galveston, Galveston Channel · NOAA 8771450",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-texas-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"1.32 ft\"\n\"above local MLLW\"\n\"7:53 AM\"\n\"July 16, 2026\"\n\"Galveston, Galveston Channel · NOAA 8771450\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Galveston, Galveston Channel · NOAA 8771450",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 16, 2026 | 7:53 AM | high | 1.324 ft MLLW\nJuly 16, 2026 | 11:49 AM | low | 1.157 ft MLLW\nJuly 16, 2026 | 4:49 PM | high | 1.311 ft MLLW\nJuly 17, 2026 | 12:40 AM | low | -0.232 ft MLLW\nJuly 17, 2026 | 8:22 AM | high | 1.230 ft MLLW\nJuly 17, 2026 | 1:38 PM | low | 0.944 ft MLLW\nJuly 17, 2026 | 6:20 PM | high | 1.150 ft MLLW\nJuly 18, 2026 | 1:29 AM | low | 0.084 ft MLLW\nJuly 18, 2026 | 8:48 AM | high | 1.161 ft MLLW\nJuly 18, 2026 | 2:58 PM | low | 0.689 ft MLLW\nJuly 18, 2026 | 8:04 PM | high | 1.002 ft MLLW\nJuly 19, 2026 | 2:17 AM | low | 0.415 ft MLLW\nJuly 19, 2026 | 9:10 AM | high | 1.116 ft MLLW\nJuly 19, 2026 | 3:57 PM | low | 0.427 ft MLLW\nJuly 19, 2026 | 10:10 PM | high | 0.948 ft MLLW\nJuly 20, 2026 | 3:02 AM | low | 0.731 ft MLLW\nJuly 20, 2026 | 9:23 AM | high | 1.093 ft MLLW\nJuly 20, 2026 | 4:49 PM | low | 0.192 ft MLLW\nJuly 21, 2026 | 12:33 AM | high | 1.037 ft MLLW\nJuly 21, 2026 | 3:43 AM | low | 1.004 ft MLLW\nJuly 21, 2026 | 9:01 AM | high | 1.101 ft MLLW\nJuly 21, 2026 | 5:35 PM | low | 0.004 ft MLLW\nJuly 22, 2026 | 4:31 AM | high | 1.217 ft MLLW\nJuly 22, 2026 | 6:20 PM | low | -0.133 ft MLLW",
+      "dataSeries": [
+        "July 16, 2026 | 7:53 AM | high | 1.324 ft MLLW",
+        "July 16, 2026 | 11:49 AM | low | 1.157 ft MLLW",
+        "July 16, 2026 | 4:49 PM | high | 1.311 ft MLLW",
+        "July 17, 2026 | 12:40 AM | low | -0.232 ft MLLW",
+        "July 17, 2026 | 8:22 AM | high | 1.230 ft MLLW",
+        "July 17, 2026 | 1:38 PM | low | 0.944 ft MLLW",
+        "July 17, 2026 | 6:20 PM | high | 1.150 ft MLLW",
+        "July 18, 2026 | 1:29 AM | low | 0.084 ft MLLW",
+        "July 18, 2026 | 8:48 AM | high | 1.161 ft MLLW",
+        "July 18, 2026 | 2:58 PM | low | 0.689 ft MLLW",
+        "July 18, 2026 | 8:04 PM | high | 1.002 ft MLLW",
+        "July 19, 2026 | 2:17 AM | low | 0.415 ft MLLW",
+        "July 19, 2026 | 9:10 AM | high | 1.116 ft MLLW",
+        "July 19, 2026 | 3:57 PM | low | 0.427 ft MLLW",
+        "July 19, 2026 | 10:10 PM | high | 0.948 ft MLLW",
+        "July 20, 2026 | 3:02 AM | low | 0.731 ft MLLW",
+        "July 20, 2026 | 9:23 AM | high | 1.093 ft MLLW",
+        "July 20, 2026 | 4:49 PM | low | 0.192 ft MLLW",
+        "July 21, 2026 | 12:33 AM | high | 1.037 ft MLLW",
+        "July 21, 2026 | 3:43 AM | low | 1.004 ft MLLW",
+        "July 21, 2026 | 9:01 AM | high | 1.101 ft MLLW",
+        "July 21, 2026 | 5:35 PM | low | 0.004 ft MLLW",
+        "July 22, 2026 | 4:31 AM | high | 1.217 ft MLLW",
+        "July 22, 2026 | 6:20 PM | low | -0.133 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-texas-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 16, 2026 | 7:53 AM | high | 1.324 ft MLLW\nJuly 16, 2026 | 11:49 AM | low | 1.157 ft MLLW\nJuly 16, 2026 | 4:49 PM | high | 1.311 ft MLLW\nJuly 17, 2026 | 12:40 AM | low | -0.232 ft MLLW\nJuly 17, 2026 | 8:22 AM | high | 1.230 ft MLLW\nJuly 17, 2026 | 1:38 PM | low | 0.944 ft MLLW\nJuly 17, 2026 | 6:20 PM | high | 1.150 ft MLLW\nJuly 18, 2026 | 1:29 AM | low | 0.084 ft MLLW\nJuly 18, 2026 | 8:48 AM | high | 1.161 ft MLLW\nJuly 18, 2026 | 2:58 PM | low | 0.689 ft MLLW\nJuly 18, 2026 | 8:04 PM | high | 1.002 ft MLLW\nJuly 19, 2026 | 2:17 AM | low | 0.415 ft MLLW\nJuly 19, 2026 | 9:10 AM | high | 1.116 ft MLLW\nJuly 19, 2026 | 3:57 PM | low | 0.427 ft MLLW\nJuly 19, 2026 | 10:10 PM | high | 0.948 ft MLLW\nJuly 20, 2026 | 3:02 AM | low | 0.731 ft MLLW\nJuly 20, 2026 | 9:23 AM | high | 1.093 ft MLLW\nJuly 20, 2026 | 4:49 PM | low | 0.192 ft MLLW\nJuly 21, 2026 | 12:33 AM | high | 1.037 ft MLLW\nJuly 21, 2026 | 3:43 AM | low | 1.004 ft MLLW\nJuly 21, 2026 | 9:01 AM | high | 1.101 ft MLLW\nJuly 21, 2026 | 5:35 PM | low | 0.004 ft MLLW\nJuly 22, 2026 | 4:31 AM | high | 1.217 ft MLLW\nJuly 22, 2026 | 6:20 PM | low | -0.133 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Galveston, Galveston Channel · NOAA 8771450\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "1.56 ft",
+        "Highest prediction · 1.32 ft",
+        "7:53 AM · July 16, 2026",
+        "Lowest prediction · -0.23 ft",
+        "12:40 AM · July 17, 2026",
+        "Station-local time · feet above local MLLW",
+        "Galveston, Galveston Channel · NOAA 8771450",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-texas-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"1.56 ft\"\n\"Highest prediction · 1.32 ft\"\n\"7:53 AM · July 16, 2026\"\n\"Lowest prediction · -0.23 ft\"\n\"12:40 AM · July 17, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Galveston, Galveston Channel · NOAA 8771450\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/texas/galveston-galveston-channel-8771450",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-16-texas-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/texas/galveston-galveston-channel-8771450\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}

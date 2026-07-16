@@ -12,6 +12,8 @@ repository as part of a publishing run.
 - `npm test` runs the deterministic unit suite.
 - `npm run social:prepare -- --mode weekly --date YYYY-MM-DD` freezes matched
   data and writes the Codex image brief for a post.
+- Add `--station 8771450` to target an exact NOAA station for a manual or dry
+  run instead of using the weekly rotation.
 - `npm run social:prepare -- --mode event-watch --date YYYY-MM-DD` publishes
   nothing when no qualifying event exists.
 - `npm run social:attach -- --manifest <path> --slide-1 <path> ... --slide-5
@@ -20,6 +22,9 @@ repository as part of a publishing run.
   validates them.
 - `npm run validate -- --manifest <path>` reruns all factual and asset gates.
 - `npm run stage -- --manifest <path>` copies verified JPEGs into `public/`.
+- `npm run dry-run -- --manifest <path>` validates a staged post and writes a
+  no-write publication simulation, including local discovery and location-tag
+  handling.
 - `npm run account:verify` checks the configured Business identity and live
   publishing quota without exposing the token.
 - `npm run token:install -- --confirm` reads a newly generated token only from
@@ -36,6 +41,13 @@ source precision in manifests and generation briefs, use station-local time and
 local MLLW, and never treat a prediction as an observation or flood forecast.
 Follow
 `skills/perigee-social-publisher/SKILL.md` and its content contract.
+
+Every new post must include a structured discovery plan with a locality-first
+caption, 5–10 focused branded/local/topic hashtags, at least two locality tags,
+local search phrases, a useful engagement prompt, and an Instagram location
+plan. Use `location_id` only when an existing Instagram place has been verified
+and configured for the station. Otherwise preserve the suggested existing place
+and require a manual location edit plus live verification after publication.
 
 Codex built-in image generation is the only approved source for finished post
 slides. Generate all five complete slides from the exact prompts in the post's

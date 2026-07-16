@@ -20,6 +20,12 @@ The five-slide story is fixed:
 4. **Meaning** — Perigee's station-specific top-1% threshold or weekly range.
 5. **Action** — prediction/observation boundary, source, disclaimer, and CTA.
 
+The caption completes the local-discovery layer: lead with the locality and
+region, use three natural local search phrases, include 5–10 focused hashtags
+with at least two locality-specific tags, and ask one useful save/share/comment
+question. Do not stuff generic tags or imply that one station describes a whole
+city, beach, harbor, or coast.
+
 ## Visual language
 
 - **Canvas:** 1080×1350 (4:5), with critical content inside 90-pixel side and

@@ -417,6 +417,9 @@ async function runPublisher() {
             media_type: "CAROUSEL",
             children: journal.children.map((child) => child.id).join(","),
             caption: manifest.creative.caption,
+            ...(manifest.creative.discovery?.locationTag?.instagramLocationId
+              ? { location_id: manifest.creative.discovery.locationTag.instagramLocationId }
+              : {}),
           },
         });
         if (!carousel.id) throw new Error("Instagram did not return a carousel container ID.");

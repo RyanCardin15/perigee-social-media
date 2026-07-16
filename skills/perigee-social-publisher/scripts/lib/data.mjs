@@ -27,7 +27,13 @@ function simpleWeekIndex(dateKey) {
   return Math.floor((date - first) / 604800000);
 }
 
-export function selectCandidate({ mode, dateKey, config, almanac }) {
+export function selectCandidate({ mode, dateKey, config, almanac, stationId = null }) {
+  const requestedRow = stationId
+    ? almanac.rows.find((candidate) => candidate.stationId === String(stationId))
+    : null;
+  if (stationId && !requestedRow) {
+    throw new Error(`Station ${stationId} is missing from the Perigee almanac.`);
+  }
   if (mode === "launch") {
     const row = almanac.rows.find((candidate) => candidate.stationId === config.launchPost.stationId);
     if (!row) throw new Error("Launch station is missing from the Perigee almanac.");
@@ -49,7 +55,7 @@ export function selectCandidate({ mode, dateKey, config, almanac }) {
 
   if (mode === "event-watch") {
     const endKey = addDays(dateKey, 7);
-    const candidates = almanac.rows.flatMap((row) =>
+    const candidates = (requestedRow ? [requestedRow] : almanac.rows).flatMap((row) =>
       row.kingTideClusters
         .filter((cluster) => overlaps(cluster, dateKey, endKey))
         .map((cluster) => ({
@@ -73,7 +79,7 @@ export function selectCandidate({ mode, dateKey, config, almanac }) {
 
   if (mode === "weekly") {
     const rows = [...almanac.rows].sort((left, right) => left.stateCode.localeCompare(right.stateCode));
-    const row = rows[simpleWeekIndex(dateKey) % rows.length];
+    const row = requestedRow || rows[simpleWeekIndex(dateKey) % rows.length];
     return {
       row,
       cluster: row.kingTideClusters.find((candidate) => overlaps(candidate, dateKey, addDays(dateKey, 6))) || null,

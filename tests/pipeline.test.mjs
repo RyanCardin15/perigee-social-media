@@ -17,6 +17,8 @@ const row = {
   stationId: "9414290",
   stationName: "SAN FRANCISCO (Golden Gate)",
   stationPath: "/tides/california/san-francisco-golden-gate-9414290",
+  latitude: 37.8063,
+  longitude: -122.4659,
   stateCalendarPath: "/king-tides/california/2026",
   kingTideThresholdFt: 7.077,
   kingTideClusters: [
@@ -87,6 +89,25 @@ test("event watch returns a quiet result when no cluster overlaps", () => {
   assert.equal(selected, null);
 });
 
+test("weekly selection can target an exact NOAA station", () => {
+  const galveston = {
+    ...row,
+    stateCode: "TX",
+    stateName: "Texas",
+    stateSlug: "texas",
+    stationId: "8771450",
+    stationName: "GALVESTON, Galveston Channel",
+  };
+  const selected = selectCandidate({
+    mode: "weekly",
+    dateKey: "2026-07-16",
+    stationId: "8771450",
+    config,
+    almanac: { rows: [row, galveston] },
+  });
+  assert.equal(selected.row.stationId, "8771450");
+});
+
 test("king-tide creative preserves prediction and MLLW boundaries", () => {
   const creative = createCreative({
     candidate: {
@@ -111,6 +132,10 @@ test("king-tide creative preserves prediction and MLLW boundaries", () => {
   assert.match(creative.caption, /not for navigation/i);
   assert.doesNotMatch(creative.caption, /\b(safe|guaranteed|real-time)\b/i);
   assert.equal(creative.altTexts.length, 5);
+  assert.ok(creative.discovery.hashtags.length >= 5);
+  assert.ok(creative.discovery.localHashtags.every((value) => creative.caption.includes(value)));
+  assert.match(creative.caption, /San Francisco, California/);
+  assert.equal(creative.discovery.locationTag.delivery, "manual-existing-place");
   assert.equal(new URL(creative.ctaUrl).searchParams.get("utm_source"), "instagram");
 });
 

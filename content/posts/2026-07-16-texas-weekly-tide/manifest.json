@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-16-texas-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-16",
+  "generatedAt": "2026-07-16T15:20:43.950Z",
+  "station": {
+    "id": "8771450",
+    "name": "GALVESTON, Galveston Channel",
+    "displayName": "Galveston, Galveston Channel",
+    "stateCode": "TX",
+    "stateName": "Texas",
+    "stateSlug": "texas",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.001,
+    "stationPath": "/tides/texas/galveston-galveston-channel-8771450",
+    "stateCalendarPath": "/king-tides/texas/2026",
+    "latitude": 29.309999465942383,
+    "longitude": -94.79329681396484
+  },
+  "window": {
+    "start": "2026-07-16",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-16T15:20:43.940Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260716&range=168&datum=MLLW&station=8771450&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "4766746a712c1289fe29422f31a3610f6018ce7befb49c702124aac013267903"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/8771450/predictions?interval=hilo&begin_date=2026-07-16&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "4766746a712c1289fe29422f31a3610f6018ce7befb49c702124aac013267903"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "f5cd93eea0fd0c49eec799e65bdd09aee971a1e96831ae826820ccbc4fcb503e"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-16 07:53",
+        "v": 1.324,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-16 11:49",
+        "v": 1.157,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-16 16:49",
+        "v": 1.311,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 00:40",
+        "v": -0.232,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 08:22",
+        "v": 1.23,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 13:38",
+        "v": 0.944,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 18:20",
+        "v": 1.15,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 01:29",
+        "v": 0.084,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 08:48",
+        "v": 1.161,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 14:58",
+        "v": 0.689,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 20:04",
+        "v": 1.002,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 02:17",
+        "v": 0.415,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 09:10",
+        "v": 1.116,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 15:57",
+        "v": 0.427,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 22:10",
+        "v": 0.948,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 03:02",
+        "v": 0.731,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 09:23",
+        "v": 1.093,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 16:49",
+        "v": 0.192,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 00:33",
+        "v": 1.037,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 03:43",
+        "v": 1.004,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 09:01",
+        "v": 1.101,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 17:35",
+        "v": 0.004,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 04:31",
+        "v": 1.217,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 18:20",
+        "v": -0.133,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-16 07:53",
+        "v": 1.324,
+        "type": "H",
+        "dateKey": "2026-07-16",
+        "dateLabel": "July 16, 2026",
+        "timeLabel": "7:53 AM"
+      },
+      "lowest": {
+        "t": "2026-07-17 00:40",
+        "v": -0.232,
+        "type": "L",
+        "dateKey": "2026-07-17",
+        "dateLabel": "July 17, 2026",
+        "timeLabel": "12:40 AM"
+      },
+      "rangeFt": 1.556,
+      "thresholdFt": 2.001,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-16-texas-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "Texas: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Galveston, Galveston Channel",
+    "caption": "Galveston, Texas tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.32 ft above local MLLW at 7:53 AM on July 16, 2026. The lowest is -0.23 ft, a predicted range of 1.56 ft at NOAA station 8771450.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Galveston. Which Texas coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #GalvestonTX #GalvestonTides #TexasCoast #TideTimes #CoastalPlanning #NOAA",
+    "discovery": {
+      "market": {
+        "locality": "Galveston",
+        "region": "Texas",
+        "label": "Galveston, Texas"
+      },
+      "keywords": [
+        "Galveston tide predictions",
+        "Galveston tide times",
+        "Texas coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#GalvestonTX",
+        "#GalvestonTides",
+        "#TexasCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#GalvestonTX",
+        "#GalvestonTides",
+        "#TexasCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around Galveston. Which Texas coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "Galveston, Texas",
+        "latitude": 29.309999465942383,
+        "longitude": -94.79329681396484,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/texas/galveston-galveston-channel-8771450?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-16-texas-weekly-tide",
+    "ctaDisplay": "perigeetides.com/tides/texas/galveston-galveston-channel-8771450",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Galveston, Galveston Channel, NOAA station 8771450.",
+      "Highest predicted tide card: 1.32 feet above local MLLW at 7:53 AM on July 16, 2026.",
+      "Seven-day high and low tide prediction chart for Galveston, Galveston Channel, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8771450.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-16-texas-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Galveston, Galveston Channel, NOAA station 8771450.",
+        "sha256": "e6dd9b7057af4eeae74a8329588918b0bf53045c53ed12db6f16566a24f9ae63",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "aa6adb76e1b9d5391bf985f56b11aaefc80b00e21d3bc999f9a8008938a488a8",
+        "sourceSha256": "7f840205680dbc8f5627dab3f38000df95e6945412235c3ba05ef69b284cc202",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T15:31:56.057Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-16-texas-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 1.32 feet above local MLLW at 7:53 AM on July 16, 2026.",
+        "sha256": "14de9229519d06862dee84084033b901b401206d732b5d4dd23ba14c13c799b1",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "50f319518b43a1538bfe0cb2edd7cee346256ef9107bfbca7d228324f5d40170",
+        "sourceSha256": "25ea29b676012a7b0b955903f7817c2ee9252933378384dd57df6c5f86d9b383",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T15:31:56.085Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-16-texas-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Galveston, Galveston Channel, based on matched NOAA and Perigee data.",
+        "sha256": "4f2d73741dae3485527999d85e359f4c2e1c411cd11894364f98bd611f449e56",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "463035183f24161add7253acca99f2afc99c411020ea3d4e74f3fae610abd0cd",
+        "sourceSha256": "52c3015621b74b19d7af3423719f9d9a88412956eb3d03ee5a21ad1d856717fd",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T15:31:56.108Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-16-texas-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8771450.",
+        "sha256": "88b58eb377c06a4d9dcb8370257d2fe9ad79335012ec40396596a77a6d38a547",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "2c2909410c78c5586cae0de65a447dad3f902412eaa6b06218421381be3383fb",
+        "sourceSha256": "b942175268974119ac006a3838ce6f087cce5d04008251f4d03d9089b3f35fb8",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T15:31:56.134Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-16-texas-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "60defee52eaafc83c824c7964f091bd1d2549e294aef71f1bfa6ff45e09950ac",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "35cd7ed2fbd07acb9caa0e7eeec46ba8382a77712cf3a2488cc362fe7851e947",
+        "sourceSha256": "9e55d54dc707d50e58c05c1fe31e67a44ca64b0a41f65cd87d530f145a514a62",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-16T15:31:56.159Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-16T15:32:28.149Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-16T15:37:08.522Z",
+    "report": "content/posts/2026-07-16-texas-weekly-tide/validation.json"
+  }
+}

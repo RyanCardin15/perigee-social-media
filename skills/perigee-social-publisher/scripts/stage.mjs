@@ -36,6 +36,7 @@ const publicManifest = {
   window: manifest.window,
   sourceUrls: [manifest.sources.noaa.url, manifest.sources.perigee.url],
   ctaUrl: manifest.creative.ctaUrl,
+  discovery: manifest.creative.discovery || null,
   slides: manifest.creative.slides.map(({ order, publicUrl, altText, sha256 }) => ({ order, publicUrl, altText, sha256 })),
 };
 await atomicWriteJson(resolve(publicDir, "manifest.public.json"), publicManifest);

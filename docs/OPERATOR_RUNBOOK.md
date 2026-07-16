@@ -20,6 +20,10 @@ status=validated. Show me all five final slides. Stop without staging,
 committing, pushing, or publishing.
 ```
 
+For a location-specific draft, name the place and station ID, for example:
+“Create a validated weekly tide draft for Galveston, Texas using NOAA station
+8771450.” The resulting caption and manifest must pass the discovery checks.
+
 For a king-tide check, replace “weekly tide draft” with “event-watch post.” A
 quiet event-watch result is success and should create nothing.
 
@@ -50,6 +54,21 @@ npm run token:status
 npm run account:verify
 npm run social:prepare -- --mode weekly --date YYYY-MM-DD
 ```
+
+To select an exact station and complete a no-publish rehearsal:
+
+```bash
+npm run social:prepare -- --mode weekly --date YYYY-MM-DD --station 8771450
+# Generate, inspect, attach, and validate the five brief-driven slides.
+npm run stage -- --manifest content/posts/<post-id>/manifest.json
+npm run dry-run -- --manifest content/posts/<post-id>/manifest.json
+```
+
+The dry-run report must show `externalWritesPerformed: false`, the approved
+local hashtags and keywords, five ordered child payloads, and the location
+delivery. If no verified `location_id` is configured, add the named existing
+place in Instagram after a real publish and verify it on the live post before
+calling the location step complete.
 
 Preparation prints the manifest and `generation-brief.json` paths and stops at
 `awaiting-generation`. Then tell Codex:

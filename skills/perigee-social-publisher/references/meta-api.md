@@ -34,9 +34,15 @@ Publication flow:
 4. Create one `/<IG_ID>/media` child container per carousel image with
    `is_carousel_item=true` and alt text.
 5. Create a `CAROUSEL` container with the ordered child IDs and caption.
+   Include `location_id` only when it is the verified ID of an existing place
+   configured for the selected station. If no verified ID is available, do not
+   guess: preserve the suggested place in the manifest and require a manual
+   location edit after publication.
 6. Publish through `/<IG_ID>/media_publish`.
 7. Read back the `CAROUSEL_ALBUM` and verify the media ID, permalink, caption,
    child count, image types, and alt-text order.
+8. When location delivery is manual, add the existing place in Instagram and
+   verify the place on the live post before marking the location step complete.
 
 Never log access tokens or app secrets. Dashboard long-lived tokens are valid
 for 60 days. Record their issuance locally, refresh a valid token after it is

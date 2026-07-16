@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-16-texas-weekly-tide",
+  "status": "dry-run-complete",
+  "completedAt": "2026-07-16T15:32:28.299Z",
+  "externalWritesPerformed": false,
+  "validationChecks": 101,
+  "captionLength": 715,
+  "hashtags": [
+    "#PerigeeTides",
+    "#GalvestonTX",
+    "#GalvestonTides",
+    "#TexasCoast",
+    "#TideTimes",
+    "#CoastalPlanning",
+    "#NOAA"
+  ],
+  "localKeywords": [
+    "Galveston tide predictions",
+    "Galveston tide times",
+    "Texas coastal planning"
+  ],
+  "locationTag": {
+    "suggestedName": "Galveston, Texas",
+    "latitude": 29.309999465942383,
+    "longitude": -94.79329681396484,
+    "instagramLocationId": null,
+    "delivery": "manual-existing-place",
+    "status": "manual-required-after-publish"
+  },
+  "locationFollowUp": "After a real publish, add the existing Instagram place “Galveston, Texas” in Instagram and verify it on the live post.",
+  "simulatedPayload": {
+    "children": [
+      {
+        "order": 1,
+        "imageUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Galveston, Galveston Channel, NOAA station 8771450.",
+        "sha256": "e6dd9b7057af4eeae74a8329588918b0bf53045c53ed12db6f16566a24f9ae63"
+      },
+      {
+        "order": 2,
+        "imageUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/02-peak.jpg",
+        "altText": "Highest predicted tide card: 1.32 feet above local MLLW at 7:53 AM on July 16, 2026.",
+        "sha256": "14de9229519d06862dee84084033b901b401206d732b5d4dd23ba14c13c799b1"
+      },
+      {
+        "order": 3,
+        "imageUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Galveston, Galveston Channel, based on matched NOAA and Perigee data.",
+        "sha256": "4f2d73741dae3485527999d85e359f4c2e1c411cd11894364f98bd611f449e56"
+      },
+      {
+        "order": 4,
+        "imageUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8771450.",
+        "sha256": "88b58eb377c06a4d9dcb8370257d2fe9ad79335012ec40396596a77a6d38a547"
+      },
+      {
+        "order": 5,
+        "imageUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-16-texas-weekly-tide/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "60defee52eaafc83c824c7964f091bd1d2549e294aef71f1bfa6ff45e09950ac"
+      }
+    ],
+    "carousel": {
+      "mediaType": "CAROUSEL",
+      "childCount": 5,
+      "caption": "Galveston, Texas tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.32 ft above local MLLW at 7:53 AM on July 16, 2026. The lowest is -0.23 ft, a predicted range of 1.56 ft at NOAA station 8771450.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Galveston. Which Texas coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #GalvestonTX #GalvestonTides #TexasCoast #TideTimes #CoastalPlanning #NOAA",
+      "locationId": null
+    }
+  }
+}

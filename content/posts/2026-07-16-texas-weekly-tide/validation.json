@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-16-texas-weekly-tide",
+  "validatedAt": "2026-07-16T15:37:08.522Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "schema",
+      "passed": true,
+      "detail": "Manifest schemaVersion must be 1, 2, 3, or 4."
+    },
+    {
+      "name": "status",
+      "passed": true,
+      "detail": "Unknown manifest status."
+    },
+    {
+      "name": "provider-match",
+      "passed": true,
+      "detail": "Perigee and NOAA digests must match."
+    },
+    {
+      "name": "provider-digests",
+      "passed": true,
+      "detail": "Provider digests differ."
+    },
+    {
+      "name": "prediction-count",
+      "passed": true,
+      "detail": "Expected at least eight high/low predictions."
+    },
+    {
+      "name": "highest-value",
+      "passed": true,
+      "detail": "Derived highest prediction does not match source data."
+    },
+    {
+      "name": "threshold",
+      "passed": true,
+      "detail": "Manifest threshold differs from the checked-in almanac."
+    },
+    {
+      "name": "content-type-policy",
+      "passed": true,
+      "detail": "Content type must belong to exactly one review policy."
+    },
+    {
+      "name": "approval-policy",
+      "passed": true,
+      "detail": "Approval policy must be automatic-after-validation for weekly-tide."
+    },
+    {
+      "name": "caption-prediction",
+      "passed": true,
+      "detail": "Caption must include “prediction”."
+    },
+    {
+      "name": "caption-mllw",
+      "passed": true,
+      "detail": "Caption must include “MLLW”."
+    },
+    {
+      "name": "caption-8771450",
+      "passed": true,
+      "detail": "Caption must include “8771450”."
+    },
+    {
+      "name": "caption-noaa",
+      "passed": true,
+      "detail": "Caption must include “NOAA”."
+    },
+    {
+      "name": "caption-not-for-navigation",
+      "passed": true,
+      "detail": "Caption must include “not for navigation”."
+    },
+    {
+      "name": "prohibited-claims",
+      "passed": true,
+      "detail": "Caption contains a prohibited claim."
+    },
+    {
+      "name": "caption-length",
+      "passed": true,
+      "detail": "Caption must be 1–2200 characters."
+    },
+    {
+      "name": "discovery-market",
+      "passed": true,
+      "detail": "Caption must lead with the configured local market label."
+    },
+    {
+      "name": "discovery-keywords",
+      "passed": true,
+      "detail": "Discovery plan must include at least three local search phrases."
+    },
+    {
+      "name": "discovery-hashtag-count",
+      "passed": true,
+      "detail": "Use 5–10 focused hashtags instead of a generic or stuffed set."
+    },
+    {
+      "name": "discovery-hashtag-format",
+      "passed": true,
+      "detail": "Hashtags must contain only letters and numbers after #."
+    },
+    {
+      "name": "discovery-hashtag-unique",
+      "passed": true,
+      "detail": "Hashtags must be unique."
+    },
+    {
+      "name": "discovery-local-hashtags",
+      "passed": true,
+      "detail": "At least two local hashtags must be present in the final set."
+    },
+    {
+      "name": "discovery-caption-hashtags",
+      "passed": true,
+      "detail": "Every approved discovery hashtag must appear in the caption."
+    },
+    {
+      "name": "discovery-engagement",
+      "passed": true,
+      "detail": "Caption must include the useful local engagement prompt."
+    },
+    {
+      "name": "discovery-location",
+      "passed": true,
+      "detail": "Location plan must name an existing-place candidate, preserve station coordinates, and declare API or manual delivery."
+    },
+    {
+      "name": "cta",
+      "passed": true,
+      "detail": "CTA must be an attributed perigeetides.com HTTPS URL."
+    },
+    {
+      "name": "no-secrets",
+      "passed": true,
+      "detail": "Manifest appears to contain an access token or app secret."
+    },
+    {
+      "name": "slide-count",
+      "passed": true,
+      "detail": "Instagram carousel must contain five slides."
+    },
+    {
+      "name": "slide-order",
+      "passed": true,
+      "detail": "Carousel slides must be unique and ordered exactly 1 through 5."
+    },
+    {
+      "name": "design-system",
+      "passed": true,
+      "detail": "Manifest must use perigee-feed-v2-full-generation."
+    },
+    {
+      "name": "no-background-artwork",
+      "passed": true,
+      "detail": "Full-generation manifests must not attach separate background artwork."
+    },
+    {
+      "name": "generation-brief-path",
+      "passed": true,
+      "detail": "Generation brief must live beside the manifest."
+    },
+    {
+      "name": "generation-brief-post",
+      "passed": true,
+      "detail": "Generation brief post ID differs from the manifest."
+    },
+    {
+      "name": "generation-brief-design",
+      "passed": true,
+      "detail": "Generation brief design system is stale."
+    },
+    {
+      "name": "generation-brief-generator",
+      "passed": true,
+      "detail": "Generation brief must require Codex built-in image generation."
+    },
+    {
+      "name": "generation-brief-slide-count",
+      "passed": true,
+      "detail": "Generation brief must contain five complete-slide prompts."
+    },
+    {
+      "name": "generation-brief-no-overlays",
+      "passed": true,
+      "detail": "Generation brief must prohibit deterministic overlays and compositing."
+    },
+    {
+      "name": "generation-brief-facts",
+      "passed": true,
+      "detail": "Generation brief facts differ from the current frozen manifest."
+    },
+    {
+      "name": "generation-brief-prompts",
+      "passed": true,
+      "detail": "Generation brief prompts differ from the current frozen manifest and design system."
+    },
+    {
+      "name": "slide-1-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-1-generated-by",
+      "passed": true,
+      "detail": "Finished slide must be generated by Codex."
+    },
+    {
+      "name": "slide-1-generator",
+      "passed": true,
+      "detail": "Finished slide must use Codex built-in image generation."
+    },
+    {
+      "name": "slide-1-factual-content",
+      "passed": true,
+      "detail": "Finished generated slide must include its factual presentation and visible copy."
+    },
+    {
+      "name": "slide-1-reviewed",
+      "passed": true,
+      "detail": "Codex must inspect the finished slide against its exact prompt and data."
+    },
+    {
+      "name": "slide-1-prompt",
+      "passed": true,
+      "detail": "Slide prompt hash differs from the frozen generation brief."
+    },
+    {
+      "name": "slide-1-no-compositing",
+      "passed": true,
+      "detail": "Only image orientation, sizing, and JPEG normalization are allowed after generation."
+    },
+    {
+      "name": "slide-1-source-digest",
+      "passed": true,
+      "detail": "Generated source image checksum is missing."
+    },
+    {
+      "name": "slide-1-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-1-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-1-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after attachment."
+    },
+    {
+      "name": "slide-1-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-2-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-2-generated-by",
+      "passed": true,
+      "detail": "Finished slide must be generated by Codex."
+    },
+    {
+      "name": "slide-2-generator",
+      "passed": true,
+      "detail": "Finished slide must use Codex built-in image generation."
+    },
+    {
+      "name": "slide-2-factual-content",
+      "passed": true,
+      "detail": "Finished generated slide must include its factual presentation and visible copy."
+    },
+    {
+      "name": "slide-2-reviewed",
+      "passed": true,
+      "detail": "Codex must inspect the finished slide against its exact prompt and data."
+    },
+    {
+      "name": "slide-2-prompt",
+      "passed": true,
+      "detail": "Slide prompt hash differs from the frozen generation brief."
+    },
+    {
+      "name": "slide-2-no-compositing",
+      "passed": true,
+      "detail": "Only image orientation, sizing, and JPEG normalization are allowed after generation."
+    },
+    {
+      "name": "slide-2-source-digest",
+      "passed": true,
+      "detail": "Generated source image checksum is missing."
+    },
+    {
+      "name": "slide-2-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-2-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-2-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after attachment."
+    },
+    {
+      "name": "slide-2-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-3-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-3-generated-by",
+      "passed": true,
+      "detail": "Finished slide must be generated by Codex."
+    },
+    {
+      "name": "slide-3-generator",
+      "passed": true,
+      "detail": "Finished slide must use Codex built-in image generation."
+    },
+    {
+      "name": "slide-3-factual-content",
+      "passed": true,
+      "detail": "Finished generated slide must include its factual presentation and visible copy."
+    },
+    {
+      "name": "slide-3-reviewed",
+      "passed": true,
+      "detail": "Codex must inspect the finished slide against its exact prompt and data."
+    },
+    {
+      "name": "slide-3-prompt",
+      "passed": true,
+      "detail": "Slide prompt hash differs from the frozen generation brief."
+    },
+    {
+      "name": "slide-3-no-compositing",
+      "passed": true,
+      "detail": "Only image orientation, sizing, and JPEG normalization are allowed after generation."
+    },
+    {
+      "name": "slide-3-source-digest",
+      "passed": true,
+      "detail": "Generated source image checksum is missing."
+    },
+    {
+      "name": "slide-3-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-3-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-3-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after attachment."
+    },
+    {
+      "name": "slide-3-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-4-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-4-generated-by",
+      "passed": true,
+      "detail": "Finished slide must be generated by Codex."
+    },
+    {
+      "name": "slide-4-generator",
+      "passed": true,
+      "detail": "Finished slide must use Codex built-in image generation."
+    },
+    {
+      "name": "slide-4-factual-content",
+      "passed": true,
+      "detail": "Finished generated slide must include its factual presentation and visible copy."
+    },
+    {
+      "name": "slide-4-reviewed",
+      "passed": true,
+      "detail": "Codex must inspect the finished slide against its exact prompt and data."
+    },
+    {
+      "name": "slide-4-prompt",
+      "passed": true,
+      "detail": "Slide prompt hash differs from the frozen generation brief."
+    },
+    {
+      "name": "slide-4-no-compositing",
+      "passed": true,
+      "detail": "Only image orientation, sizing, and JPEG normalization are allowed after generation."
+    },
+    {
+      "name": "slide-4-source-digest",
+      "passed": true,
+      "detail": "Generated source image checksum is missing."
+    },
+    {
+      "name": "slide-4-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-4-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-4-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after attachment."
+    },
+    {
+      "name": "slide-4-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "slide-5-path",
+      "passed": true,
+      "detail": "Slide must live below its manifest directory."
+    },
+    {
+      "name": "slide-5-generated-by",
+      "passed": true,
+      "detail": "Finished slide must be generated by Codex."
+    },
+    {
+      "name": "slide-5-generator",
+      "passed": true,
+      "detail": "Finished slide must use Codex built-in image generation."
+    },
+    {
+      "name": "slide-5-factual-content",
+      "passed": true,
+      "detail": "Finished generated slide must include its factual presentation and visible copy."
+    },
+    {
+      "name": "slide-5-reviewed",
+      "passed": true,
+      "detail": "Codex must inspect the finished slide against its exact prompt and data."
+    },
+    {
+      "name": "slide-5-prompt",
+      "passed": true,
+      "detail": "Slide prompt hash differs from the frozen generation brief."
+    },
+    {
+      "name": "slide-5-no-compositing",
+      "passed": true,
+      "detail": "Only image orientation, sizing, and JPEG normalization are allowed after generation."
+    },
+    {
+      "name": "slide-5-source-digest",
+      "passed": true,
+      "detail": "Generated source image checksum is missing."
+    },
+    {
+      "name": "slide-5-format",
+      "passed": true,
+      "detail": "Slide must be JPEG."
+    },
+    {
+      "name": "slide-5-size",
+      "passed": true,
+      "detail": "Slide must be 1080×1350."
+    },
+    {
+      "name": "slide-5-digest",
+      "passed": true,
+      "detail": "Slide checksum changed after attachment."
+    },
+    {
+      "name": "slide-5-alt",
+      "passed": true,
+      "detail": "Alt text must be 40–1000 characters."
+    },
+    {
+      "name": "generated-at",
+      "passed": true,
+      "detail": "generatedAt is invalid or in the future."
+    },
+    {
+      "name": "fresh-source",
+      "passed": true,
+      "detail": "Prediction data is more than six hours old."
+    }
+  ],
+  "errors": []
+}

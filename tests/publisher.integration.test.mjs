@@ -103,6 +103,7 @@ test("publisher executes and verifies the complete Instagram carousel flow", { t
       if (fields.media_type === "CAROUSEL") {
         assert.equal(fields.children, "2001,2002,2003,2004,2005");
         assert.equal(fields.caption, expectedCaption);
+        assert.equal(fields.location_id, "123456789");
         sendJson(response, 200, { id: "3001" });
         return;
       }
@@ -177,6 +178,7 @@ test("publisher executes and verifies the complete Instagram carousel flow", { t
   manifest.publishing.status = "staged-not-published";
   manifest.publishing.mediaId = null;
   manifest.publishing.permalink = null;
+  manifest.creative.discovery = { locationTag: { instagramLocationId: "123456789" } };
   expectedSlides = [...manifest.creative.slides].sort((left, right) => left.order - right.order);
   for (const slide of expectedSlides) {
     const publicPath = `/public/${slide.order}.jpg`;
