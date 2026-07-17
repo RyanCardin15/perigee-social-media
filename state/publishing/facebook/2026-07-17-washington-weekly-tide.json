@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "platform": "facebook",
+  "postId": "2026-07-17-washington-weekly-tide",
+  "status": "live-verified",
+  "pageIdHash": "c1581032a7f035c412cb68609a648b535399b343021fcc73f78e946cee839cfa",
+  "manifestSha256": "3d6d74ec4b635f6677a1f64847c4e127e99e79781e1b9b43514c885e3a750484",
+  "photos": [
+    {
+      "order": 1,
+      "id": "122109220221388773"
+    },
+    {
+      "order": 2,
+      "id": "122109220269388773"
+    },
+    {
+      "order": 3,
+      "id": "122109220329388773"
+    },
+    {
+      "order": 4,
+      "id": "122109220389388773"
+    },
+    {
+      "order": 5,
+      "id": "122109220443388773"
+    }
+  ],
+  "mediaId": "1253693981151886_122109220497388773",
+  "createdAt": "2026-07-17T15:01:40.019Z",
+  "updatedAt": "2026-07-17T15:02:01.768Z",
+  "requestedAt": "2026-07-17T15:01:55.975Z",
+  "receivedAt": "2026-07-17T15:02:00.505Z",
+  "permalink": "https://www.facebook.com/122109220539388773/posts/122109220497388773",
+  "publishedAt": "2026-07-17T15:01:56+0000",
+  "pageName": "Perigee Tides"
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-07-17-washington-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-17",
   "generatedAt": "2026-07-17T14:39:56.596Z",
@@ -383,10 +383,23 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-17T14:53:51.429Z"
+    "status": "published",
+    "mediaId": "17959107936171118",
+    "permalink": "https://www.instagram.com/p/Da5fOnjEa2Q/",
+    "stagedAt": "2026-07-17T14:53:51.429Z",
+    "publishedAt": "2026-07-17T15:01:35+0000",
+    "instagram": {
+      "status": "published",
+      "mediaId": "17959107936171118",
+      "permalink": "https://www.instagram.com/p/Da5fOnjEa2Q/",
+      "publishedAt": "2026-07-17T15:01:35+0000"
+    },
+    "facebook": {
+      "status": "published",
+      "mediaId": "1253693981151886_122109220497388773",
+      "permalink": "https://www.facebook.com/122109220539388773/posts/122109220497388773",
+      "publishedAt": "2026-07-17T15:01:56+0000"
+    }
   },
   "validation": {
     "passed": true,
