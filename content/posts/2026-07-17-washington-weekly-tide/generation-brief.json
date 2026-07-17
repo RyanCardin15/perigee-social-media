@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-17-washington-weekly-tide",
+  "createdAt": "2026-07-17T14:39:56.598Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "9447130",
+      "name": "SEATTLE (Madison St.), Elliott Bay",
+      "displayName": "Seattle (Madison St.), Elliott Bay",
+      "stateCode": "WA",
+      "stateName": "Washington",
+      "stateSlug": "washington",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 12.819,
+      "stationPath": "/tides/washington/seattle-madison-st-elliott-bay-9447130",
+      "stateCalendarPath": "/king-tides/washington/2026",
+      "latitude": 47.60263888888889,
+      "longitude": -122.3393055555556
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-07-17 02:00",
+        "v": 5.603,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 06:58",
+        "v": 9.94,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 13:40",
+        "v": -1.547,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 20:51",
+        "v": 12.29,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 02:52",
+        "v": 4.634,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 08:02",
+        "v": 9.2,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 14:25",
+        "v": -0.002,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 21:24",
+        "v": 12.151,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 03:46",
+        "v": 3.649,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 09:11",
+        "v": 8.469,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 15:10",
+        "v": 1.803,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 21:58",
+        "v": 11.877,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 04:40",
+        "v": 2.71,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 10:30",
+        "v": 7.926,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 15:58",
+        "v": 3.717,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 22:32",
+        "v": 11.463,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 05:34",
+        "v": 1.869,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 12:08",
+        "v": 7.811,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 16:54",
+        "v": 5.55,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 23:09",
+        "v": 10.941,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 06:28",
+        "v": 1.154,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 14:07",
+        "v": 8.355,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 18:12",
+        "v": 7.054,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 23:50",
+        "v": 10.386,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 07:21",
+        "v": 0.564,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 15:41",
+        "v": 9.32,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 20:00",
+        "v": 7.899,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-17 20:51",
+        "v": 12.29,
+        "type": "H",
+        "dateKey": "2026-07-17",
+        "dateLabel": "July 17, 2026",
+        "timeLabel": "8:51 PM"
+      },
+      "lowest": {
+        "t": "2026-07-17 13:40",
+        "v": -1.547,
+        "type": "L",
+        "dateKey": "2026-07-17",
+        "dateLabel": "July 17, 2026",
+        "timeLabel": "1:40 PM"
+      },
+      "rangeFt": 13.837,
+      "thresholdFt": 12.819,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "Washington: your tide week ahead",
+          "Predicted high · 12.29 ft",
+          "8:51 PM · July 17, 2026",
+          "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "12.29 ft",
+          "above local MLLW",
+          "8:51 PM",
+          "July 17, 2026",
+          "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "13.84 ft",
+          "Highest prediction · 12.29 ft",
+          "8:51 PM · July 17, 2026",
+          "Lowest prediction · -1.55 ft",
+          "1:40 PM · July 17, 2026",
+          "Station-local time · feet above local MLLW",
+          "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "ed0db1ca9c22076567b09604aeafb8ba87cd5240ef6b6f6b5a5071387f2bb0c9",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "Washington: your tide week ahead",
+        "Predicted high · 12.29 ft",
+        "8:51 PM · July 17, 2026",
+        "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-17-washington-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"Washington: your tide week ahead\"\n\"Predicted high · 12.29 ft\"\n\"8:51 PM · July 17, 2026\"\n\"Seattle (Madison St.), Elliott Bay · NOAA 9447130\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "12.29 ft",
+        "above local MLLW",
+        "8:51 PM",
+        "July 17, 2026",
+        "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-17-washington-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"12.29 ft\"\n\"above local MLLW\"\n\"8:51 PM\"\n\"July 17, 2026\"\n\"Seattle (Madison St.), Elliott Bay · NOAA 9447130\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 17, 2026 | 2:00 AM | low | 5.603 ft MLLW\nJuly 17, 2026 | 6:58 AM | high | 9.940 ft MLLW\nJuly 17, 2026 | 1:40 PM | low | -1.547 ft MLLW\nJuly 17, 2026 | 8:51 PM | high | 12.290 ft MLLW\nJuly 18, 2026 | 2:52 AM | low | 4.634 ft MLLW\nJuly 18, 2026 | 8:02 AM | high | 9.200 ft MLLW\nJuly 18, 2026 | 2:25 PM | low | -0.002 ft MLLW\nJuly 18, 2026 | 9:24 PM | high | 12.151 ft MLLW\nJuly 19, 2026 | 3:46 AM | low | 3.649 ft MLLW\nJuly 19, 2026 | 9:11 AM | high | 8.469 ft MLLW\nJuly 19, 2026 | 3:10 PM | low | 1.803 ft MLLW\nJuly 19, 2026 | 9:58 PM | high | 11.877 ft MLLW\nJuly 20, 2026 | 4:40 AM | low | 2.710 ft MLLW\nJuly 20, 2026 | 10:30 AM | high | 7.926 ft MLLW\nJuly 20, 2026 | 3:58 PM | low | 3.717 ft MLLW\nJuly 20, 2026 | 10:32 PM | high | 11.463 ft MLLW\nJuly 21, 2026 | 5:34 AM | low | 1.869 ft MLLW\nJuly 21, 2026 | 12:08 PM | high | 7.811 ft MLLW\nJuly 21, 2026 | 4:54 PM | low | 5.550 ft MLLW\nJuly 21, 2026 | 11:09 PM | high | 10.941 ft MLLW\nJuly 22, 2026 | 6:28 AM | low | 1.154 ft MLLW\nJuly 22, 2026 | 2:07 PM | high | 8.355 ft MLLW\nJuly 22, 2026 | 6:12 PM | low | 7.054 ft MLLW\nJuly 22, 2026 | 11:50 PM | high | 10.386 ft MLLW\nJuly 23, 2026 | 7:21 AM | low | 0.564 ft MLLW\nJuly 23, 2026 | 3:41 PM | high | 9.320 ft MLLW\nJuly 23, 2026 | 8:00 PM | low | 7.899 ft MLLW",
+      "dataSeries": [
+        "July 17, 2026 | 2:00 AM | low | 5.603 ft MLLW",
+        "July 17, 2026 | 6:58 AM | high | 9.940 ft MLLW",
+        "July 17, 2026 | 1:40 PM | low | -1.547 ft MLLW",
+        "July 17, 2026 | 8:51 PM | high | 12.290 ft MLLW",
+        "July 18, 2026 | 2:52 AM | low | 4.634 ft MLLW",
+        "July 18, 2026 | 8:02 AM | high | 9.200 ft MLLW",
+        "July 18, 2026 | 2:25 PM | low | -0.002 ft MLLW",
+        "July 18, 2026 | 9:24 PM | high | 12.151 ft MLLW",
+        "July 19, 2026 | 3:46 AM | low | 3.649 ft MLLW",
+        "July 19, 2026 | 9:11 AM | high | 8.469 ft MLLW",
+        "July 19, 2026 | 3:10 PM | low | 1.803 ft MLLW",
+        "July 19, 2026 | 9:58 PM | high | 11.877 ft MLLW",
+        "July 20, 2026 | 4:40 AM | low | 2.710 ft MLLW",
+        "July 20, 2026 | 10:30 AM | high | 7.926 ft MLLW",
+        "July 20, 2026 | 3:58 PM | low | 3.717 ft MLLW",
+        "July 20, 2026 | 10:32 PM | high | 11.463 ft MLLW",
+        "July 21, 2026 | 5:34 AM | low | 1.869 ft MLLW",
+        "July 21, 2026 | 12:08 PM | high | 7.811 ft MLLW",
+        "July 21, 2026 | 4:54 PM | low | 5.550 ft MLLW",
+        "July 21, 2026 | 11:09 PM | high | 10.941 ft MLLW",
+        "July 22, 2026 | 6:28 AM | low | 1.154 ft MLLW",
+        "July 22, 2026 | 2:07 PM | high | 8.355 ft MLLW",
+        "July 22, 2026 | 6:12 PM | low | 7.054 ft MLLW",
+        "July 22, 2026 | 11:50 PM | high | 10.386 ft MLLW",
+        "July 23, 2026 | 7:21 AM | low | 0.564 ft MLLW",
+        "July 23, 2026 | 3:41 PM | high | 9.320 ft MLLW",
+        "July 23, 2026 | 8:00 PM | low | 7.899 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-17-washington-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 17, 2026 | 2:00 AM | low | 5.603 ft MLLW\nJuly 17, 2026 | 6:58 AM | high | 9.940 ft MLLW\nJuly 17, 2026 | 1:40 PM | low | -1.547 ft MLLW\nJuly 17, 2026 | 8:51 PM | high | 12.290 ft MLLW\nJuly 18, 2026 | 2:52 AM | low | 4.634 ft MLLW\nJuly 18, 2026 | 8:02 AM | high | 9.200 ft MLLW\nJuly 18, 2026 | 2:25 PM | low | -0.002 ft MLLW\nJuly 18, 2026 | 9:24 PM | high | 12.151 ft MLLW\nJuly 19, 2026 | 3:46 AM | low | 3.649 ft MLLW\nJuly 19, 2026 | 9:11 AM | high | 8.469 ft MLLW\nJuly 19, 2026 | 3:10 PM | low | 1.803 ft MLLW\nJuly 19, 2026 | 9:58 PM | high | 11.877 ft MLLW\nJuly 20, 2026 | 4:40 AM | low | 2.710 ft MLLW\nJuly 20, 2026 | 10:30 AM | high | 7.926 ft MLLW\nJuly 20, 2026 | 3:58 PM | low | 3.717 ft MLLW\nJuly 20, 2026 | 10:32 PM | high | 11.463 ft MLLW\nJuly 21, 2026 | 5:34 AM | low | 1.869 ft MLLW\nJuly 21, 2026 | 12:08 PM | high | 7.811 ft MLLW\nJuly 21, 2026 | 4:54 PM | low | 5.550 ft MLLW\nJuly 21, 2026 | 11:09 PM | high | 10.941 ft MLLW\nJuly 22, 2026 | 6:28 AM | low | 1.154 ft MLLW\nJuly 22, 2026 | 2:07 PM | high | 8.355 ft MLLW\nJuly 22, 2026 | 6:12 PM | low | 7.054 ft MLLW\nJuly 22, 2026 | 11:50 PM | high | 10.386 ft MLLW\nJuly 23, 2026 | 7:21 AM | low | 0.564 ft MLLW\nJuly 23, 2026 | 3:41 PM | high | 9.320 ft MLLW\nJuly 23, 2026 | 8:00 PM | low | 7.899 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Seattle (Madison St.), Elliott Bay · NOAA 9447130\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "13.84 ft",
+        "Highest prediction · 12.29 ft",
+        "8:51 PM · July 17, 2026",
+        "Lowest prediction · -1.55 ft",
+        "1:40 PM · July 17, 2026",
+        "Station-local time · feet above local MLLW",
+        "Seattle (Madison St.), Elliott Bay · NOAA 9447130",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-17-washington-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"13.84 ft\"\n\"Highest prediction · 12.29 ft\"\n\"8:51 PM · July 17, 2026\"\n\"Lowest prediction · -1.55 ft\"\n\"1:40 PM · July 17, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Seattle (Madison St.), Elliott Bay · NOAA 9447130\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-17-washington-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}

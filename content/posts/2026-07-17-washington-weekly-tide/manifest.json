@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-17-washington-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-17",
+  "generatedAt": "2026-07-17T14:39:56.596Z",
+  "station": {
+    "id": "9447130",
+    "name": "SEATTLE (Madison St.), Elliott Bay",
+    "displayName": "Seattle (Madison St.), Elliott Bay",
+    "stateCode": "WA",
+    "stateName": "Washington",
+    "stateSlug": "washington",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 12.819,
+    "stationPath": "/tides/washington/seattle-madison-st-elliott-bay-9447130",
+    "stateCalendarPath": "/king-tides/washington/2026",
+    "latitude": 47.60263888888889,
+    "longitude": -122.3393055555556
+  },
+  "window": {
+    "start": "2026-07-17",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-17T14:39:56.586Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260717&range=168&datum=MLLW&station=9447130&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "be5011c5767d7ea6559d503e6de3db5c0c68675c616e541daeb4cb258679531b"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/9447130/predictions?interval=hilo&begin_date=2026-07-17&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "be5011c5767d7ea6559d503e6de3db5c0c68675c616e541daeb4cb258679531b"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "78f8c13dc970f157e11f28f8b364c1f5e7a38c9914669047c7cdcd09b3534b49"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-17 02:00",
+        "v": 5.603,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 06:58",
+        "v": 9.94,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-17 13:40",
+        "v": -1.547,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-17 20:51",
+        "v": 12.29,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 02:52",
+        "v": 4.634,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 08:02",
+        "v": 9.2,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-18 14:25",
+        "v": -0.002,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-18 21:24",
+        "v": 12.151,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 03:46",
+        "v": 3.649,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 09:11",
+        "v": 8.469,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 15:10",
+        "v": 1.803,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 21:58",
+        "v": 11.877,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 04:40",
+        "v": 2.71,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 10:30",
+        "v": 7.926,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 15:58",
+        "v": 3.717,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 22:32",
+        "v": 11.463,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 05:34",
+        "v": 1.869,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 12:08",
+        "v": 7.811,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 16:54",
+        "v": 5.55,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 23:09",
+        "v": 10.941,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 06:28",
+        "v": 1.154,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 14:07",
+        "v": 8.355,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 18:12",
+        "v": 7.054,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 23:50",
+        "v": 10.386,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 07:21",
+        "v": 0.564,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 15:41",
+        "v": 9.32,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 20:00",
+        "v": 7.899,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-17 20:51",
+        "v": 12.29,
+        "type": "H",
+        "dateKey": "2026-07-17",
+        "dateLabel": "July 17, 2026",
+        "timeLabel": "8:51 PM"
+      },
+      "lowest": {
+        "t": "2026-07-17 13:40",
+        "v": -1.547,
+        "type": "L",
+        "dateKey": "2026-07-17",
+        "dateLabel": "July 17, 2026",
+        "timeLabel": "1:40 PM"
+      },
+      "rangeFt": 13.837,
+      "thresholdFt": 12.819,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-17-washington-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "Washington: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Seattle (Madison St.), Elliott Bay",
+    "caption": "Seattle, Washington tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 12.29 ft above local MLLW at 8:51 PM on July 17, 2026. The lowest is -1.55 ft, a predicted range of 13.84 ft at NOAA station 9447130.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #SeattleWA #SeattleTides #WashingtonCoast #TideTimes #CoastalPlanning #NOAA",
+    "captions": {
+      "instagram": "Seattle, Washington tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 12.29 ft above local MLLW at 8:51 PM on July 17, 2026. The lowest is -1.55 ft, a predicted range of 13.84 ft at NOAA station 9447130.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #SeattleWA #SeattleTides #WashingtonCoast #TideTimes #CoastalPlanning #NOAA",
+      "facebook": "Seattle, Washington tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 12.29 ft above local MLLW at 8:51 PM on July 17, 2026. The lowest is -1.55 ft, a predicted range of 13.84 ft at NOAA station 9447130.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-17-washington-weekly-tide\n\nSave this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #SeattleWA #SeattleTides #WashingtonCoast #TideTimes #CoastalPlanning #NOAA"
+    },
+    "discovery": {
+      "market": {
+        "locality": "Seattle",
+        "region": "Washington",
+        "label": "Seattle, Washington"
+      },
+      "keywords": [
+        "Seattle tide predictions",
+        "Seattle tide times",
+        "Washington coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#SeattleWA",
+        "#SeattleTides",
+        "#WashingtonCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#SeattleWA",
+        "#SeattleTides",
+        "#WashingtonCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "Seattle, Washington",
+        "latitude": 47.60263888888889,
+        "longitude": -122.3393055555556,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-17-washington-weekly-tide",
+    "ctaUrls": {
+      "instagram": "https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-17-washington-weekly-tide",
+      "facebook": "https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-17-washington-weekly-tide"
+    },
+    "ctaDisplay": "perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Seattle (Madison St.), Elliott Bay, NOAA station 9447130.",
+      "Highest predicted tide card: 12.29 feet above local MLLW at 8:51 PM on July 17, 2026.",
+      "Seven-day high and low tide prediction chart for Seattle (Madison St.), Elliott Bay, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9447130.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-17-washington-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Seattle (Madison St.), Elliott Bay, NOAA station 9447130.",
+        "sha256": "3da1b82e980a646ef5b927ace24de9d48621ae5efa0ea4c01ebfabb1c8af622a",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "d966b02c6a3b5c0f65d8a1fbacfe6386a1d02bf572d3ae8eee26149c5447cdd0",
+        "sourceSha256": "38c1632a2d249d2aaac2d79c1c898df4009fdf156e74d0c720b90a36f9183df7",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-17T14:53:27.290Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-17-washington-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-17-washington-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 12.29 feet above local MLLW at 8:51 PM on July 17, 2026.",
+        "sha256": "978393228febb46302df9a4dced5b3717332a8d216e4f880caab13857c2924ff",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "b49fd387875993801cac20b7ea2f30099a5a8dec33e77e98d9f7eeabead29724",
+        "sourceSha256": "533afe8ac0e334a86d62b70119d203dc395671b16bf4aa8a518ce55dc126cbf4",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-17T14:53:27.313Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-17-washington-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-17-washington-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Seattle (Madison St.), Elliott Bay, based on matched NOAA and Perigee data.",
+        "sha256": "7e0bfb39279bbcb197aefedc218499c9d38cec248cc8e1f87d2bfd9ac4495cb6",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "bb4b2f48a54590987d887c210b2598fa210848f5ca8fb704a977c18228e25d1e",
+        "sourceSha256": "8b325382ab0fd26955fa20cee6e7a69a09368bac7e944cca5c5527181c3f5a78",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-17T14:53:27.333Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-17-washington-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-17-washington-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9447130.",
+        "sha256": "f78805a1d0cdada0f5b20d9c3128bc30d6c8168cc6b7dec8f2a168b88dc9941a",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "f513178fb37e240badad81d91e6b2f9ce6629cedb853704eee046935fc352663",
+        "sourceSha256": "ceb2a9b7dbad7895af1d4ff357ab117912293d06c61ed39b79d62f93934e4bbc",
+        "sourceFormat": "png",
+        "sourceWidth": 999,
+        "sourceHeight": 1574,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-17T14:53:27.358Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-17-washington-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-17-washington-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "3958e8a5a1df626f27a5bfdfca3f17f7cb38fa3cb890b9f74306cc44c6f80fa0",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "c347985003f81eca04ff73fa9dc7af2731a8e102e1c826225ac4db1de3ca77db",
+        "sourceSha256": "16b208eda88db68b7c3de1744034b265f1d7b4b0b53dd158ed31da88fdab9a40",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-17T14:53:27.387Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-17-washington-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-17T14:53:51.429Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-17T14:53:41.273Z",
+    "report": "content/posts/2026-07-17-washington-weekly-tide/validation.json"
+  }
+}
