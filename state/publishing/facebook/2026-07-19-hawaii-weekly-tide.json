@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "platform": "facebook",
+  "postId": "2026-07-19-hawaii-weekly-tide",
+  "status": "live-verified",
+  "pageIdHash": "c1581032a7f035c412cb68609a648b535399b343021fcc73f78e946cee839cfa",
+  "manifestSha256": "62f78f917ff13d4cbeb2651cc3b5cb2e03a82620f4d2fb8ba480686d3c5b009f",
+  "photos": [
+    {
+      "order": 1,
+      "id": "122110907679388773"
+    },
+    {
+      "order": 2,
+      "id": "122110907769388773"
+    },
+    {
+      "order": 3,
+      "id": "122110907871388773"
+    },
+    {
+      "order": 4,
+      "id": "122110907943388773"
+    },
+    {
+      "order": 5,
+      "id": "122110908009388773"
+    }
+  ],
+  "mediaId": "1253693981151886_122110908045388773",
+  "createdAt": "2026-07-20T03:26:41.515Z",
+  "updatedAt": "2026-07-20T03:27:00.845Z",
+  "requestedAt": "2026-07-20T03:26:54.457Z",
+  "receivedAt": "2026-07-20T03:27:00.586Z",
+  "permalink": "https://www.facebook.com/122109220539388773/posts/122110908045388773",
+  "publishedAt": "2026-07-20T03:26:54+0000",
+  "pageName": "Perigee Tides"
+}

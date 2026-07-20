@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-07-19-new-york-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-19",
   "generatedAt": "2026-07-20T02:17:12.690Z",
@@ -383,14 +383,27 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-20T03:06:31.439Z"
+    "status": "published",
+    "mediaId": "18413527096150218",
+    "permalink": "https://www.instagram.com/p/Da_9GMyjVBE/",
+    "stagedAt": "2026-07-20T03:06:31.439Z",
+    "publishedAt": "2026-07-20T03:18:01+0000",
+    "instagram": {
+      "status": "published",
+      "mediaId": "18413527096150218",
+      "permalink": "https://www.instagram.com/p/Da_9GMyjVBE/",
+      "publishedAt": "2026-07-20T03:18:01+0000"
+    },
+    "facebook": {
+      "status": "published",
+      "mediaId": "1253693981151886_122110901457388773",
+      "permalink": "https://www.facebook.com/122109220539388773/posts/122110901457388773",
+      "publishedAt": "2026-07-20T03:18:17+0000"
+    }
   },
   "validation": {
     "passed": true,
-    "validatedAt": "2026-07-20T03:06:31.279Z",
+    "validatedAt": "2026-07-20T03:27:28.304Z",
     "report": "content/posts/2026-07-19-new-york-weekly-tide/validation.json"
   }
 }

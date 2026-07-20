@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "platform": "facebook",
+  "postId": "2026-07-19-florida-weekly-tide",
+  "status": "live-verified",
+  "pageIdHash": "c1581032a7f035c412cb68609a648b535399b343021fcc73f78e946cee839cfa",
+  "manifestSha256": "40f6ff28803fd199c5207df55aa788311c060c890c5b2e204c7a041442633597",
+  "photos": [
+    {
+      "order": 1,
+      "id": "122110906461388773"
+    },
+    {
+      "order": 2,
+      "id": "122110906503388773"
+    },
+    {
+      "order": 3,
+      "id": "122110906563388773"
+    },
+    {
+      "order": 4,
+      "id": "122110906617388773"
+    },
+    {
+      "order": 5,
+      "id": "122110906671388773"
+    }
+  ],
+  "mediaId": "1253693981151886_122110906821388773",
+  "createdAt": "2026-07-20T03:24:18.700Z",
+  "updatedAt": "2026-07-20T03:24:44.922Z",
+  "requestedAt": "2026-07-20T03:24:35.056Z",
+  "receivedAt": "2026-07-20T03:24:44.110Z",
+  "permalink": "https://www.facebook.com/122109220539388773/posts/122110906821388773",
+  "publishedAt": "2026-07-20T03:24:35+0000",
+  "pageName": "Perigee Tides"
+}

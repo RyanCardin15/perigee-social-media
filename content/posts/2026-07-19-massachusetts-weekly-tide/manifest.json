@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-07-19-massachusetts-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-19",
   "generatedAt": "2026-07-20T02:17:33.749Z",
@@ -383,14 +383,27 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-20T03:06:31.800Z"
+    "status": "published",
+    "mediaId": "18114270788475147",
+    "permalink": "https://www.instagram.com/p/Da_9cmdDaZg/",
+    "stagedAt": "2026-07-20T03:06:31.800Z",
+    "publishedAt": "2026-07-20T03:20:20+0000",
+    "instagram": {
+      "status": "published",
+      "mediaId": "18114270788475147",
+      "permalink": "https://www.instagram.com/p/Da_9cmdDaZg/",
+      "publishedAt": "2026-07-20T03:20:20+0000"
+    },
+    "facebook": {
+      "status": "published",
+      "mediaId": "1253693981151886_122110903497388773",
+      "permalink": "https://www.facebook.com/122109220539388773/posts/122110903497388773",
+      "publishedAt": "2026-07-20T03:20:40+0000"
+    }
   },
   "validation": {
     "passed": true,
-    "validatedAt": "2026-07-20T03:06:31.622Z",
+    "validatedAt": "2026-07-20T03:27:28.497Z",
     "report": "content/posts/2026-07-19-massachusetts-weekly-tide/validation.json"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-19-new-york-weekly-tide",
+  "status": "live-verified",
+  "accountIdHash": "5e5961c776e13573746642defa75b466ac9b84971f4ca88a16ccb5eb2f67df0d",
+  "manifestSha256": "7329dd864d3603898c5a0a62f61d375de6dc95ae767d2c7c8bcaac800c9e21a2",
+  "children": [
+    {
+      "order": 1,
+      "id": "18169137007410483"
+    },
+    {
+      "order": 2,
+      "id": "18169137130410483"
+    },
+    {
+      "order": 3,
+      "id": "18169137493410483"
+    },
+    {
+      "order": 4,
+      "id": "18169137916410483"
+    },
+    {
+      "order": 5,
+      "id": "18169138213410483"
+    }
+  ],
+  "carouselId": "18169138282410483",
+  "mediaId": "18413527096150218",
+  "createdAt": "2026-07-20T03:12:39.324Z",
+  "updatedAt": "2026-07-20T03:18:04.924Z",
+  "requestedAt": "2026-07-20T03:18:00.876Z",
+  "receivedAt": "2026-07-20T03:18:04.733Z",
+  "permalink": "https://www.instagram.com/p/Da_9GMyjVBE/",
+  "publishedAt": "2026-07-20T03:18:01+0000"
+}

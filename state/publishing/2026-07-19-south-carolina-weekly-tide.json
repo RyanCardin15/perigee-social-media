@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-19-south-carolina-weekly-tide",
+  "status": "live-verified",
+  "accountIdHash": "5e5961c776e13573746642defa75b466ac9b84971f4ca88a16ccb5eb2f67df0d",
+  "manifestSha256": "1c55bed3e8f54397ccd603ebc186c8a2137ff19c97d1d9a8432d6b185e912ffd",
+  "children": [
+    {
+      "order": 1,
+      "id": "18169139188410483"
+    },
+    {
+      "order": 2,
+      "id": "18169139203410483"
+    },
+    {
+      "order": 3,
+      "id": "18169139266410483"
+    },
+    {
+      "order": 4,
+      "id": "18169139350410483"
+    },
+    {
+      "order": 5,
+      "id": "18169139362410483"
+    }
+  ],
+  "carouselId": "18169139383410483",
+  "mediaId": "18104443949027501",
+  "createdAt": "2026-07-20T03:21:05.111Z",
+  "updatedAt": "2026-07-20T03:22:17.971Z",
+  "requestedAt": "2026-07-20T03:22:13.803Z",
+  "receivedAt": "2026-07-20T03:22:17.824Z",
+  "permalink": "https://www.instagram.com/p/Da_9sbzjbFp/",
+  "publishedAt": "2026-07-20T03:22:14+0000"
+}

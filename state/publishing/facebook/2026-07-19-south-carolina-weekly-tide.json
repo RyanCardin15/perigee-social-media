@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "platform": "facebook",
+  "postId": "2026-07-19-south-carolina-weekly-tide",
+  "status": "live-verified",
+  "pageIdHash": "c1581032a7f035c412cb68609a648b535399b343021fcc73f78e946cee839cfa",
+  "manifestSha256": "2384c9bf9a4a0f309dba0dd4b1295851f46f847648490d1433023736420f4cf2",
+  "photos": [
+    {
+      "order": 1,
+      "id": "122110905165388773"
+    },
+    {
+      "order": 2,
+      "id": "122110905273388773"
+    },
+    {
+      "order": 3,
+      "id": "122110905357388773"
+    },
+    {
+      "order": 4,
+      "id": "122110905417388773"
+    },
+    {
+      "order": 5,
+      "id": "122110905507388773"
+    }
+  ],
+  "mediaId": "1253693981151886_122110905585388773",
+  "createdAt": "2026-07-20T03:22:18.037Z",
+  "updatedAt": "2026-07-20T03:22:35.146Z",
+  "requestedAt": "2026-07-20T03:22:30.615Z",
+  "receivedAt": "2026-07-20T03:22:34.926Z",
+  "permalink": "https://www.facebook.com/122109220539388773/posts/122110905585388773",
+  "publishedAt": "2026-07-20T03:22:30+0000",
+  "pageName": "Perigee Tides"
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-19-florida-weekly-tide",
+  "status": "live-verified",
+  "accountIdHash": "5e5961c776e13573746642defa75b466ac9b84971f4ca88a16ccb5eb2f67df0d",
+  "manifestSha256": "cb829090b8814abe90f1e4204a2ee66ce0b1f18d6809aad0166f6d6f23e9dbea",
+  "children": [
+    {
+      "order": 1,
+      "id": "18169139689410483"
+    },
+    {
+      "order": 2,
+      "id": "18169139749410483"
+    },
+    {
+      "order": 3,
+      "id": "18169139800410483"
+    },
+    {
+      "order": 4,
+      "id": "18169139878410483"
+    },
+    {
+      "order": 5,
+      "id": "18169140076410483"
+    }
+  ],
+  "carouselId": "18169140103410483",
+  "mediaId": "17977040514061997",
+  "createdAt": "2026-07-20T03:22:49.171Z",
+  "updatedAt": "2026-07-20T03:24:18.627Z",
+  "requestedAt": "2026-07-20T03:24:13.740Z",
+  "receivedAt": "2026-07-20T03:24:18.482Z",
+  "permalink": "https://www.instagram.com/p/Da_968RDQ7i/",
+  "publishedAt": "2026-07-20T03:24:14+0000"
+}

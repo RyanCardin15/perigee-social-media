@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-07-19-hawaii-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-19",
   "generatedAt": "2026-07-20T02:17:43.186Z",
@@ -373,14 +373,27 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-20T03:06:32.877Z"
+    "status": "published",
+    "mediaId": "18058778438774382",
+    "permalink": "https://www.instagram.com/p/Da_-MSFDSTM/",
+    "stagedAt": "2026-07-20T03:06:32.877Z",
+    "publishedAt": "2026-07-20T03:26:36+0000",
+    "instagram": {
+      "status": "published",
+      "mediaId": "18058778438774382",
+      "permalink": "https://www.instagram.com/p/Da_-MSFDSTM/",
+      "publishedAt": "2026-07-20T03:26:36+0000"
+    },
+    "facebook": {
+      "status": "published",
+      "mediaId": "1253693981151886_122110908045388773",
+      "permalink": "https://www.facebook.com/122109220539388773/posts/122110908045388773",
+      "publishedAt": "2026-07-20T03:26:54+0000"
+    }
   },
   "validation": {
     "passed": true,
-    "validatedAt": "2026-07-20T03:06:32.703Z",
+    "validatedAt": "2026-07-20T03:27:29.021Z",
     "report": "content/posts/2026-07-19-hawaii-weekly-tide/validation.json"
   }
 }

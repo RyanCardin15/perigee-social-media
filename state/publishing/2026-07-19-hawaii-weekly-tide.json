@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-19-hawaii-weekly-tide",
+  "status": "live-verified",
+  "accountIdHash": "5e5961c776e13573746642defa75b466ac9b84971f4ca88a16ccb5eb2f67df0d",
+  "manifestSha256": "9af487d58af2af9c2e29deb57c21afe7fd12abfeccb5512fefb09402851b1263",
+  "children": [
+    {
+      "order": 1,
+      "id": "18169140250410483"
+    },
+    {
+      "order": 2,
+      "id": "18169140274410483"
+    },
+    {
+      "order": 3,
+      "id": "18169140340410483"
+    },
+    {
+      "order": 4,
+      "id": "18169140370410483"
+    },
+    {
+      "order": 5,
+      "id": "18169140505410483"
+    }
+  ],
+  "carouselId": "18169140532410483",
+  "mediaId": "18058778438774382",
+  "createdAt": "2026-07-20T03:24:56.264Z",
+  "updatedAt": "2026-07-20T03:26:41.446Z",
+  "requestedAt": "2026-07-20T03:26:35.936Z",
+  "receivedAt": "2026-07-20T03:26:41.288Z",
+  "permalink": "https://www.instagram.com/p/Da_-MSFDSTM/",
+  "publishedAt": "2026-07-20T03:26:36+0000"
+}

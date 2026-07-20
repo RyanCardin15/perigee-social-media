@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "platform": "facebook",
+  "postId": "2026-07-19-massachusetts-weekly-tide",
+  "status": "live-verified",
+  "pageIdHash": "c1581032a7f035c412cb68609a648b535399b343021fcc73f78e946cee839cfa",
+  "manifestSha256": "a0cd9d178d4d445b5b3e578394b80ca20fc05e5fed999b7a3e04251237043fca",
+  "photos": [
+    {
+      "order": 1,
+      "id": "122110903119388773"
+    },
+    {
+      "order": 2,
+      "id": "122110903209388773"
+    },
+    {
+      "order": 3,
+      "id": "122110903281388773"
+    },
+    {
+      "order": 4,
+      "id": "122110903353388773"
+    },
+    {
+      "order": 5,
+      "id": "122110903443388773"
+    }
+  ],
+  "mediaId": "1253693981151886_122110903497388773",
+  "createdAt": "2026-07-20T03:20:26.609Z",
+  "updatedAt": "2026-07-20T03:20:45.951Z",
+  "requestedAt": "2026-07-20T03:20:40.195Z",
+  "receivedAt": "2026-07-20T03:20:45.213Z",
+  "permalink": "https://www.facebook.com/122109220539388773/posts/122110903497388773",
+  "publishedAt": "2026-07-20T03:20:40+0000",
+  "pageName": "Perigee Tides"
+}

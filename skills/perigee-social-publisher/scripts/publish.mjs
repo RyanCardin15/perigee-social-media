@@ -189,7 +189,7 @@ async function verifyPublishingQuota() {
 
 async function waitForContainer(containerId) {
   const maximumAttempts = testMode ? 2 : 6;
-  const pollingIntervalMs = testMode ? 1 : 60000;
+  const pollingIntervalMs = testMode ? 1 : 15000;
   for (let attempt = 0; attempt < maximumAttempts; attempt += 1) {
     const status = await graph(`/${containerId}?fields=status_code`);
     if (status.status_code === "FINISHED" || status.status_code === "PUBLISHED") return;
