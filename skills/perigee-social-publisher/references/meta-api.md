@@ -1,4 +1,6 @@
-# Instagram publishing boundary
+# Meta publishing boundaries
+
+## Instagram
 
 Use Instagram Login with a public Instagram professional Business account.
 For a system serving only Perigee's owned account, Standard Access is
@@ -49,3 +51,39 @@ for 60 days. Record their issuance locally, refresh a valid token after it is
 at least 24 hours old and before expiry, and surface reauthorization failures.
 An expired token cannot be refreshed. Confirm current Meta documentation
 before changing API versions, scopes, limits, or token policy.
+
+## Facebook Page
+
+Create an owned Facebook Page for Perigee Tides, connect it to the
+`@perigeetides` Instagram professional account, and add the **Manage everything
+on your Page** use case to the existing Perigee Social Publisher app. The owned
+Page flow uses `pages_show_list`, `pages_read_engagement`, and
+`pages_manage_posts`. Keep the Page access token private and install it only
+through `npm run facebook-token:install -- --confirm` on piped stdin.
+
+Current official references:
+
+- Pages API: https://developers.facebook.com/docs/pages-api/
+- Page posts: https://developers.facebook.com/docs/pages-api/posts/
+- Page feed edge: https://developers.facebook.com/docs/graph-api/reference/page/feed/
+- Page photos edge: https://developers.facebook.com/docs/graph-api/reference/page/photos/
+- Connect a Page and Instagram account:
+  https://www.facebook.com/help/1148909221857370
+
+Publication flow:
+
+1. Verify `/<PAGE_ID>?fields=id,name,username,link` against the configured Page
+   ID, exact name, optional username, and public link.
+2. Reverify all five public JPEGs and SHA-256 values.
+3. Upload one unpublished `/<PAGE_ID>/photos` object per ordered slide with
+   `published=false` and `alt_text_custom`.
+4. Create one `/<PAGE_ID>/feed` post with the Facebook-specific caption and
+   ordered `attached_media[n]` photo IDs.
+5. Read back the post and verify ID, permalink, Facebook caption, five-photo
+   count, and photo order before writing the Facebook ledger entry.
+
+Facebook uses its own journal below `state/publishing/facebook/`. If the feed
+write is ambiguous, rerun the same `npm run publish` command so the publisher
+can reconcile a recent Page post with the exact caption and photo order. Never
+delete the journal or submit the feed post another way. An Instagram success
+does not make a Facebook failure complete, and vice versa.

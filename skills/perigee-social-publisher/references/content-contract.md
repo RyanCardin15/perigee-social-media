@@ -42,7 +42,7 @@ Prohibited claims include “safe,” “unsafe,” “all clear,” “guarante
 
 ## Local discovery and engagement
 
-- Lead captions with the locality and region represented by the selected NOAA
+- Lead both platform captions with the locality and region represented by the selected NOAA
   station, then immediately identify the station-level prediction boundary.
 - Include three natural local search phrases in the structured discovery plan.
 - Use 5–10 focused hashtags: one Perigee brand tag, at least two locality tags,
@@ -53,6 +53,9 @@ Prohibited claims include “safe,” “unsafe,” “all clear,” “guarante
 - Suggest an existing Instagram place near the station. A verified numeric
   location ID may be sent with the publishing container; otherwise the live
   post requires a manual existing-place edit and verification.
+- Keep Instagram's profile-oriented CTA as link-in-bio copy. Facebook must use
+  a directly clickable Perigee CTA carrying `utm_source=facebook`; it must not
+  say “link in bio.”
 
 ## Accessibility
 

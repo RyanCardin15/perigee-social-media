@@ -36,6 +36,8 @@ const publicManifest = {
   window: manifest.window,
   sourceUrls: [manifest.sources.noaa.url, manifest.sources.perigee.url],
   ctaUrl: manifest.creative.ctaUrl,
+  ctaUrls: manifest.creative.ctaUrls || { instagram: manifest.creative.ctaUrl },
+  captions: manifest.creative.captions || { instagram: manifest.creative.caption },
   discovery: manifest.creative.discovery || null,
   slides: manifest.creative.slides.map(({ order, publicUrl, altText, sha256 }) => ({ order, publicUrl, altText, sha256 })),
 };

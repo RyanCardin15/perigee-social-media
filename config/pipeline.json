@@ -51,7 +51,9 @@
     "source": "instagram",
     "medium": "organic_social",
     "profileCampaign": "instagram_profile",
-    "postCampaignPrefix": "ig_"
+    "postCampaignPrefix": "ig_",
+    "facebookSource": "facebook",
+    "facebookPostCampaignPrefix": "fb_"
   },
   "discovery": {
     "locationIds": {}

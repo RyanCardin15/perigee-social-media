@@ -305,7 +305,7 @@ async function runPublisher() {
 
     const ledgerEntries = await readJsonLines(LEDGER_PATH);
     const completedEntry = ledgerEntries.find(
-      (entry) => entry.postId === manifest.id && entry.mediaId && entry.permalink,
+      (entry) => entry.platform === "instagram" && entry.postId === manifest.id && entry.mediaId && entry.permalink,
     );
     if (completedEntry) {
       manifest.status = "published";
@@ -315,6 +315,12 @@ async function runPublisher() {
         mediaId: completedEntry.mediaId,
         permalink: completedEntry.permalink,
         publishedAt: completedEntry.publishedAt,
+        instagram: {
+          status: "published",
+          mediaId: completedEntry.mediaId,
+          permalink: completedEntry.permalink,
+          publishedAt: completedEntry.publishedAt,
+        },
       };
       await atomicWriteJson(manifestPath, manifest);
       if (journal) {
@@ -475,6 +481,12 @@ async function runPublisher() {
       mediaId: live.id,
       permalink: live.permalink,
       publishedAt,
+      instagram: {
+        status: "published",
+        mediaId: live.id,
+        permalink: live.permalink,
+        publishedAt,
+      },
     };
     await atomicWriteJson(manifestPath, manifest);
     journal.status = "live-verified";

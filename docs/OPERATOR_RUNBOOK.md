@@ -41,8 +41,9 @@ SVG, PNG overlays, templates, deterministic composition, stock art, a shell/API
 image generator, or prior assets. Attach only the five reviewed image outputs
 with --confirm-reviewed, validate, and visually inspect the final JPEGs. Only
 if every gate passes, stage, commit and push only this post and its public
-assets, verify public checksums, publish with the gated Meta command, verify the
-live post and ledger, then commit and push the publication state.
+assets, verify public checksums, publish with the gated Meta command, verify
+both live posts and both platform ledger entries, then commit and push the
+publication state.
 ```
 
 ## Run preparation yourself
@@ -51,6 +52,7 @@ From `/Users/ryancardin/Src/Perigee/Perigee Social Media`:
 
 ```bash
 npm run token:status
+npm run facebook-token:status
 npm run account:verify
 npm run social:prepare -- --mode weekly --date YYYY-MM-DD
 ```
@@ -65,8 +67,9 @@ npm run dry-run -- --manifest content/posts/<post-id>/manifest.json
 ```
 
 The dry-run report must show `externalWritesPerformed: false`, the approved
-local hashtags and keywords, five ordered child payloads, and the location
-delivery. If no verified `location_id` is configured, add the named existing
+local hashtags and keywords, five ordered Instagram children, five ordered
+Facebook unpublished-photo payloads, the Facebook feed attachment order, and
+the Instagram location delivery. If no verified `location_id` is configured, add the named existing
 place in Instagram after a real publish and verify it on the live post before
 calling the location step complete.
 
@@ -96,9 +99,10 @@ npm run social:prepare -- --mode event-watch --date YYYY-MM-DD
 - `validated`: generated slide provenance, facts, alt text, and hashes passed;
   safe to review.
 - `staged`: public assets were copied but the post is not yet published.
-- `published`: Meta response, live post, journal, and ledger all agree.
+- `published`: both Meta responses, both live posts, separate journals, and two
+  platform ledger entries all agree.
 - `blocked`: stop and resolve the named gate; do not bypass or delete state.
 
 Never use `--force` for a post that appears in `state/publishing-ledger.jsonl`
-or `state/publishing/`. Never reuse a prior generated slide or the checked-in v1
+or either platform journal under `state/publishing/`. Never reuse a prior generated slide or the checked-in v1
 reference carousel.

@@ -33,17 +33,32 @@ const report = {
     ? "The verified location ID would be included on the carousel container."
     : `After a real publish, add the existing Instagram place “${location?.suggestedName}” in Instagram and verify it on the live post.`,
   simulatedPayload: {
-    children: orderedSlides.map((slide) => ({
-      order: slide.order,
-      imageUrl: slide.publicUrl,
-      altText: slide.altText,
-      sha256: slide.sha256,
-    })),
-    carousel: {
-      mediaType: "CAROUSEL",
-      childCount: orderedSlides.length,
-      caption: manifest.creative.caption,
-      locationId: location?.instagramLocationId || null,
+    instagram: {
+      children: orderedSlides.map((slide) => ({
+        order: slide.order,
+        imageUrl: slide.publicUrl,
+        altText: slide.altText,
+        sha256: slide.sha256,
+      })),
+      carousel: {
+        mediaType: "CAROUSEL",
+        childCount: orderedSlides.length,
+        caption: manifest.creative.caption,
+        locationId: location?.instagramLocationId || null,
+      },
+    },
+    facebook: {
+      unpublishedPhotos: orderedSlides.map((slide) => ({
+        order: slide.order,
+        imageUrl: slide.publicUrl,
+        altTextCustom: slide.altText,
+        sha256: slide.sha256,
+      })),
+      feedPost: {
+        message: manifest.creative.captions?.facebook || manifest.creative.caption,
+        attachedMediaCount: orderedSlides.length,
+        attachedMediaOrder: orderedSlides.map((slide) => slide.order),
+      },
     },
   },
 };

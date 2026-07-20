@@ -34,6 +34,11 @@ function envSource(accountId, token = "") {
     `INSTAGRAM_ACCOUNT_ID=${accountId}`,
     "INSTAGRAM_ACCOUNT_HANDLE=perigeetides",
     `INSTAGRAM_ACCESS_TOKEN=${token}`,
+    "FACEBOOK_GRAPH_API_VERSION=v25.0",
+    "FACEBOOK_PAGE_ID=123456789012345",
+    "FACEBOOK_PAGE_NAME=Perigee Tides",
+    "FACEBOOK_PAGE_HANDLE=perigeetides",
+    `FACEBOOK_PAGE_ACCESS_TOKEN=EAA${"c".repeat(62)}`,
     "PUBLIC_MEDIA_BASE_URL=https://example.com/posts",
     "UNRELATED_SETTING=preserve-me",
     "",
@@ -152,6 +157,92 @@ test("token installation rejects unsafe input without changing private state", a
   assert.equal((await stat(dirname(metadataPath))).mode & 0o777, 0o700);
 });
 
+test("Facebook token installation requires durable lifecycle metadata", async (t) => {
+  const root = await mkdtemp(resolve(tmpdir(), "perigee-facebook-token-"));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  await cp(resolve(repoRoot, "skills"), resolve(root, "skills"), { recursive: true });
+
+  const accountId = "17841400000000000";
+  const token = `EAA${"d".repeat(62)}`;
+  const envPath = resolve(root, ".env.local");
+  const originalSource = envSource(accountId);
+  const installScript = resolve(
+    root,
+    "skills/perigee-social-publisher/scripts/install-facebook-token.mjs",
+  );
+  const statusScript = resolve(
+    root,
+    "skills/perigee-social-publisher/scripts/facebook-token-status.mjs",
+  );
+  const future = new Date(Date.now() + (90 * 86400000)).toISOString();
+
+  for (const entry of [
+    { args: ["--confirm"], message: /--expires-at/ },
+    {
+      args: ["--confirm", "--expires-at", "never"],
+      message: /--data-access-expires-at/,
+    },
+    {
+      args: [
+        "--confirm",
+        "--expires-at",
+        "2020-01-01T00:00:00Z",
+        "--data-access-expires-at",
+        future,
+      ],
+      message: /future ISO-8601 timestamp/,
+    },
+  ]) {
+    await writeFile(envPath, originalSource, { mode: 0o600 });
+    const result = await runNode([installScript, ...entry.args], {
+      cwd: root,
+      env: process.env,
+      input: token,
+    });
+    assert.notEqual(result.code, 0);
+    assert.match(result.stderr, entry.message);
+    assert.equal(await readFile(envPath, "utf8"), originalSource);
+    assert.doesNotMatch(result.stdout + result.stderr, new RegExp(token));
+  }
+
+  const installed = await runNode([
+    installScript,
+    "--confirm",
+    "--expires-at",
+    "never",
+    "--data-access-expires-at",
+    future,
+  ], {
+    cwd: root,
+    env: process.env,
+    input: token,
+  });
+  assert.equal(installed.code, 0, installed.stderr);
+  assert.doesNotMatch(installed.stdout + installed.stderr, new RegExp(token));
+  assert.equal((await stat(envPath)).mode & 0o777, 0o600);
+
+  const metadataPath = resolve(root, "state/private/facebook-page-token.json");
+  const metadata = JSON.parse(await readFile(metadataPath, "utf8"));
+  assert.equal(metadata.schemaVersion, 2);
+  assert.equal(metadata.expirationKind, "never");
+  assert.equal(metadata.expiresAt, null);
+  assert.equal(metadata.dataAccessExpiresAt, future);
+  assert.notEqual(metadata.tokenSha256, token);
+  assert.equal((await stat(metadataPath)).mode & 0o777, 0o600);
+
+  const healthy = await runNode([statusScript], { cwd: root, env: process.env });
+  assert.equal(healthy.code, 0, healthy.stderr);
+  assert.match(healthy.stdout, /"status": "healthy"/);
+  assert.doesNotMatch(healthy.stdout + healthy.stderr, new RegExp(token));
+
+  metadata.dataAccessExpiresAt = new Date(Date.now() + (7 * 86400000)).toISOString();
+  await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, { mode: 0o600 });
+  const refreshDue = await runNode([statusScript], { cwd: root, env: process.env });
+  assert.notEqual(refreshDue.code, 0);
+  assert.match(refreshDue.stdout, /"status": "refresh-due"/);
+  assert.match(refreshDue.stdout, /"refreshRecommended": true/);
+});
+
 test("token refresh rotates .env.local safely and records expiration metadata", async (t) => {
   const root = await mkdtemp(resolve(tmpdir(), "perigee-social-token-"));
   t.after(() => rm(root, { recursive: true, force: true }));
@@ -187,6 +278,17 @@ test("token refresh rotates .env.local safely and records expiration metadata", 
       response.end(JSON.stringify({ data: [{ quota_usage: 3, config: { quota_total: 50 } }] }));
       return;
     }
+    if (url.pathname === "/v25.0/123456789012345") {
+      assert.equal(request.headers.authorization, `Bearer EAA${"c".repeat(62)}`);
+      response.writeHead(200, { "Content-Type": "application/json" });
+      response.end(JSON.stringify({
+        id: "123456789012345",
+        name: "Perigee Tides",
+        username: "perigeetides",
+        link: "https://www.facebook.com/perigeetides",
+      }));
+      return;
+    }
     response.writeHead(404, { "Content-Type": "application/json" });
     response.end(JSON.stringify({ error: { type: "MockNotFound", code: 404 } }));
   });
@@ -198,6 +300,7 @@ test("token refresh rotates .env.local safely and records expiration metadata", 
     PERIGEE_SOCIAL_TEST_MODE: "1",
     PERIGEE_SOCIAL_TEST_REFRESH_URL: `${baseUrl}/refresh_access_token`,
     PERIGEE_SOCIAL_TEST_GRAPH_BASE_URL: `${baseUrl}/v25.0`,
+    PERIGEE_SOCIAL_TEST_FACEBOOK_GRAPH_BASE_URL: `${baseUrl}/v25.0`,
   };
 
   const installScript = resolve(root, "skills/perigee-social-publisher/scripts/install-token.mjs");

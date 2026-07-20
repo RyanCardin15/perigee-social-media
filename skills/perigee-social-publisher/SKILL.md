@@ -1,6 +1,6 @@
 ---
 name: perigee-social-publisher
-description: Prepare, validate, stage, publish, recover, and maintain authorization for factual Perigee Tides Instagram posts from NOAA and Perigee data. Use for scheduled weekly tide carousels, king-tide predictions, tide education, caption and alt-text generation, social asset validation, Meta Content Publishing API delivery, account verification, ambiguous-publish recovery, publishing quota checks, or long-lived Instagram token maintenance for Perigee.
+description: Prepare, validate, stage, publish, recover, and maintain authorization for factual Perigee Tides Instagram and Facebook posts from NOAA and Perigee data. Use for scheduled weekly tide carousels, king-tide predictions, tide education, platform captions and alt text, social asset validation, Meta API delivery, account verification, ambiguous-publish recovery, quota checks, or token maintenance for Perigee.
 ---
 
 # Perigee Social Publisher
@@ -12,8 +12,12 @@ and interpretation traceable to authoritative data.
 
 1. Read `references/content-contract.md` before writing or approving copy.
 2. Read `references/meta-api.md` before configuring or repairing publication.
-3. Check `state/publishing-ledger.jsonl` and `state/publishing/<post-id>.json`.
-   Do not recreate or republish an existing post ID.
+3. Check `state/publishing-ledger.jsonl`, the Instagram journal at
+   `state/publishing/<post-id>.json`, and the Facebook journal at
+   `state/publishing/facebook/<post-id>.json`. Do not recreate an existing post
+   ID or republish a platform that already has a `live-verified` entry. If one
+   platform is complete and the other is pending, resume only the missing side
+   through the same `npm run publish` command.
 4. Run the appropriate preparation mode from the project root. This freezes
    the matched data and writes `generation-brief.json`; it intentionally stops
    at `awaiting-generation`:
@@ -55,18 +59,22 @@ and interpretation traceable to authoritative data.
    to the local SHA-256 before API publication.
 9. For a rehearsal, run `npm run dry-run -- --manifest <path>` after staging.
    Require `dry-run-complete`, `externalWritesPerformed: false`, five ordered
-   children, and the intended hashtag/location handling. This step must never
+   Instagram children, five ordered Facebook photos, and the intended
+   hashtag/location handling. This step must never
    create containers, journals, ledger entries, commits, or live posts.
 10. Apply the review policy in `config/pipeline.json`. Require a human for
    observations, advisories, flooding claims, or safety incidents. A matched,
    prediction-only weekly or king-tide post may publish automatically.
-11. Verify secure configuration, the exact Business account, live quota, and
-   token lifecycle before the first publish:
+11. Verify secure configuration, the exact Instagram Business account, the
+   exact Facebook Page, live Instagram quota, and token lifecycle before the
+   first publish:
 
    ```bash
    ( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run token:install -- --confirm )
+   ( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run facebook-token:install -- --confirm --expires-at never --data-access-expires-at <ISO-8601> )
    npm run check:env
    npm run token:status
+   npm run facebook-token:status
    npm run account:verify
    ```
 
@@ -76,9 +84,9 @@ and interpretation traceable to authoritative data.
    npm run publish -- --manifest <path> --confirm
    ```
 
-13. Verify the returned media ID, live permalink, caption, slide order,
-    publication journal, and ledger entry. Do not report success from container
-    creation alone.
+13. Verify both returned media IDs, live permalinks, platform captions, five
+    assets in order, platform-specific journals, and two ledger entries. Do not
+    report success from container or unpublished-photo creation alone.
 
 ## Required boundaries
 
@@ -92,21 +100,25 @@ and interpretation traceable to authoritative data.
   boundary, and the planning-aid disclaimer.
 - Include a local market label and focused local discovery metadata without
   implying that the station represents citywide or beach conditions.
+- Keep Instagram's link-in-bio copy on Instagram. Facebook copy must include
+  the direct, `utm_source=facebook` Perigee link and preserve the same factual
+  boundaries, discovery prompt, and focused hashtags.
 - Tag only an existing Instagram place. Use a configured numeric `location_id`
   when verified; otherwise require a manual existing-place edit after publish
   and verify it on the live post.
 - Never store access tokens, app secrets, passwords, verification codes, or
   exact private user data in manifests, Git, captions, logs, or automation
   prompts.
-- Install a newly generated token only through `npm run token:install -- --confirm`
-  on piped stdin. Interactive pasting is rejected; the command
+- Install newly generated tokens only through `npm run token:install -- --confirm`
+  or `npm run facebook-token:install -- --confirm` on piped stdin. Interactive pasting is rejected; each command
   writes atomically with mode `0600`, records lifecycle metadata, and never
   echoes the credential.
 - Do not automate account signup, terms acceptance, CAPTCHA, age verification,
   identity challenges, or developer registration. Hand those steps to the
   account owner and resume after completion.
-- Require `/me` to match the configured account ID, username, and `Business`
-  type before creating a media container.
+- Require Instagram `/me` to match the configured account ID, username, and
+  `Business` type, and require Facebook `/<PAGE_ID>` to match the configured
+  Page ID, name, optional username, and public link before external writes.
 
 ## Failure handling
 
@@ -118,14 +130,17 @@ and interpretation traceable to authoritative data.
   successful outcome.
 - Refresh long-lived Instagram authorization before expiry; never replace a
   failed token with browser scraping or password automation.
-- If publication returns an ambiguous result, preserve the per-post journal and
+- If publication returns an ambiguous result, preserve the platform-specific journal and
   rerun the same command. Let it reconcile recent account media and resume live
   verification. Never delete the journal or resubmit through another path.
 - If a per-post lock exists, stop. Another publisher owns that attempt.
 
 ## Token maintenance
 
-- Run `npm run token:status` on a schedule.
+- Run `npm run token:status`, `npm run facebook-token:status`, and
+  `npm run account:verify` on a schedule.
+- Run `npm run account:verify` on the same schedule so the Facebook Page token
+  and identity are checked even when the Instagram token is not refresh-due.
 - When the status is `refresh-due`, run `npm run token:refresh -- --confirm`.
 - Keep `.env.local` and `state/private/` outside Git. Never print the token.
 - If refresh fails or the token is expired, publish nothing and request human
@@ -134,5 +149,6 @@ and interpretation traceable to authoritative data.
 ## Exit criteria
 
 Finish only when source matching, visual inspection, validation, public-media
-availability, publish response, live-post verification, and ledger recording
-all agree. A generated draft is not a published post.
+availability, both publish responses, both live-post verifications, and both
+ledger records agree. A generated draft or one-platform-only post is not a
+complete scheduled publication.

@@ -3,7 +3,7 @@
 ## Scope
 
 This repository owns Perigee's generated social assets, validation manifests,
-publishing skill, and Instagram delivery scripts. It consumes product data and
+publishing skill, and Instagram/Facebook delivery scripts. It consumes product data and
 brand assets from the sibling `../Perigee` repository but must not edit that
 repository as part of a publishing run.
 
@@ -25,14 +25,19 @@ repository as part of a publishing run.
 - `npm run dry-run -- --manifest <path>` validates a staged post and writes a
   no-write publication simulation, including local discovery and location-tag
   handling.
-- `npm run account:verify` checks the configured Business identity and live
-  publishing quota without exposing the token.
+- `npm run account:verify` checks the configured Instagram Business identity,
+  Instagram quota, and Facebook Page identity without exposing either token.
 - `npm run token:install -- --confirm` reads a newly generated token only from
   piped stdin, writes it privately, and records its lifecycle metadata.
+- `npm run facebook-token:install -- --confirm --expires-at <ISO|never>
+  --data-access-expires-at <ISO>` securely installs a Page access token from
+  piped stdin and records both Meta lifetimes without echoing the token.
+- `npm run facebook-token:status` checks the private Page-token lifecycle
+  metadata and fails before its token or data-access grant expires.
 - `npm run token:status` checks private expiry metadata.
 - `npm run token:refresh -- --confirm` rotates an eligible long-lived token.
-- `npm run publish -- --manifest <path> --confirm` performs the external Meta
-  API write after public hosting and credentials are configured.
+- `npm run publish -- --manifest <path> --confirm` publishes to Instagram and
+  Facebook after public hosting and both identities are verified.
 
 ## Data and content rules
 
@@ -42,8 +47,9 @@ local MLLW, and never treat a prediction as an observation or flood forecast.
 Follow
 `skills/perigee-social-publisher/SKILL.md` and its content contract.
 
-Every new post must include a structured discovery plan with a locality-first
-caption, 5–10 focused branded/local/topic hashtags, at least two locality tags,
+Every new post must include platform-appropriate Instagram and Facebook
+captions with the same factual boundaries, a locality-first lead, 5–10 focused
+branded/local/topic hashtags, at least two locality tags,
 local search phrases, a useful engagement prompt, and an Instagram location
 plan. Use `location_id` only when an existing Instagram place has been verified
 and configured for the station. Otherwise preserve the suggested existing place
@@ -66,11 +72,12 @@ or account recovery material. Do not print secrets during diagnostics. Generated
 public manifests may contain only public source URLs, station data, captions,
 alt text, and asset checksums.
 
-Never delete a publication journal to force a retry. Rerun the same publisher
-command so an ambiguous Meta response is reconciled without a duplicate post.
+Never delete either platform's publication journal to force a retry. Rerun the
+same publisher command so ambiguous Meta responses are reconciled without a
+duplicate post.
 
 ## Git hygiene
 
 Commit one generated post and its public assets together. Do not stage
-`node_modules/` or unrelated files. Verify the live post and publishing ledger
-before describing a run as complete.
+`node_modules/` or unrelated files. Verify both live posts and both platform
+ledger entries before describing a run as complete.

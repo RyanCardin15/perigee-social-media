@@ -1,9 +1,9 @@
 # Perigee Social Media
 
 This workspace turns point-for-point matched Perigee and NOAA tide data into
-complete Codex-generated Instagram slides, validates their provenance and
-factual contract, stages public JPEGs, and publishes through Meta's authorized
-Content Publishing API.
+complete Codex-generated social slides, validates their provenance and factual
+contract, stages public JPEGs, and publishes the same reviewed assets to the
+owned Instagram Business account and Facebook Page through Meta APIs.
 
 The reusable operating contract is
 `skills/perigee-social-publisher/SKILL.md`. [Perigee Feed System v2](design-system/FEED_SYSTEM.md)
@@ -36,7 +36,7 @@ and limits post-processing to orientation, 1080×1350 sizing, and JPEG encoding.
 Validation records the prompt and source-image checksums and rejects missing or
 non-Codex provenance.
 
-New manifests also freeze a local-discovery plan: a locality-first caption,
+New manifests also freeze a local-discovery plan and platform captions: a locality-first caption,
 local search phrases, 5–10 focused hashtags, and an Instagram place candidate.
 To target a specific station, add `--station <NOAA station ID>` to
 `social:prepare`. Verified Instagram place IDs may be configured in
@@ -44,26 +44,38 @@ To target a specific station, add `--station <NOAA station ID>` to
 scheduled workflow require a manual existing-place tag after publication.
 
 `npm run dry-run` is the final no-publish gate. It requires a staged, valid
-manifest, writes `dry-run-report.json`, previews the exact carousel payload and
-location handling, and performs no Meta or publication-state writes.
+manifest, writes `dry-run-report.json`, previews the exact Instagram carousel
+and Facebook multi-photo payloads plus location handling, and performs no Meta
+or publication-state writes.
 
 Publishing remains a separate explicit gate:
 
 ```bash
 cp .env.example .env.local
+npm run facebook:configure -- --page-id <id> --page-name "Perigee Tides" --page-handle perigeetides --confirm
 ( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run token:install -- --confirm )
+( set +x; trap 'pbcopy </dev/null' EXIT; pbpaste | npm run facebook-token:install -- --confirm --expires-at never --data-access-expires-at <ISO-8601> )
 npm run check:env
 npm run token:status
+npm run facebook-token:status
 npm run account:verify
 npm run publish -- --manifest content/posts/<post-id>/manifest.json --confirm
 ```
 
 Never paste tokens into chat, captions, manifests, Git history, or logs. The
 publisher refuses drafts, failed validation, wrong accounts, exhausted quota,
-remote-byte mismatches, and duplicate post IDs. It journals publication state
-so ambiguous Meta responses can be reconciled without duplicate posts.
+remote-byte mismatches, and duplicate platform entries. Instagram and Facebook
+use separate journals so an ambiguous response can be reconciled without
+duplicating either live post.
 
 Long-lived Instagram tokens expire after roughly 60 days. The install command
 records lifecycle metadata. Check it with `npm run token:status` and rotate an
 eligible token with `npm run token:refresh -- --confirm`. Both `.env.local` and
 token metadata stay outside Git.
+
+The Facebook Page token is also stored only in `.env.local`; its hash, token
+lifetime, and Meta data-access lifetime are recorded under `state/private/`.
+`facebook-token:status` warns within 14 days of either expiry, while
+`account:verify` checks the exact Page ID, name, optional username, and public
+link on every preflight. Obtain both lifetime values from Meta's Access Token
+Debugger; do not install a token with unknown lifecycle metadata.

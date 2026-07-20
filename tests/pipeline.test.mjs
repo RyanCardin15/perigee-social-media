@@ -35,7 +35,13 @@ const row = {
 
 const config = {
   brand: { website: "https://perigeetides.com" },
-  campaign: { source: "instagram", medium: "organic_social", postCampaignPrefix: "ig_" },
+  campaign: {
+    source: "instagram",
+    medium: "organic_social",
+    postCampaignPrefix: "ig_",
+    facebookSource: "facebook",
+    facebookPostCampaignPrefix: "fb_",
+  },
   launchPost: {
     stationId: "9414290",
     windowStart: "2026-07-12",
@@ -137,6 +143,11 @@ test("king-tide creative preserves prediction and MLLW boundaries", () => {
   assert.match(creative.caption, /San Francisco, California/);
   assert.equal(creative.discovery.locationTag.delivery, "manual-existing-place");
   assert.equal(new URL(creative.ctaUrl).searchParams.get("utm_source"), "instagram");
+  assert.equal(new URL(creative.ctaUrls.facebook).searchParams.get("utm_source"), "facebook");
+  assert.equal(new URL(creative.ctaUrls.facebook).searchParams.get("utm_campaign"), "fb_2026-07-15-golden-gate-king-tide");
+  assert.match(creative.captions.instagram, /link in bio/);
+  assert.match(creative.captions.facebook, /https:\/\/perigeetides\.com\/king-tides\/california\/2026/);
+  assert.doesNotMatch(creative.captions.facebook, /link in bio/);
 });
 
 test("king-tide creative uses the actual station and falls back when no state calendar exists", () => {

@@ -36,6 +36,7 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
   push(check("threshold", manifest.data?.metrics?.thresholdFt === manifest.station?.kingTideThresholdFt, "Manifest threshold differs from the checked-in almanac."));
 
   const caption = manifest.creative?.caption || "";
+  const facebookCaption = manifest.creative?.captions?.facebook || null;
   const contentType = manifest.creative?.contentType;
   const manualReviewTypes = config.publishing?.manualReviewTypes || [];
   const autoPublishTypes = config.publishing?.autoPublishTypes || [];
@@ -60,6 +61,11 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
   const prohibited = /\b(safe|unsafe|all clear|guaranteed|real-time|navigation-grade|perfect conditions)\b/i;
   push(check("prohibited-claims", !prohibited.test(caption), "Caption contains a prohibited claim."));
   push(check("caption-length", caption.length > 0 && caption.length <= 2200, "Caption must be 1–2200 characters."));
+  if (facebookCaption) {
+    push(check("facebook-caption-terms", requiredTerms.every((term) => facebookCaption.toLowerCase().includes(String(term).toLowerCase())), "Facebook caption must preserve every required prediction boundary term."));
+    push(check("facebook-caption-claims", !prohibited.test(facebookCaption), "Facebook caption contains a prohibited claim."));
+    push(check("facebook-caption-discovery", (manifest.creative?.discovery?.hashtags || []).every((value) => facebookCaption.includes(value)), "Facebook caption must preserve approved discovery hashtags."));
+  }
 
   if (manifest.schemaVersion === 4) {
     const discovery = manifest.creative?.discovery;
@@ -90,6 +96,16 @@ export async function validateManifest(manifest, manifestPath, config, { allowSt
     ctaValid = false;
   }
   push(check("cta", ctaValid, "CTA must be an attributed perigeetides.com HTTPS URL."));
+  if (manifest.creative?.ctaUrls?.facebook) {
+    let facebookCtaValid = false;
+    try {
+      const url = new URL(manifest.creative.ctaUrls.facebook);
+      facebookCtaValid = url.protocol === "https:" && url.hostname === "perigeetides.com" && url.searchParams.get("utm_source") === "facebook";
+    } catch {
+      facebookCtaValid = false;
+    }
+    push(check("facebook-cta", facebookCtaValid, "Facebook CTA must be an attributed perigeetides.com HTTPS URL."));
+  }
 
   push(check("no-secrets", !containsSecret(JSON.stringify(manifest)), "Manifest appears to contain an access token or app secret."));
 

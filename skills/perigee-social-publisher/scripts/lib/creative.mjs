@@ -5,11 +5,15 @@ function stationDisplayName(row) {
   return titleCase(row.stationName);
 }
 
-function campaignUrl(path, postId, config) {
+function campaignUrl(path, postId, config, platform = "instagram") {
   const url = new URL(path, config.brand.website);
-  url.searchParams.set("utm_source", config.campaign.source);
+  const facebook = platform === "facebook";
+  url.searchParams.set("utm_source", facebook ? config.campaign.facebookSource || "facebook" : config.campaign.source);
   url.searchParams.set("utm_medium", config.campaign.medium);
-  url.searchParams.set("utm_campaign", `${config.campaign.postCampaignPrefix}${postId}`);
+  url.searchParams.set(
+    "utm_campaign",
+    `${facebook ? config.campaign.facebookPostCampaignPrefix || "fb_" : config.campaign.postCampaignPrefix}${postId}`,
+  );
   return url.toString();
 }
 
@@ -75,6 +79,7 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
   const hasStateCalendar = Boolean(cluster && row.stateCalendarPath);
   const destinationPath = hasStateCalendar ? row.stateCalendarPath : row.stationPath;
   const ctaUrl = campaignUrl(destinationPath, postId, config);
+  const facebookCtaUrl = campaignUrl(destinationPath, postId, config, "facebook");
 
   if (contentType === "king-tide-prediction") {
     const timing = formatStationLocal(`${cluster.peakDateKey} ${toTwentyFourHour(cluster.peakTimeLabel)}`);
@@ -86,8 +91,12 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
     const action = hasStateCalendar
       ? `Explore the ${row.stateName} 2026 calendar at the link in bio.`
       : `Open the full ${stationName} station chart at the link in bio.`;
+    const facebookAction = hasStateCalendar
+      ? `Explore the ${row.stateName} 2026 calendar: ${facebookCtaUrl}`
+      : `Open the full ${stationName} station chart: ${facebookCtaUrl}`;
     const kingTideHashtags = [...new Set([...discovery.hashtags.slice(0, 4), "#KingTides", ...discovery.hashtags.slice(4)])];
     const caption = `${discovery.market.label} king-tide prediction. ${lead} 🌊\n\nAt NOAA station ${row.stationId}, the astronomical prediction ${verb} ${cluster.peakHeight.toFixed(3)} ft above local MLLW at ${cluster.peakTimeLabel} on ${timing.dateLabel} (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is ${threshold.toFixed(3)} ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\n${action}\n\n${discovery.engagementPrompt}\n\nNOAA CO-OPS • ${disclaimer()}\n\n${kingTideHashtags.join(" ")}`;
+    const facebookCaption = `${discovery.market.label} king-tide prediction. ${lead} 🌊\n\nAt NOAA station ${row.stationId}, the astronomical prediction ${verb} ${cluster.peakHeight.toFixed(3)} ft above local MLLW at ${cluster.peakTimeLabel} on ${timing.dateLabel} (station-local time). Perigee defines a king-tide window as the station's top 1% of predicted annual high tides; this station's 2026 threshold is ${threshold.toFixed(3)} ft.\n\nThis is a prediction at one NOAA station—not an observed water level or a flood forecast. Wind, pressure, waves, and rainfall can move observed water above or below the astronomical prediction.\n\n${facebookAction}\n\n${discovery.engagementPrompt}\n\nNOAA CO-OPS • ${disclaimer()}\n\n${kingTideHashtags.join(" ")}`;
     return {
       postId,
       contentType,
@@ -96,8 +105,10 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
       eyebrow: "PERIGEE TIDES · KING-TIDE SIGNAL",
       stationName,
       caption,
+      captions: { instagram: caption, facebook: facebookCaption },
       discovery: { ...discovery, hashtags: kingTideHashtags },
       ctaUrl,
+      ctaUrls: { instagram: ctaUrl, facebook: facebookCtaUrl },
       ctaDisplay: `${config.brand.website.replace("https://", "")}${destinationPath}`,
       ctaLabel: hasStateCalendar ? "EXPLORE THE FULL CALENDAR" : "OPEN THE FULL STATION CHART",
       disclaimer: disclaimer(),
@@ -112,6 +123,7 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
   }
 
   const caption = `${discovery.market.label} tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at ${highest.v.toFixed(2)} ft above local MLLW at ${highest.timeLabel} on ${highest.dateLabel}. The lowest is ${metrics.lowest.v.toFixed(2)} ft, a predicted range of ${metrics.rangeFt.toFixed(2)} ft at NOAA station ${row.stationId}.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\n${discovery.engagementPrompt}\n\nNOAA CO-OPS • ${disclaimer()}\n\n${discovery.hashtags.join(" ")}`;
+  const facebookCaption = `${discovery.market.label} tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at ${highest.v.toFixed(2)} ft above local MLLW at ${highest.timeLabel} on ${highest.dateLabel}. The lowest is ${metrics.lowest.v.toFixed(2)} ft, a predicted range of ${metrics.rangeFt.toFixed(2)} ft at NOAA station ${row.stationId}.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: ${facebookCtaUrl}\n\n${discovery.engagementPrompt}\n\nNOAA CO-OPS • ${disclaimer()}\n\n${discovery.hashtags.join(" ")}`;
   return {
     postId,
     contentType,
@@ -120,8 +132,10 @@ export function createCreative({ candidate, dateKey, metrics, config }) {
     eyebrow: "PERIGEE TIDES · WEEK AHEAD",
     stationName,
     caption,
+    captions: { instagram: caption, facebook: facebookCaption },
     discovery,
     ctaUrl,
+    ctaUrls: { instagram: ctaUrl, facebook: facebookCtaUrl },
     ctaDisplay: `${config.brand.website.replace("https://", "")}${destinationPath}`,
     disclaimer: disclaimer(),
     altTexts: [

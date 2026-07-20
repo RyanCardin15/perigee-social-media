@@ -10,6 +10,10 @@ const required = [
   "INSTAGRAM_ACCOUNT_ID",
   "INSTAGRAM_ACCOUNT_HANDLE",
   "INSTAGRAM_ACCESS_TOKEN",
+  "FACEBOOK_GRAPH_API_VERSION",
+  "FACEBOOK_PAGE_ID",
+  "FACEBOOK_PAGE_NAME",
+  "FACEBOOK_PAGE_ACCESS_TOKEN",
   "PUBLIC_MEDIA_BASE_URL",
 ];
 const presence = Object.fromEntries(required.map((name) => [name, Boolean(process.env[name]?.trim())]));
