@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-20-washington-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "9447130",
+    "name": "SEATTLE (Madison St.), Elliott Bay",
+    "displayName": "Seattle (Madison St.), Elliott Bay",
+    "stateCode": "WA",
+    "stateName": "Washington",
+    "stateSlug": "washington",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 12.819,
+    "stationPath": "/tides/washington/seattle-madison-st-elliott-bay-9447130",
+    "stateCalendarPath": "/king-tides/washington/2026",
+    "latitude": 47.60263888888889,
+    "longitude": -122.3393055555556
+  },
+  "window": {
+    "start": "2026-07-20",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260720&range=168&datum=MLLW&station=9447130&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/9447130/predictions?interval=hilo&begin_date=2026-07-20&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-20-washington-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-20-washington-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-20-washington-weekly-tide"
+  },
+  "captions": {
+    "instagram": "Seattle, Washington tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 11.46 ft above local MLLW at 10:32 PM on July 20, 2026. The lowest is -0.69 ft, a predicted range of 12.15 ft at NOAA station 9447130.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #SeattleWA #SeattleTides #WashingtonCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "Seattle, Washington tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 11.46 ft above local MLLW at 10:32 PM on July 20, 2026. The lowest is -0.69 ft, a predicted range of 12.15 ft at NOAA station 9447130.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/washington/seattle-madison-st-elliott-bay-9447130?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-20-washington-weekly-tide\n\nSave this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #SeattleWA #SeattleTides #WashingtonCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "Seattle",
+      "region": "Washington",
+      "label": "Seattle, Washington"
+    },
+    "keywords": [
+      "Seattle tide predictions",
+      "Seattle tide times",
+      "Washington coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#SeattleWA",
+      "#SeattleTides",
+      "#WashingtonCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#SeattleWA",
+      "#SeattleTides",
+      "#WashingtonCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Seattle. Which Washington coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Seattle, Washington",
+      "latitude": 47.60263888888889,
+      "longitude": -122.3393055555556,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-20-washington-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Seattle (Madison St.), Elliott Bay, NOAA station 9447130.",
+      "sha256": "748ae1b3ab34da0421b5f9ea20102d695be340d4f4a2ffcaee84e63632a2e8e3"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-20-washington-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 11.46 feet above local MLLW at 10:32 PM on July 20, 2026.",
+      "sha256": "5ade6f4f573556d6340a422cd21148775585fd2b5393cba344188fcd628798bc"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-20-washington-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Seattle (Madison St.), Elliott Bay, based on matched NOAA and Perigee data.",
+      "sha256": "62a256760c21016cfdb636ab7ecc33b6ff09cfd7f4ea7e97de9350fe3b527b92"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-20-washington-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9447130.",
+      "sha256": "abd677f04f752984552388f1d401a20bac18d947ad71df2f195abfbe9189e2a9"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-20-washington-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "fb543afd5645b60ecc004d8df00b18382a2672d31949fc10f1b9c8bfdbc6eaf1"
+    }
+  ]
+}
