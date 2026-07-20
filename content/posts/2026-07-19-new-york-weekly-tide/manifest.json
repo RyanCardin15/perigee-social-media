@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-19-new-york-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-19",
+  "generatedAt": "2026-07-20T02:17:12.690Z",
+  "station": {
+    "id": "8518750",
+    "name": "NEW YORK (The Battery)",
+    "displayName": "New York (The Battery)",
+    "stateCode": "NY",
+    "stateName": "New York",
+    "stateSlug": "new-york",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 6.087,
+    "stationPath": "/tides/new-york/new-york-the-battery-8518750",
+    "stateCalendarPath": "/king-tides/new-york/2026",
+    "latitude": 40.70055389404297,
+    "longitude": -74.01416778564453
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-20T02:17:12.684Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8518750&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "8365f248c60ba029c0bd726f46413c432c0b35f41bf75169b513a8e3eaafde5f"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/8518750/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "8365f248c60ba029c0bd726f46413c432c0b35f41bf75169b513a8e3eaafde5f"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "d46f52252788a7f8168b792c25828a84705873c3a9c460974c976c6768d64141"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-19 00:36",
+        "v": 5.123,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 06:56",
+        "v": -0.012,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 13:19",
+        "v": 5.151,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 19:21",
+        "v": 0.733,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 01:28",
+        "v": 4.772,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 07:46",
+        "v": 0.341,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 14:07",
+        "v": 5.078,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 20:21",
+        "v": 0.976,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 02:18",
+        "v": 4.429,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 08:38",
+        "v": 0.664,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 14:54",
+        "v": 4.985,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 21:23",
+        "v": 1.108,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 03:07",
+        "v": 4.119,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 09:31",
+        "v": 0.912,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 15:41",
+        "v": 4.893,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 22:22",
+        "v": 1.13,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 04:01",
+        "v": 3.88,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 10:23",
+        "v": 1.063,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 16:33",
+        "v": 4.84,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 23:17",
+        "v": 1.067,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 05:00",
+        "v": 3.762,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 11:13",
+        "v": 1.118,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 17:28",
+        "v": 4.86,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 00:07",
+        "v": 0.952,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 06:00",
+        "v": 3.79,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 12:01",
+        "v": 1.096,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 18:21",
+        "v": 4.957,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-19 13:19",
+        "v": 5.151,
+        "type": "H",
+        "dateKey": "2026-07-19",
+        "dateLabel": "July 19, 2026",
+        "timeLabel": "1:19 PM"
+      },
+      "lowest": {
+        "t": "2026-07-19 06:56",
+        "v": -0.012,
+        "type": "L",
+        "dateKey": "2026-07-19",
+        "dateLabel": "July 19, 2026",
+        "timeLabel": "6:56 AM"
+      },
+      "rangeFt": 5.163,
+      "thresholdFt": 6.087,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-19-new-york-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "New York: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "New York (The Battery)",
+    "caption": "New York, New York tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.15 ft above local MLLW at 1:19 PM on July 19, 2026. The lowest is -0.01 ft, a predicted range of 5.16 ft at NOAA station 8518750.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around New York. Which New York coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #NewYorkNY #NewYorkTides #NewYorkCoast #TideTimes #CoastalPlanning #NOAA",
+    "captions": {
+      "instagram": "New York, New York tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.15 ft above local MLLW at 1:19 PM on July 19, 2026. The lowest is -0.01 ft, a predicted range of 5.16 ft at NOAA station 8518750.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around New York. Which New York coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #NewYorkNY #NewYorkTides #NewYorkCoast #TideTimes #CoastalPlanning #NOAA",
+      "facebook": "New York, New York tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.15 ft above local MLLW at 1:19 PM on July 19, 2026. The lowest is -0.01 ft, a predicted range of 5.16 ft at NOAA station 8518750.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-new-york-weekly-tide\n\nSave this chart for coastal planning around New York. Which New York coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #NewYorkNY #NewYorkTides #NewYorkCoast #TideTimes #CoastalPlanning #NOAA"
+    },
+    "discovery": {
+      "market": {
+        "locality": "New York",
+        "region": "New York",
+        "label": "New York, New York"
+      },
+      "keywords": [
+        "New York tide predictions",
+        "New York tide times",
+        "New York coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#NewYorkNY",
+        "#NewYorkTides",
+        "#NewYorkCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#NewYorkNY",
+        "#NewYorkTides",
+        "#NewYorkCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around New York. Which New York coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "New York, New York",
+        "latitude": 40.70055389404297,
+        "longitude": -74.01416778564453,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-new-york-weekly-tide",
+    "ctaUrls": {
+      "instagram": "https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-new-york-weekly-tide",
+      "facebook": "https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-new-york-weekly-tide"
+    },
+    "ctaDisplay": "perigeetides.com/tides/new-york/new-york-the-battery-8518750",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for New York (The Battery), NOAA station 8518750.",
+      "Highest predicted tide card: 5.15 feet above local MLLW at 1:19 PM on July 19, 2026.",
+      "Seven-day high and low tide prediction chart for New York (The Battery), based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8518750.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-19-new-york-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for New York (The Battery), NOAA station 8518750.",
+        "sha256": "0da3a8cdc68e9378552799abc18de1a825e8e38d618573c58eb7bf3029ff49b8",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "639a3afd205cd73043a8d9245e8881b170f22c8a83dc153a3b6d296c66323e5b",
+        "sourceSha256": "623ad9d4ad15eb4f5d106263d01591288de6359e71818d72e75e1f85421f5b88",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.365Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-19-new-york-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 5.15 feet above local MLLW at 1:19 PM on July 19, 2026.",
+        "sha256": "f8461e098c4938f71d766fa95e9ce4a6c101067879c72e5a0633fd4027660492",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "42adcffb3ffbfd4adb4cea762b3fe7807cf38b8118373be7aa717e19125abb2a",
+        "sourceSha256": "aa4876c3bd75b7abf913ee7d96b9caa84505086eb183f84757696099bcfbc6c5",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.393Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-19-new-york-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for New York (The Battery), based on matched NOAA and Perigee data.",
+        "sha256": "cec3dd0d97a4621d80fd0cbc7739bbf90aeebc3f76460149757738861048467a",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "a8f9900a9bd32bd5bf32d13798e2b7290fffae08d4878d1de576739f9bc91003",
+        "sourceSha256": "7a07e2f9bad433e15b6b819f2fba5adf4cb37a3ed7eb5426ce2cdc2ac5a94bad",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.418Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-19-new-york-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8518750.",
+        "sha256": "b036413ba43efe4ab1521fbc67acb133993d83242727ea57a44f7429a557beb5",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "b49af3289b2f12ed8480e6a5cde54a128dc367c5036e8843d840d8c35e1b97b6",
+        "sourceSha256": "e51c2316f07c3ffe65fadb24a6b8aaac694c460c60d198f2b4a81900c7e9be95",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.441Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-19-new-york-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "cb8cf42ae87b228e62f90b39b44ea065d6f7b350624c96df9f39a6cdafdd857e",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "af9643d150dd0a4933e227b07a75b47a18c89ae92b3a5836976b6069506b5a18",
+        "sourceSha256": "d549c9d1b33e6972d3d11d1e8e972cad7a24d86aea9448eb7d0663cd1e02a56b",
+        "sourceFormat": "png",
+        "sourceWidth": 997,
+        "sourceHeight": 1577,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.467Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-20T03:06:31.439Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-20T03:06:31.279Z",
+    "report": "content/posts/2026-07-19-new-york-weekly-tide/validation.json"
+  }
+}

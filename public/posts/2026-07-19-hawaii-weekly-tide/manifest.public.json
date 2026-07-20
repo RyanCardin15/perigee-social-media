@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-19-hawaii-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "1612340",
+    "name": "HONOLULU",
+    "displayName": "Honolulu",
+    "stateCode": "HI",
+    "stateName": "Hawaiʻi",
+    "stateSlug": "hawaii",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.635,
+    "stationPath": "/tides/hawaii/honolulu-1612340",
+    "stateCalendarPath": "/king-tides/hawaii/2026",
+    "latitude": 21.30333333333334,
+    "longitude": -157.8645277777778
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=1612340&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/1612340/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-hawaii-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-hawaii-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-hawaii-weekly-tide"
+  },
+  "captions": {
+    "instagram": "Honolulu, Hawaiʻi tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 2.14 ft above local MLLW at 2:19 PM on July 25, 2026. The lowest is 0.10 ft, a predicted range of 2.04 ft at NOAA station 1612340.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #HonoluluHI #HonoluluTides #HawaiiCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "Honolulu, Hawaiʻi tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 2.14 ft above local MLLW at 2:19 PM on July 25, 2026. The lowest is 0.10 ft, a predicted range of 2.04 ft at NOAA station 1612340.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-hawaii-weekly-tide\n\nSave this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #HonoluluHI #HonoluluTides #HawaiiCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "Honolulu",
+      "region": "Hawaiʻi",
+      "label": "Honolulu, Hawaiʻi"
+    },
+    "keywords": [
+      "Honolulu tide predictions",
+      "Honolulu tide times",
+      "Hawaiʻi coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#HonoluluHI",
+      "#HonoluluTides",
+      "#HawaiiCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#HonoluluHI",
+      "#HonoluluTides",
+      "#HawaiiCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Honolulu, Hawaiʻi",
+      "latitude": 21.30333333333334,
+      "longitude": -157.8645277777778,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Honolulu, NOAA station 1612340.",
+      "sha256": "36b554073ea9d95903a3c9dbeb97bb5ab2365e0cbd67b3941120e3b058396902"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 2.14 feet above local MLLW at 2:19 PM on July 25, 2026.",
+      "sha256": "53b1b6e6f9ec91bf7ced70bc3148418764e840786407bee880b845c95a0e8451"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Honolulu, based on matched NOAA and Perigee data.",
+      "sha256": "d5a0cd2c3189d73e682c050f9a062f0e7efee0cee7392f29479e4c674ce8114f"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 1612340.",
+      "sha256": "4d80f9b61ab60a2dd14fa4ec44405616de66a616bad852cc1eeab29024edadf4"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "df6a8df45306efa5d532205baabdfd588933fa93bd4ab80066c833a671326799"
+    }
+  ]
+}

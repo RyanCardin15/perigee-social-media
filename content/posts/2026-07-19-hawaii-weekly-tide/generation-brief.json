@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-19-hawaii-weekly-tide",
+  "createdAt": "2026-07-20T02:17:43.188Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "1612340",
+      "name": "HONOLULU",
+      "displayName": "Honolulu",
+      "stateCode": "HI",
+      "stateName": "Hawaiʻi",
+      "stateSlug": "hawaii",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 2.635,
+      "stationPath": "/tides/hawaii/honolulu-1612340",
+      "stateCalendarPath": "/king-tides/hawaii/2026",
+      "latitude": 21.30333333333334,
+      "longitude": -157.8645277777778
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-07-19 02:10",
+        "v": 0.099,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 08:50",
+        "v": 1.321,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 13:59",
+        "v": 0.766,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 19:44",
+        "v": 1.487,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 02:43",
+        "v": 0.125,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 10:02",
+        "v": 1.49,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 15:39",
+        "v": 0.915,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 20:17",
+        "v": 1.198,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 03:19",
+        "v": 0.15,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 11:10",
+        "v": 1.665,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 17:58",
+        "v": 0.904,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 20:52",
+        "v": 0.946,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 03:59",
+        "v": 0.167,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 12:09",
+        "v": 1.825,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 04:44",
+        "v": 0.17,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 12:58",
+        "v": 1.958,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 21:15",
+        "v": 0.591,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 23:55",
+        "v": 0.645,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 05:33",
+        "v": 0.153,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 13:40",
+        "v": 2.061,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 21:38",
+        "v": 0.486,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 01:03",
+        "v": 0.619,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 06:22",
+        "v": 0.117,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 14:19",
+        "v": 2.14,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 21:57",
+        "v": 0.412,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-25 14:19",
+        "v": 2.14,
+        "type": "H",
+        "dateKey": "2026-07-25",
+        "dateLabel": "July 25, 2026",
+        "timeLabel": "2:19 PM"
+      },
+      "lowest": {
+        "t": "2026-07-19 02:10",
+        "v": 0.099,
+        "type": "L",
+        "dateKey": "2026-07-19",
+        "dateLabel": "July 19, 2026",
+        "timeLabel": "2:10 AM"
+      },
+      "rangeFt": 2.041,
+      "thresholdFt": 2.635,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "Hawaiʻi: your tide week ahead",
+          "Predicted high · 2.14 ft",
+          "2:19 PM · July 25, 2026",
+          "Honolulu · NOAA 1612340",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "2.14 ft",
+          "above local MLLW",
+          "2:19 PM",
+          "July 25, 2026",
+          "Honolulu · NOAA 1612340",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Honolulu · NOAA 1612340",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "2.04 ft",
+          "Highest prediction · 2.14 ft",
+          "2:19 PM · July 25, 2026",
+          "Lowest prediction · 0.10 ft",
+          "2:10 AM · July 19, 2026",
+          "Station-local time · feet above local MLLW",
+          "Honolulu · NOAA 1612340",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/hawaii/honolulu-1612340",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "4283e3af9447cdbe87b9cf9033e0eb9b531f5cf94e714f596bf4664e6a28fae3",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "Hawaiʻi: your tide week ahead",
+        "Predicted high · 2.14 ft",
+        "2:19 PM · July 25, 2026",
+        "Honolulu · NOAA 1612340",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-hawaii-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"Hawaiʻi: your tide week ahead\"\n\"Predicted high · 2.14 ft\"\n\"2:19 PM · July 25, 2026\"\n\"Honolulu · NOAA 1612340\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "2.14 ft",
+        "above local MLLW",
+        "2:19 PM",
+        "July 25, 2026",
+        "Honolulu · NOAA 1612340",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-hawaii-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"2.14 ft\"\n\"above local MLLW\"\n\"2:19 PM\"\n\"July 25, 2026\"\n\"Honolulu · NOAA 1612340\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Honolulu · NOAA 1612340",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 19, 2026 | 2:10 AM | low | 0.099 ft MLLW\nJuly 19, 2026 | 8:50 AM | high | 1.321 ft MLLW\nJuly 19, 2026 | 1:59 PM | low | 0.766 ft MLLW\nJuly 19, 2026 | 7:44 PM | high | 1.487 ft MLLW\nJuly 20, 2026 | 2:43 AM | low | 0.125 ft MLLW\nJuly 20, 2026 | 10:02 AM | high | 1.490 ft MLLW\nJuly 20, 2026 | 3:39 PM | low | 0.915 ft MLLW\nJuly 20, 2026 | 8:17 PM | high | 1.198 ft MLLW\nJuly 21, 2026 | 3:19 AM | low | 0.150 ft MLLW\nJuly 21, 2026 | 11:10 AM | high | 1.665 ft MLLW\nJuly 21, 2026 | 5:58 PM | low | 0.904 ft MLLW\nJuly 21, 2026 | 8:52 PM | high | 0.946 ft MLLW\nJuly 22, 2026 | 3:59 AM | low | 0.167 ft MLLW\nJuly 22, 2026 | 12:09 PM | high | 1.825 ft MLLW\nJuly 23, 2026 | 4:44 AM | low | 0.170 ft MLLW\nJuly 23, 2026 | 12:58 PM | high | 1.958 ft MLLW\nJuly 23, 2026 | 9:15 PM | low | 0.591 ft MLLW\nJuly 23, 2026 | 11:55 PM | high | 0.645 ft MLLW\nJuly 24, 2026 | 5:33 AM | low | 0.153 ft MLLW\nJuly 24, 2026 | 1:40 PM | high | 2.061 ft MLLW\nJuly 24, 2026 | 9:38 PM | low | 0.486 ft MLLW\nJuly 25, 2026 | 1:03 AM | high | 0.619 ft MLLW\nJuly 25, 2026 | 6:22 AM | low | 0.117 ft MLLW\nJuly 25, 2026 | 2:19 PM | high | 2.140 ft MLLW\nJuly 25, 2026 | 9:57 PM | low | 0.412 ft MLLW",
+      "dataSeries": [
+        "July 19, 2026 | 2:10 AM | low | 0.099 ft MLLW",
+        "July 19, 2026 | 8:50 AM | high | 1.321 ft MLLW",
+        "July 19, 2026 | 1:59 PM | low | 0.766 ft MLLW",
+        "July 19, 2026 | 7:44 PM | high | 1.487 ft MLLW",
+        "July 20, 2026 | 2:43 AM | low | 0.125 ft MLLW",
+        "July 20, 2026 | 10:02 AM | high | 1.490 ft MLLW",
+        "July 20, 2026 | 3:39 PM | low | 0.915 ft MLLW",
+        "July 20, 2026 | 8:17 PM | high | 1.198 ft MLLW",
+        "July 21, 2026 | 3:19 AM | low | 0.150 ft MLLW",
+        "July 21, 2026 | 11:10 AM | high | 1.665 ft MLLW",
+        "July 21, 2026 | 5:58 PM | low | 0.904 ft MLLW",
+        "July 21, 2026 | 8:52 PM | high | 0.946 ft MLLW",
+        "July 22, 2026 | 3:59 AM | low | 0.167 ft MLLW",
+        "July 22, 2026 | 12:09 PM | high | 1.825 ft MLLW",
+        "July 23, 2026 | 4:44 AM | low | 0.170 ft MLLW",
+        "July 23, 2026 | 12:58 PM | high | 1.958 ft MLLW",
+        "July 23, 2026 | 9:15 PM | low | 0.591 ft MLLW",
+        "July 23, 2026 | 11:55 PM | high | 0.645 ft MLLW",
+        "July 24, 2026 | 5:33 AM | low | 0.153 ft MLLW",
+        "July 24, 2026 | 1:40 PM | high | 2.061 ft MLLW",
+        "July 24, 2026 | 9:38 PM | low | 0.486 ft MLLW",
+        "July 25, 2026 | 1:03 AM | high | 0.619 ft MLLW",
+        "July 25, 2026 | 6:22 AM | low | 0.117 ft MLLW",
+        "July 25, 2026 | 2:19 PM | high | 2.140 ft MLLW",
+        "July 25, 2026 | 9:57 PM | low | 0.412 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-hawaii-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 19, 2026 | 2:10 AM | low | 0.099 ft MLLW\nJuly 19, 2026 | 8:50 AM | high | 1.321 ft MLLW\nJuly 19, 2026 | 1:59 PM | low | 0.766 ft MLLW\nJuly 19, 2026 | 7:44 PM | high | 1.487 ft MLLW\nJuly 20, 2026 | 2:43 AM | low | 0.125 ft MLLW\nJuly 20, 2026 | 10:02 AM | high | 1.490 ft MLLW\nJuly 20, 2026 | 3:39 PM | low | 0.915 ft MLLW\nJuly 20, 2026 | 8:17 PM | high | 1.198 ft MLLW\nJuly 21, 2026 | 3:19 AM | low | 0.150 ft MLLW\nJuly 21, 2026 | 11:10 AM | high | 1.665 ft MLLW\nJuly 21, 2026 | 5:58 PM | low | 0.904 ft MLLW\nJuly 21, 2026 | 8:52 PM | high | 0.946 ft MLLW\nJuly 22, 2026 | 3:59 AM | low | 0.167 ft MLLW\nJuly 22, 2026 | 12:09 PM | high | 1.825 ft MLLW\nJuly 23, 2026 | 4:44 AM | low | 0.170 ft MLLW\nJuly 23, 2026 | 12:58 PM | high | 1.958 ft MLLW\nJuly 23, 2026 | 9:15 PM | low | 0.591 ft MLLW\nJuly 23, 2026 | 11:55 PM | high | 0.645 ft MLLW\nJuly 24, 2026 | 5:33 AM | low | 0.153 ft MLLW\nJuly 24, 2026 | 1:40 PM | high | 2.061 ft MLLW\nJuly 24, 2026 | 9:38 PM | low | 0.486 ft MLLW\nJuly 25, 2026 | 1:03 AM | high | 0.619 ft MLLW\nJuly 25, 2026 | 6:22 AM | low | 0.117 ft MLLW\nJuly 25, 2026 | 2:19 PM | high | 2.140 ft MLLW\nJuly 25, 2026 | 9:57 PM | low | 0.412 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Honolulu · NOAA 1612340\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "2.04 ft",
+        "Highest prediction · 2.14 ft",
+        "2:19 PM · July 25, 2026",
+        "Lowest prediction · 0.10 ft",
+        "2:10 AM · July 19, 2026",
+        "Station-local time · feet above local MLLW",
+        "Honolulu · NOAA 1612340",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-hawaii-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"2.04 ft\"\n\"Highest prediction · 2.14 ft\"\n\"2:19 PM · July 25, 2026\"\n\"Lowest prediction · 0.10 ft\"\n\"2:10 AM · July 19, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Honolulu · NOAA 1612340\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/hawaii/honolulu-1612340",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-hawaii-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/hawaii/honolulu-1612340\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}

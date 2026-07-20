@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-19-south-carolina-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "8665530",
+    "name": "CHARLESTON (Customhouse Wharf)",
+    "displayName": "Charleston (Customhouse Wharf)",
+    "stateCode": "SC",
+    "stateName": "South Carolina",
+    "stateSlug": "south-carolina",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 6.726,
+    "stationPath": "/tides/south-carolina/charleston-customhouse-wharf-8665530",
+    "stateCalendarPath": "/king-tides/south-carolina/2026",
+    "latitude": 32.7808333,
+    "longitude": -79.9236111
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8665530&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/8665530/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/south-carolina/charleston-customhouse-wharf-8665530?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-south-carolina-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/south-carolina/charleston-customhouse-wharf-8665530?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-south-carolina-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/south-carolina/charleston-customhouse-wharf-8665530?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-south-carolina-weekly-tide"
+  },
+  "captions": {
+    "instagram": "Charleston, South Carolina tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.56 ft above local MLLW at 12:21 AM on July 19, 2026. The lowest is -0.10 ft, a predicted range of 5.66 ft at NOAA station 8665530.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Charleston. Which South Carolina coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #CharlestonSC #CharlestonTides #SouthCarolinaCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "Charleston, South Carolina tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.56 ft above local MLLW at 12:21 AM on July 19, 2026. The lowest is -0.10 ft, a predicted range of 5.66 ft at NOAA station 8665530.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/south-carolina/charleston-customhouse-wharf-8665530?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-south-carolina-weekly-tide\n\nSave this chart for coastal planning around Charleston. Which South Carolina coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #CharlestonSC #CharlestonTides #SouthCarolinaCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "Charleston",
+      "region": "South Carolina",
+      "label": "Charleston, South Carolina"
+    },
+    "keywords": [
+      "Charleston tide predictions",
+      "Charleston tide times",
+      "South Carolina coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#CharlestonSC",
+      "#CharlestonTides",
+      "#SouthCarolinaCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#CharlestonSC",
+      "#CharlestonTides",
+      "#SouthCarolinaCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Charleston. Which South Carolina coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Charleston, South Carolina",
+      "latitude": 32.7808333,
+      "longitude": -79.9236111,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-south-carolina-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Charleston (Customhouse Wharf), NOAA station 8665530.",
+      "sha256": "360030c4743a98ba24ddb83c20dd7d911a0db553cb7e14b6bd284c1593c1b632"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-south-carolina-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 5.56 feet above local MLLW at 12:21 AM on July 19, 2026.",
+      "sha256": "089329fe7fdb45b2e7d4055c2ad388c0b312186e8c0ee93281c33c45978a73ca"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-south-carolina-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Charleston (Customhouse Wharf), based on matched NOAA and Perigee data.",
+      "sha256": "edc091498263e2ab711716c97c469703a467e22908e652e09bcaa62b1f53668a"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-south-carolina-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8665530.",
+      "sha256": "9bc8497d1b21968e56861671bd60b0458f94d15891a70b7b5cc56f481df3a269"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-south-carolina-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "5ed156d25a087400876258b3b1cac519aeccec3968de6c03509b3e24691824e0"
+    }
+  ]
+}

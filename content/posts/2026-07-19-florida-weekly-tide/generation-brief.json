@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-19-florida-weekly-tide",
+  "createdAt": "2026-07-20T02:17:40.561Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "8724580",
+      "name": "KEY WEST",
+      "displayName": "Key West",
+      "stateCode": "FL",
+      "stateName": "Florida",
+      "stateSlug": "florida",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 2.403,
+      "stationPath": "/tides/florida/key-west-8724580",
+      "stateCalendarPath": "/king-tides/florida/2026",
+      "latitude": 24.555700302124023,
+      "longitude": -81.80789947509766
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-07-19 02:20",
+        "v": 1.542,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 08:07",
+        "v": 0.295,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 14:33",
+        "v": 1.491,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 20:26",
+        "v": 0.313,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 03:00",
+        "v": 1.614,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 09:16",
+        "v": 0.297,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 15:30",
+        "v": 1.232,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 21:06",
+        "v": 0.443,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 03:43",
+        "v": 1.65,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 10:27",
+        "v": 0.275,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 16:42",
+        "v": 1.007,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 21:48",
+        "v": 0.543,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 04:32",
+        "v": 1.661,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 11:38",
+        "v": 0.228,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 18:19",
+        "v": 0.861,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 22:34",
+        "v": 0.613,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 05:26",
+        "v": 1.663,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 12:46",
+        "v": 0.162,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 19:56",
+        "v": 0.813,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 23:25",
+        "v": 0.654,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 06:23",
+        "v": 1.677,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 13:47",
+        "v": 0.087,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 21:02",
+        "v": 0.82,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 00:19",
+        "v": 0.668,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 07:18",
+        "v": 1.713,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 14:39",
+        "v": 0.019,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 21:45",
+        "v": 0.854,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-25 07:18",
+        "v": 1.713,
+        "type": "H",
+        "dateKey": "2026-07-25",
+        "dateLabel": "July 25, 2026",
+        "timeLabel": "7:18 AM"
+      },
+      "lowest": {
+        "t": "2026-07-25 14:39",
+        "v": 0.019,
+        "type": "L",
+        "dateKey": "2026-07-25",
+        "dateLabel": "July 25, 2026",
+        "timeLabel": "2:39 PM"
+      },
+      "rangeFt": 1.694,
+      "thresholdFt": 2.403,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "Florida: your tide week ahead",
+          "Predicted high · 1.71 ft",
+          "7:18 AM · July 25, 2026",
+          "Key West · NOAA 8724580",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "1.71 ft",
+          "above local MLLW",
+          "7:18 AM",
+          "July 25, 2026",
+          "Key West · NOAA 8724580",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Key West · NOAA 8724580",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "1.69 ft",
+          "Highest prediction · 1.71 ft",
+          "7:18 AM · July 25, 2026",
+          "Lowest prediction · 0.02 ft",
+          "2:39 PM · July 25, 2026",
+          "Station-local time · feet above local MLLW",
+          "Key West · NOAA 8724580",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/florida/key-west-8724580",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "f5ae6e870998f79ddd0a1d665e7606f85665af083979b507f89909dcf0dfb49e",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "Florida: your tide week ahead",
+        "Predicted high · 1.71 ft",
+        "7:18 AM · July 25, 2026",
+        "Key West · NOAA 8724580",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-florida-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"Florida: your tide week ahead\"\n\"Predicted high · 1.71 ft\"\n\"7:18 AM · July 25, 2026\"\n\"Key West · NOAA 8724580\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "1.71 ft",
+        "above local MLLW",
+        "7:18 AM",
+        "July 25, 2026",
+        "Key West · NOAA 8724580",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-florida-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"1.71 ft\"\n\"above local MLLW\"\n\"7:18 AM\"\n\"July 25, 2026\"\n\"Key West · NOAA 8724580\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Key West · NOAA 8724580",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 19, 2026 | 2:20 AM | high | 1.542 ft MLLW\nJuly 19, 2026 | 8:07 AM | low | 0.295 ft MLLW\nJuly 19, 2026 | 2:33 PM | high | 1.491 ft MLLW\nJuly 19, 2026 | 8:26 PM | low | 0.313 ft MLLW\nJuly 20, 2026 | 3:00 AM | high | 1.614 ft MLLW\nJuly 20, 2026 | 9:16 AM | low | 0.297 ft MLLW\nJuly 20, 2026 | 3:30 PM | high | 1.232 ft MLLW\nJuly 20, 2026 | 9:06 PM | low | 0.443 ft MLLW\nJuly 21, 2026 | 3:43 AM | high | 1.650 ft MLLW\nJuly 21, 2026 | 10:27 AM | low | 0.275 ft MLLW\nJuly 21, 2026 | 4:42 PM | high | 1.007 ft MLLW\nJuly 21, 2026 | 9:48 PM | low | 0.543 ft MLLW\nJuly 22, 2026 | 4:32 AM | high | 1.661 ft MLLW\nJuly 22, 2026 | 11:38 AM | low | 0.228 ft MLLW\nJuly 22, 2026 | 6:19 PM | high | 0.861 ft MLLW\nJuly 22, 2026 | 10:34 PM | low | 0.613 ft MLLW\nJuly 23, 2026 | 5:26 AM | high | 1.663 ft MLLW\nJuly 23, 2026 | 12:46 PM | low | 0.162 ft MLLW\nJuly 23, 2026 | 7:56 PM | high | 0.813 ft MLLW\nJuly 23, 2026 | 11:25 PM | low | 0.654 ft MLLW\nJuly 24, 2026 | 6:23 AM | high | 1.677 ft MLLW\nJuly 24, 2026 | 1:47 PM | low | 0.087 ft MLLW\nJuly 24, 2026 | 9:02 PM | high | 0.820 ft MLLW\nJuly 25, 2026 | 12:19 AM | low | 0.668 ft MLLW\nJuly 25, 2026 | 7:18 AM | high | 1.713 ft MLLW\nJuly 25, 2026 | 2:39 PM | low | 0.019 ft MLLW\nJuly 25, 2026 | 9:45 PM | high | 0.854 ft MLLW",
+      "dataSeries": [
+        "July 19, 2026 | 2:20 AM | high | 1.542 ft MLLW",
+        "July 19, 2026 | 8:07 AM | low | 0.295 ft MLLW",
+        "July 19, 2026 | 2:33 PM | high | 1.491 ft MLLW",
+        "July 19, 2026 | 8:26 PM | low | 0.313 ft MLLW",
+        "July 20, 2026 | 3:00 AM | high | 1.614 ft MLLW",
+        "July 20, 2026 | 9:16 AM | low | 0.297 ft MLLW",
+        "July 20, 2026 | 3:30 PM | high | 1.232 ft MLLW",
+        "July 20, 2026 | 9:06 PM | low | 0.443 ft MLLW",
+        "July 21, 2026 | 3:43 AM | high | 1.650 ft MLLW",
+        "July 21, 2026 | 10:27 AM | low | 0.275 ft MLLW",
+        "July 21, 2026 | 4:42 PM | high | 1.007 ft MLLW",
+        "July 21, 2026 | 9:48 PM | low | 0.543 ft MLLW",
+        "July 22, 2026 | 4:32 AM | high | 1.661 ft MLLW",
+        "July 22, 2026 | 11:38 AM | low | 0.228 ft MLLW",
+        "July 22, 2026 | 6:19 PM | high | 0.861 ft MLLW",
+        "July 22, 2026 | 10:34 PM | low | 0.613 ft MLLW",
+        "July 23, 2026 | 5:26 AM | high | 1.663 ft MLLW",
+        "July 23, 2026 | 12:46 PM | low | 0.162 ft MLLW",
+        "July 23, 2026 | 7:56 PM | high | 0.813 ft MLLW",
+        "July 23, 2026 | 11:25 PM | low | 0.654 ft MLLW",
+        "July 24, 2026 | 6:23 AM | high | 1.677 ft MLLW",
+        "July 24, 2026 | 1:47 PM | low | 0.087 ft MLLW",
+        "July 24, 2026 | 9:02 PM | high | 0.820 ft MLLW",
+        "July 25, 2026 | 12:19 AM | low | 0.668 ft MLLW",
+        "July 25, 2026 | 7:18 AM | high | 1.713 ft MLLW",
+        "July 25, 2026 | 2:39 PM | low | 0.019 ft MLLW",
+        "July 25, 2026 | 9:45 PM | high | 0.854 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-florida-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 19, 2026 | 2:20 AM | high | 1.542 ft MLLW\nJuly 19, 2026 | 8:07 AM | low | 0.295 ft MLLW\nJuly 19, 2026 | 2:33 PM | high | 1.491 ft MLLW\nJuly 19, 2026 | 8:26 PM | low | 0.313 ft MLLW\nJuly 20, 2026 | 3:00 AM | high | 1.614 ft MLLW\nJuly 20, 2026 | 9:16 AM | low | 0.297 ft MLLW\nJuly 20, 2026 | 3:30 PM | high | 1.232 ft MLLW\nJuly 20, 2026 | 9:06 PM | low | 0.443 ft MLLW\nJuly 21, 2026 | 3:43 AM | high | 1.650 ft MLLW\nJuly 21, 2026 | 10:27 AM | low | 0.275 ft MLLW\nJuly 21, 2026 | 4:42 PM | high | 1.007 ft MLLW\nJuly 21, 2026 | 9:48 PM | low | 0.543 ft MLLW\nJuly 22, 2026 | 4:32 AM | high | 1.661 ft MLLW\nJuly 22, 2026 | 11:38 AM | low | 0.228 ft MLLW\nJuly 22, 2026 | 6:19 PM | high | 0.861 ft MLLW\nJuly 22, 2026 | 10:34 PM | low | 0.613 ft MLLW\nJuly 23, 2026 | 5:26 AM | high | 1.663 ft MLLW\nJuly 23, 2026 | 12:46 PM | low | 0.162 ft MLLW\nJuly 23, 2026 | 7:56 PM | high | 0.813 ft MLLW\nJuly 23, 2026 | 11:25 PM | low | 0.654 ft MLLW\nJuly 24, 2026 | 6:23 AM | high | 1.677 ft MLLW\nJuly 24, 2026 | 1:47 PM | low | 0.087 ft MLLW\nJuly 24, 2026 | 9:02 PM | high | 0.820 ft MLLW\nJuly 25, 2026 | 12:19 AM | low | 0.668 ft MLLW\nJuly 25, 2026 | 7:18 AM | high | 1.713 ft MLLW\nJuly 25, 2026 | 2:39 PM | low | 0.019 ft MLLW\nJuly 25, 2026 | 9:45 PM | high | 0.854 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Key West · NOAA 8724580\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "1.69 ft",
+        "Highest prediction · 1.71 ft",
+        "7:18 AM · July 25, 2026",
+        "Lowest prediction · 0.02 ft",
+        "2:39 PM · July 25, 2026",
+        "Station-local time · feet above local MLLW",
+        "Key West · NOAA 8724580",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-florida-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"1.69 ft\"\n\"Highest prediction · 1.71 ft\"\n\"7:18 AM · July 25, 2026\"\n\"Lowest prediction · 0.02 ft\"\n\"2:39 PM · July 25, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Key West · NOAA 8724580\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/florida/key-west-8724580",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-19-florida-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/florida/key-west-8724580\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}

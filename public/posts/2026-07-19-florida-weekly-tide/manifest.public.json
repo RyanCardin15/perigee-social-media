@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-19-florida-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "8724580",
+    "name": "KEY WEST",
+    "displayName": "Key West",
+    "stateCode": "FL",
+    "stateName": "Florida",
+    "stateSlug": "florida",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.403,
+    "stationPath": "/tides/florida/key-west-8724580",
+    "stateCalendarPath": "/king-tides/florida/2026",
+    "latitude": 24.555700302124023,
+    "longitude": -81.80789947509766
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8724580&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/8724580/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/florida/key-west-8724580?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-florida-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/florida/key-west-8724580?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-florida-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/florida/key-west-8724580?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-florida-weekly-tide"
+  },
+  "captions": {
+    "instagram": "Key West, Florida tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.71 ft above local MLLW at 7:18 AM on July 25, 2026. The lowest is 0.02 ft, a predicted range of 1.69 ft at NOAA station 8724580.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KeyWestFL #KeyWestTides #FloridaCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "Key West, Florida tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.71 ft above local MLLW at 7:18 AM on July 25, 2026. The lowest is 0.02 ft, a predicted range of 1.69 ft at NOAA station 8724580.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/florida/key-west-8724580?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-florida-weekly-tide\n\nSave this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KeyWestFL #KeyWestTides #FloridaCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "Key West",
+      "region": "Florida",
+      "label": "Key West, Florida"
+    },
+    "keywords": [
+      "Key West tide predictions",
+      "Key West tide times",
+      "Florida coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#KeyWestFL",
+      "#KeyWestTides",
+      "#FloridaCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#KeyWestFL",
+      "#KeyWestTides",
+      "#FloridaCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Key West, Florida",
+      "latitude": 24.555700302124023,
+      "longitude": -81.80789947509766,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Key West, NOAA station 8724580.",
+      "sha256": "833a2e620d3cf1024f4c873be238fed039fc05ca2fe958e3a6153987f9529acf"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 1.71 feet above local MLLW at 7:18 AM on July 25, 2026.",
+      "sha256": "bbb0d8e1fa5d5b568a345f35f5d271989bb1db21a69a81328aa5af9f3b5c8b6c"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Key West, based on matched NOAA and Perigee data.",
+      "sha256": "9b4adef0af560911cc18148d9a427904578bee85b2628573d3b69fb71a5a999f"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8724580.",
+      "sha256": "907c16ea3205b5bbbc3c148ffa50ef326bcbd139d780145846737f9ab5bc23ad"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "3af2ff64dd67da85637ab92710fd38bae24dc8f12014f0c777aad121c9dbb641"
+    }
+  ]
+}

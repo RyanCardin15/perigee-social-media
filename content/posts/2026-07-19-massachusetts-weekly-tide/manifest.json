@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-19-massachusetts-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-19",
+  "generatedAt": "2026-07-20T02:17:33.749Z",
+  "station": {
+    "id": "8443970",
+    "name": "BOSTON",
+    "displayName": "Boston",
+    "stateCode": "MA",
+    "stateName": "Massachusetts",
+    "stateSlug": "massachusetts",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 11.824,
+    "stationPath": "/tides/massachusetts/boston-8443970",
+    "stateCalendarPath": "/king-tides/massachusetts/2026",
+    "latitude": 42.35388888888889,
+    "longitude": -71.05027777777778
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-20T02:17:33.740Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8443970&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "b5af3ee9338b4c0e9cef7668702a322eaaaa9b714fda8b2524c73a02b8b3c45b"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/8443970/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "b5af3ee9338b4c0e9cef7668702a322eaaaa9b714fda8b2524c73a02b8b3c45b"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "05aa6a21de063a4cc235854c5b14b45a76b57f8922b5d20740bedd156ba72885"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-19 03:33",
+        "v": 10.431,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 09:46",
+        "v": -0.026,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 16:06",
+        "v": 10.165,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 22:13",
+        "v": 0.554,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 04:27",
+        "v": 9.8,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 10:37",
+        "v": 0.555,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 16:57",
+        "v": 9.964,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 23:10",
+        "v": 0.862,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 05:23",
+        "v": 9.19,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 11:28",
+        "v": 1.118,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 17:48",
+        "v": 9.744,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 00:07",
+        "v": 1.128,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 06:21",
+        "v": 8.672,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 12:20",
+        "v": 1.602,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 18:41",
+        "v": 9.548,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 01:05",
+        "v": 1.321,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 07:19",
+        "v": 8.294,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 13:13",
+        "v": 1.961,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 19:34",
+        "v": 9.418,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 02:03",
+        "v": 1.412,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 08:18",
+        "v": 8.09,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 14:07",
+        "v": 2.161,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 20:28",
+        "v": 9.394,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 03:01",
+        "v": 1.374,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 09:15",
+        "v": 8.068,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 15:00",
+        "v": 2.185,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 21:21",
+        "v": 9.486,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-19 03:33",
+        "v": 10.431,
+        "type": "H",
+        "dateKey": "2026-07-19",
+        "dateLabel": "July 19, 2026",
+        "timeLabel": "3:33 AM"
+      },
+      "lowest": {
+        "t": "2026-07-19 09:46",
+        "v": -0.026,
+        "type": "L",
+        "dateKey": "2026-07-19",
+        "dateLabel": "July 19, 2026",
+        "timeLabel": "9:46 AM"
+      },
+      "rangeFt": 10.457,
+      "thresholdFt": 11.824,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-19-massachusetts-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "Massachusetts: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Boston",
+    "caption": "Boston, Massachusetts tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 10.43 ft above local MLLW at 3:33 AM on July 19, 2026. The lowest is -0.03 ft, a predicted range of 10.46 ft at NOAA station 8443970.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #BostonMA #BostonTides #MassachusettsCoast #TideTimes #CoastalPlanning #NOAA",
+    "captions": {
+      "instagram": "Boston, Massachusetts tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 10.43 ft above local MLLW at 3:33 AM on July 19, 2026. The lowest is -0.03 ft, a predicted range of 10.46 ft at NOAA station 8443970.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #BostonMA #BostonTides #MassachusettsCoast #TideTimes #CoastalPlanning #NOAA",
+      "facebook": "Boston, Massachusetts tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 10.43 ft above local MLLW at 3:33 AM on July 19, 2026. The lowest is -0.03 ft, a predicted range of 10.46 ft at NOAA station 8443970.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-massachusetts-weekly-tide\n\nSave this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #BostonMA #BostonTides #MassachusettsCoast #TideTimes #CoastalPlanning #NOAA"
+    },
+    "discovery": {
+      "market": {
+        "locality": "Boston",
+        "region": "Massachusetts",
+        "label": "Boston, Massachusetts"
+      },
+      "keywords": [
+        "Boston tide predictions",
+        "Boston tide times",
+        "Massachusetts coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#BostonMA",
+        "#BostonTides",
+        "#MassachusettsCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#BostonMA",
+        "#BostonTides",
+        "#MassachusettsCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "Boston, Massachusetts",
+        "latitude": 42.35388888888889,
+        "longitude": -71.05027777777778,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-massachusetts-weekly-tide",
+    "ctaUrls": {
+      "instagram": "https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-massachusetts-weekly-tide",
+      "facebook": "https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-massachusetts-weekly-tide"
+    },
+    "ctaDisplay": "perigeetides.com/tides/massachusetts/boston-8443970",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Boston, NOAA station 8443970.",
+      "Highest predicted tide card: 10.43 feet above local MLLW at 3:33 AM on July 19, 2026.",
+      "Seven-day high and low tide prediction chart for Boston, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8443970.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-19-massachusetts-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Boston, NOAA station 8443970.",
+        "sha256": "393bd6fea335714e70c6cbcc3b3d42483d54d2631c4399726dd8706a0827017c",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "1e15319a58dea79538812c0e6b12c8af252fbe0b6783e34b147ec17b8be74121",
+        "sourceSha256": "552b0d7ee84746e6918e41c77f54ffcea678f970b962070c3e2d2001651da457",
+        "sourceFormat": "png",
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.651Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-19-massachusetts-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 10.43 feet above local MLLW at 3:33 AM on July 19, 2026.",
+        "sha256": "dc063218a1fdd8e8abe1b2325a15ed0a3f0b40da8eb1c164e131f2aa2de04e27",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "62a4ba0dfe4ec4711769328bc43e7f783102bb6c3df77ea094d80b6c55dab95a",
+        "sourceSha256": "0f74f97b790dfc5f143804211ddede17348c77fa0d9ecbe88e72b94a4832591f",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.679Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-19-massachusetts-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Boston, based on matched NOAA and Perigee data.",
+        "sha256": "3d6f284598c880296a283427736a3231451ee441e889c0fa327db704d52211dd",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "4cd3964cb7756e7441001a3fd7e1a6be12a63199f2bfc0df2d7b38fe2e77220b",
+        "sourceSha256": "56d21e029eb4b76f88a47464d399a893baabd2e8ea3466b1b2dbf8518e3c932e",
+        "sourceFormat": "png",
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.700Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-19-massachusetts-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8443970.",
+        "sha256": "4f19565bdec119cd673ead18a8fc331a3175a1e7824d2be332889c9c17b02442",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "4052fec36ec7a41e96cf8dd87670401de087ec570082baee9812366e0cf571dc",
+        "sourceSha256": "ba14a39c5387c34141d4b7398d1510847386a7f2a7958f6ca4803823aa4a8b38",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.724Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-19-massachusetts-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "929fced6c9d3f6049507c6592d49ab4f5ec07fd1b5b596d4ba65552996b34755",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "c961374d170f64d9b571b351ae9ba2d24270190dd048cb98caedb7bb43239c76",
+        "sourceSha256": "f65ab94e60b41b4dcbdec13a76b8a5f9d542959472f5249270c8123997eb8455",
+        "sourceFormat": "png",
+        "sourceWidth": 997,
+        "sourceHeight": 1577,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:58.747Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-20T03:06:31.800Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-20T03:06:31.622Z",
+    "report": "content/posts/2026-07-19-massachusetts-weekly-tide/validation.json"
+  }
+}

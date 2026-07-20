@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-19-florida-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-19",
+  "generatedAt": "2026-07-20T02:17:40.559Z",
+  "station": {
+    "id": "8724580",
+    "name": "KEY WEST",
+    "displayName": "Key West",
+    "stateCode": "FL",
+    "stateName": "Florida",
+    "stateSlug": "florida",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.403,
+    "stationPath": "/tides/florida/key-west-8724580",
+    "stateCalendarPath": "/king-tides/florida/2026",
+    "latitude": 24.555700302124023,
+    "longitude": -81.80789947509766
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-20T02:17:40.550Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8724580&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "c0b874b45cb6f28fa00a9f82ba41c9ebf03b53fb4137859ae7a604dd6d597a77"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/8724580/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "c0b874b45cb6f28fa00a9f82ba41c9ebf03b53fb4137859ae7a604dd6d597a77"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "2333e02fafa3940bfdb34cd67c2b3da3a356d4cd9ad819febf0483a75f6f7b53"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-19 02:20",
+        "v": 1.542,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 08:07",
+        "v": 0.295,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 14:33",
+        "v": 1.491,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 20:26",
+        "v": 0.313,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 03:00",
+        "v": 1.614,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 09:16",
+        "v": 0.297,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 15:30",
+        "v": 1.232,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 21:06",
+        "v": 0.443,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 03:43",
+        "v": 1.65,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 10:27",
+        "v": 0.275,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 16:42",
+        "v": 1.007,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 21:48",
+        "v": 0.543,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 04:32",
+        "v": 1.661,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 11:38",
+        "v": 0.228,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 18:19",
+        "v": 0.861,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 22:34",
+        "v": 0.613,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 05:26",
+        "v": 1.663,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 12:46",
+        "v": 0.162,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 19:56",
+        "v": 0.813,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 23:25",
+        "v": 0.654,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 06:23",
+        "v": 1.677,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 13:47",
+        "v": 0.087,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 21:02",
+        "v": 0.82,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 00:19",
+        "v": 0.668,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 07:18",
+        "v": 1.713,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 14:39",
+        "v": 0.019,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 21:45",
+        "v": 0.854,
+        "type": "H"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-25 07:18",
+        "v": 1.713,
+        "type": "H",
+        "dateKey": "2026-07-25",
+        "dateLabel": "July 25, 2026",
+        "timeLabel": "7:18 AM"
+      },
+      "lowest": {
+        "t": "2026-07-25 14:39",
+        "v": 0.019,
+        "type": "L",
+        "dateKey": "2026-07-25",
+        "dateLabel": "July 25, 2026",
+        "timeLabel": "2:39 PM"
+      },
+      "rangeFt": 1.694,
+      "thresholdFt": 2.403,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-19-florida-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "Florida: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Key West",
+    "caption": "Key West, Florida tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.71 ft above local MLLW at 7:18 AM on July 25, 2026. The lowest is 0.02 ft, a predicted range of 1.69 ft at NOAA station 8724580.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KeyWestFL #KeyWestTides #FloridaCoast #TideTimes #CoastalPlanning #NOAA",
+    "captions": {
+      "instagram": "Key West, Florida tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.71 ft above local MLLW at 7:18 AM on July 25, 2026. The lowest is 0.02 ft, a predicted range of 1.69 ft at NOAA station 8724580.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KeyWestFL #KeyWestTides #FloridaCoast #TideTimes #CoastalPlanning #NOAA",
+      "facebook": "Key West, Florida tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.71 ft above local MLLW at 7:18 AM on July 25, 2026. The lowest is 0.02 ft, a predicted range of 1.69 ft at NOAA station 8724580.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/florida/key-west-8724580?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-florida-weekly-tide\n\nSave this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #KeyWestFL #KeyWestTides #FloridaCoast #TideTimes #CoastalPlanning #NOAA"
+    },
+    "discovery": {
+      "market": {
+        "locality": "Key West",
+        "region": "Florida",
+        "label": "Key West, Florida"
+      },
+      "keywords": [
+        "Key West tide predictions",
+        "Key West tide times",
+        "Florida coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#KeyWestFL",
+        "#KeyWestTides",
+        "#FloridaCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#KeyWestFL",
+        "#KeyWestTides",
+        "#FloridaCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around Key West. Which Florida coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "Key West, Florida",
+        "latitude": 24.555700302124023,
+        "longitude": -81.80789947509766,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/florida/key-west-8724580?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-florida-weekly-tide",
+    "ctaUrls": {
+      "instagram": "https://perigeetides.com/tides/florida/key-west-8724580?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-florida-weekly-tide",
+      "facebook": "https://perigeetides.com/tides/florida/key-west-8724580?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-florida-weekly-tide"
+    },
+    "ctaDisplay": "perigeetides.com/tides/florida/key-west-8724580",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Key West, NOAA station 8724580.",
+      "Highest predicted tide card: 1.71 feet above local MLLW at 7:18 AM on July 25, 2026.",
+      "Seven-day high and low tide prediction chart for Key West, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8724580.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-19-florida-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Key West, NOAA station 8724580.",
+        "sha256": "833a2e620d3cf1024f4c873be238fed039fc05ca2fe958e3a6153987f9529acf",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "62b3ad91ad802931dd774687d77b46e447206eb27497326725208173d4331c42",
+        "sourceSha256": "7ea6b6a76ff199e19b53f88d5d5d82f387648c2bd45dac7997c611cf118f37e2",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.215Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-19-florida-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 1.71 feet above local MLLW at 7:18 AM on July 25, 2026.",
+        "sha256": "bbb0d8e1fa5d5b568a345f35f5d271989bb1db21a69a81328aa5af9f3b5c8b6c",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "f72427db1841a242f97271a87ed9262bf7920fff9f6d07875ac75969accd2c7a",
+        "sourceSha256": "4e29b75459c8b4bb0349add475b6c9b18c8f3e5b67d846e2e4b5f278e3e71185",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.243Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-19-florida-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Key West, based on matched NOAA and Perigee data.",
+        "sha256": "9b4adef0af560911cc18148d9a427904578bee85b2628573d3b69fb71a5a999f",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "158dc4bc30736ef7311190fd4c4ce3232d4d2c4b5253125cee2981f700b770e4",
+        "sourceSha256": "bfb05db5ab4d030669503ec987ac5003c64e9b6922db813bbecce8554aba67e7",
+        "sourceFormat": "png",
+        "sourceWidth": 979,
+        "sourceHeight": 1606,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.264Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-19-florida-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8724580.",
+        "sha256": "907c16ea3205b5bbbc3c148ffa50ef326bcbd139d780145846737f9ab5bc23ad",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "2700effad0f1b416c4e73290050f01ddb2921458419d6f0d07545e8343d0f600",
+        "sourceSha256": "49fa9f85bdc57f936234dace44c589e149a6df401a24bda769b18a0606fe6763",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.290Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-19-florida-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "3af2ff64dd67da85637ab92710fd38bae24dc8f12014f0c777aad121c9dbb641",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "c2d2e9c7e3ed087190254670a11de67a0f2cf3c70422b8b1a22c5770917426b1",
+        "sourceSha256": "c270849353e32dc0658cfd37dc8f459b737453561fdb6921762b5563d6b9dd04",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.319Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-florida-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-20T03:06:32.513Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-20T03:06:32.330Z",
+    "report": "content/posts/2026-07-19-florida-weekly-tide/validation.json"
+  }
+}

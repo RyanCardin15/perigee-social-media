@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-19-new-york-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "8518750",
+    "name": "NEW YORK (The Battery)",
+    "displayName": "New York (The Battery)",
+    "stateCode": "NY",
+    "stateName": "New York",
+    "stateSlug": "new-york",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 6.087,
+    "stationPath": "/tides/new-york/new-york-the-battery-8518750",
+    "stateCalendarPath": "/king-tides/new-york/2026",
+    "latitude": 40.70055389404297,
+    "longitude": -74.01416778564453
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8518750&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/8518750/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-new-york-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-new-york-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-new-york-weekly-tide"
+  },
+  "captions": {
+    "instagram": "New York, New York tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.15 ft above local MLLW at 1:19 PM on July 19, 2026. The lowest is -0.01 ft, a predicted range of 5.16 ft at NOAA station 8518750.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around New York. Which New York coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #NewYorkNY #NewYorkTides #NewYorkCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "New York, New York tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 5.15 ft above local MLLW at 1:19 PM on July 19, 2026. The lowest is -0.01 ft, a predicted range of 5.16 ft at NOAA station 8518750.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/new-york/new-york-the-battery-8518750?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-new-york-weekly-tide\n\nSave this chart for coastal planning around New York. Which New York coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #NewYorkNY #NewYorkTides #NewYorkCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "New York",
+      "region": "New York",
+      "label": "New York, New York"
+    },
+    "keywords": [
+      "New York tide predictions",
+      "New York tide times",
+      "New York coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#NewYorkNY",
+      "#NewYorkTides",
+      "#NewYorkCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#NewYorkNY",
+      "#NewYorkTides",
+      "#NewYorkCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around New York. Which New York coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "New York, New York",
+      "latitude": 40.70055389404297,
+      "longitude": -74.01416778564453,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for New York (The Battery), NOAA station 8518750.",
+      "sha256": "0da3a8cdc68e9378552799abc18de1a825e8e38d618573c58eb7bf3029ff49b8"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 5.15 feet above local MLLW at 1:19 PM on July 19, 2026.",
+      "sha256": "f8461e098c4938f71d766fa95e9ce4a6c101067879c72e5a0633fd4027660492"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for New York (The Battery), based on matched NOAA and Perigee data.",
+      "sha256": "cec3dd0d97a4621d80fd0cbc7739bbf90aeebc3f76460149757738861048467a"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8518750.",
+      "sha256": "b036413ba43efe4ab1521fbc67acb133993d83242727ea57a44f7429a557beb5"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-new-york-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "cb8cf42ae87b228e62f90b39b44ea065d6f7b350624c96df9f39a6cdafdd857e"
+    }
+  ]
+}

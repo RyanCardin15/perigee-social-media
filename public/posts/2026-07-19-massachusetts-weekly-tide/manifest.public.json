@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-07-19-massachusetts-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "8443970",
+    "name": "BOSTON",
+    "displayName": "Boston",
+    "stateCode": "MA",
+    "stateName": "Massachusetts",
+    "stateSlug": "massachusetts",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 11.824,
+    "stationPath": "/tides/massachusetts/boston-8443970",
+    "stateCalendarPath": "/king-tides/massachusetts/2026",
+    "latitude": 42.35388888888889,
+    "longitude": -71.05027777777778
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=8443970&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/8443970/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-massachusetts-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-massachusetts-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-massachusetts-weekly-tide"
+  },
+  "captions": {
+    "instagram": "Boston, Massachusetts tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 10.43 ft above local MLLW at 3:33 AM on July 19, 2026. The lowest is -0.03 ft, a predicted range of 10.46 ft at NOAA station 8443970.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #BostonMA #BostonTides #MassachusettsCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "Boston, Massachusetts tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 10.43 ft above local MLLW at 3:33 AM on July 19, 2026. The lowest is -0.03 ft, a predicted range of 10.46 ft at NOAA station 8443970.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/massachusetts/boston-8443970?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-massachusetts-weekly-tide\n\nSave this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #BostonMA #BostonTides #MassachusettsCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "Boston",
+      "region": "Massachusetts",
+      "label": "Boston, Massachusetts"
+    },
+    "keywords": [
+      "Boston tide predictions",
+      "Boston tide times",
+      "Massachusetts coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#BostonMA",
+      "#BostonTides",
+      "#MassachusettsCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#BostonMA",
+      "#BostonTides",
+      "#MassachusettsCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Boston. Which Massachusetts coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Boston, Massachusetts",
+      "latitude": 42.35388888888889,
+      "longitude": -71.05027777777778,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Boston, NOAA station 8443970.",
+      "sha256": "393bd6fea335714e70c6cbcc3b3d42483d54d2631c4399726dd8706a0827017c"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 10.43 feet above local MLLW at 3:33 AM on July 19, 2026.",
+      "sha256": "dc063218a1fdd8e8abe1b2325a15ed0a3f0b40da8eb1c164e131f2aa2de04e27"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Boston, based on matched NOAA and Perigee data.",
+      "sha256": "3d6f284598c880296a283427736a3231451ee441e889c0fa327db704d52211dd"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8443970.",
+      "sha256": "4f19565bdec119cd673ead18a8fc331a3175a1e7824d2be332889c9c17b02442"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-massachusetts-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "929fced6c9d3f6049507c6592d49ab4f5ec07fd1b5b596d4ba65552996b34755"
+    }
+  ]
+}

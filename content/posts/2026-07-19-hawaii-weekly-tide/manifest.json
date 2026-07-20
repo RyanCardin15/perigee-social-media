@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-19-hawaii-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-19",
+  "generatedAt": "2026-07-20T02:17:43.186Z",
+  "station": {
+    "id": "1612340",
+    "name": "HONOLULU",
+    "displayName": "Honolulu",
+    "stateCode": "HI",
+    "stateName": "Hawaiʻi",
+    "stateSlug": "hawaii",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 2.635,
+    "stationPath": "/tides/hawaii/honolulu-1612340",
+    "stateCalendarPath": "/king-tides/hawaii/2026",
+    "latitude": 21.30333333333334,
+    "longitude": -157.8645277777778
+  },
+  "window": {
+    "start": "2026-07-19",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-20T02:17:43.177Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260719&range=168&datum=MLLW&station=1612340&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "bf9eafc26659cdffb5afb8e4883ef793a829bff8dfdb38540a823bcbce2d58a8"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/1612340/predictions?interval=hilo&begin_date=2026-07-19&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "bf9eafc26659cdffb5afb8e4883ef793a829bff8dfdb38540a823bcbce2d58a8"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "5d7fe68c8e2db30967d278fdb4d281a93c74c88ed5f67de887e00f3836950510"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-19 02:10",
+        "v": 0.099,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 08:50",
+        "v": 1.321,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-19 13:59",
+        "v": 0.766,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-19 19:44",
+        "v": 1.487,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 02:43",
+        "v": 0.125,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 10:02",
+        "v": 1.49,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-20 15:39",
+        "v": 0.915,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-20 20:17",
+        "v": 1.198,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 03:19",
+        "v": 0.15,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 11:10",
+        "v": 1.665,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-21 17:58",
+        "v": 0.904,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-21 20:52",
+        "v": 0.946,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-22 03:59",
+        "v": 0.167,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-22 12:09",
+        "v": 1.825,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 04:44",
+        "v": 0.17,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 12:58",
+        "v": 1.958,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-23 21:15",
+        "v": 0.591,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-23 23:55",
+        "v": 0.645,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 05:33",
+        "v": 0.153,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-24 13:40",
+        "v": 2.061,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-24 21:38",
+        "v": 0.486,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 01:03",
+        "v": 0.619,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 06:22",
+        "v": 0.117,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-25 14:19",
+        "v": 2.14,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-25 21:57",
+        "v": 0.412,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-25 14:19",
+        "v": 2.14,
+        "type": "H",
+        "dateKey": "2026-07-25",
+        "dateLabel": "July 25, 2026",
+        "timeLabel": "2:19 PM"
+      },
+      "lowest": {
+        "t": "2026-07-19 02:10",
+        "v": 0.099,
+        "type": "L",
+        "dateKey": "2026-07-19",
+        "dateLabel": "July 19, 2026",
+        "timeLabel": "2:10 AM"
+      },
+      "rangeFt": 2.041,
+      "thresholdFt": 2.635,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-19-hawaii-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "Hawaiʻi: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Honolulu",
+    "caption": "Honolulu, Hawaiʻi tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 2.14 ft above local MLLW at 2:19 PM on July 25, 2026. The lowest is 0.10 ft, a predicted range of 2.04 ft at NOAA station 1612340.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #HonoluluHI #HonoluluTides #HawaiiCoast #TideTimes #CoastalPlanning #NOAA",
+    "captions": {
+      "instagram": "Honolulu, Hawaiʻi tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 2.14 ft above local MLLW at 2:19 PM on July 25, 2026. The lowest is 0.10 ft, a predicted range of 2.04 ft at NOAA station 1612340.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #HonoluluHI #HonoluluTides #HawaiiCoast #TideTimes #CoastalPlanning #NOAA",
+      "facebook": "Honolulu, Hawaiʻi tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 2.14 ft above local MLLW at 2:19 PM on July 25, 2026. The lowest is 0.10 ft, a predicted range of 2.04 ft at NOAA station 1612340.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-hawaii-weekly-tide\n\nSave this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #HonoluluHI #HonoluluTides #HawaiiCoast #TideTimes #CoastalPlanning #NOAA"
+    },
+    "discovery": {
+      "market": {
+        "locality": "Honolulu",
+        "region": "Hawaiʻi",
+        "label": "Honolulu, Hawaiʻi"
+      },
+      "keywords": [
+        "Honolulu tide predictions",
+        "Honolulu tide times",
+        "Hawaiʻi coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#HonoluluHI",
+        "#HonoluluTides",
+        "#HawaiiCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#HonoluluHI",
+        "#HonoluluTides",
+        "#HawaiiCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around Honolulu. Which Hawaiʻi coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "Honolulu, Hawaiʻi",
+        "latitude": 21.30333333333334,
+        "longitude": -157.8645277777778,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-hawaii-weekly-tide",
+    "ctaUrls": {
+      "instagram": "https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-19-hawaii-weekly-tide",
+      "facebook": "https://perigeetides.com/tides/hawaii/honolulu-1612340?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-19-hawaii-weekly-tide"
+    },
+    "ctaDisplay": "perigeetides.com/tides/hawaii/honolulu-1612340",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Honolulu, NOAA station 1612340.",
+      "Highest predicted tide card: 2.14 feet above local MLLW at 2:19 PM on July 25, 2026.",
+      "Seven-day high and low tide prediction chart for Honolulu, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 1612340.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-19-hawaii-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Honolulu, NOAA station 1612340.",
+        "sha256": "36b554073ea9d95903a3c9dbeb97bb5ab2365e0cbd67b3941120e3b058396902",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "c0dac9bc9742f29f103f67054c2d173056a1c15554fad109f034b3c853649582",
+        "sourceSha256": "757bb7ec4ca1617c8468dc9d0578255cdb6c671a4da35ae004424b64bf17b474",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.511Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-19-hawaii-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 2.14 feet above local MLLW at 2:19 PM on July 25, 2026.",
+        "sha256": "53b1b6e6f9ec91bf7ced70bc3148418764e840786407bee880b845c95a0e8451",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "1e8330fff19c5206f360fe293adab63d21a9da1932ccf8da464103db8db57efd",
+        "sourceSha256": "0be42685ecd502e7c6754af4e8a7f5a46b5bb8f8d553bf39aff151ce8959cc1d",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.540Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-19-hawaii-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Honolulu, based on matched NOAA and Perigee data.",
+        "sha256": "d5a0cd2c3189d73e682c050f9a062f0e7efee0cee7392f29479e4c674ce8114f",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "f55e22f5ba7885951fe7bb78bb9c55c213f6463f5fae408dd221c7e280f8c85b",
+        "sourceSha256": "288ea0d57e7f1a92a1077e8f28d6e03f89df1c4b48ab84bf6b69a14b88fbb83e",
+        "sourceFormat": "png",
+        "sourceWidth": 1024,
+        "sourceHeight": 1536,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.567Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-19-hawaii-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 1612340.",
+        "sha256": "4d80f9b61ab60a2dd14fa4ec44405616de66a616bad852cc1eeab29024edadf4",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "2ef7ecf90581fb52ff01c80a4a6339c472122664b94bee6e339aba9e1cccd29d",
+        "sourceSha256": "ab514936cd90827183a28fcd4dee2e090cb6d5456802548434902fb1f2052c0b",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.592Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-19-hawaii-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "df6a8df45306efa5d532205baabdfd588933fa93bd4ab80066c833a671326799",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "b982029c6da8518cb1471775121c4509bcac4e6c351d39bcfad984c38d4c3a5d",
+        "sourceSha256": "692e82a52eff05d63f3203c9a031012125ff934452622f600e71aa7d02d879c0",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-20T03:05:59.620Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-19-hawaii-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-20T03:06:32.877Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-20T03:06:32.703Z",
+    "report": "content/posts/2026-07-19-hawaii-weekly-tide/validation.json"
+  }
+}
