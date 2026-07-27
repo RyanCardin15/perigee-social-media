@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 4,
+  "id": "2026-07-27-alaska-weekly-tide",
+  "status": "staged",
+  "mode": "weekly",
+  "requestedDate": "2026-07-27",
+  "generatedAt": "2026-07-27T13:00:52.930Z",
+  "station": {
+    "id": "9452210",
+    "name": "Juneau",
+    "displayName": "Juneau",
+    "stateCode": "AK",
+    "stateName": "Alaska",
+    "stateSlug": "alaska",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 19.521,
+    "stationPath": "/tides/alaska/juneau-9452210",
+    "stateCalendarPath": "/king-tides/alaska/2026",
+    "latitude": 58.2988,
+    "longitude": -134.4106
+  },
+  "window": {
+    "start": "2026-07-27",
+    "hours": 168
+  },
+  "sources": {
+    "fetchedAt": "2026-07-27T13:00:52.905Z",
+    "matched": true,
+    "noaa": {
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260727&range=168&datum=MLLW&station=9452210&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+      "sha256": "c25f14d0cbd942278ece60269e6f1a74781cf31faf7729ceb4a11d28a8c42b3f"
+    },
+    "perigee": {
+      "url": "https://perigeetides.com/api/v1/stations/9452210/predictions?interval=hilo&begin_date=2026-07-27&hours=168&datum=MLLW&units=english&time_zone=lst_ldt",
+      "sha256": "c25f14d0cbd942278ece60269e6f1a74781cf31faf7729ceb4a11d28a8c42b3f"
+    },
+    "almanac": {
+      "path": "../Perigee/src/data/us-king-tides-2026.json",
+      "generatedAt": "2026-07-13T15:08:54.333Z",
+      "year": 2026,
+      "stationRowSha256": "8bdfcc57f8a7b9368abfa85eef496c21ebab856abb089dbb19a764fc7d127edf"
+    }
+  },
+  "data": {
+    "predictions": [
+      {
+        "t": "2026-07-27 00:05",
+        "v": 15.216,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-27 06:53",
+        "v": 0.338,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-27 13:35",
+        "v": 13.379,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-27 18:58",
+        "v": 4.719,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-28 00:49",
+        "v": 15.899,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-28 07:28",
+        "v": -0.461,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-28 14:08",
+        "v": 14.053,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-28 19:35",
+        "v": 3.903,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-29 01:28",
+        "v": 16.45,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-29 08:01",
+        "v": -1.11,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-29 14:37",
+        "v": 14.638,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-29 20:10",
+        "v": 3.163,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-30 02:04",
+        "v": 16.779,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-30 08:31",
+        "v": -1.525,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-30 15:05",
+        "v": 15.133,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-30 20:44",
+        "v": 2.531,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-31 02:40",
+        "v": 16.83,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-31 09:01",
+        "v": -1.628,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-31 15:33",
+        "v": 15.536,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-31 21:17",
+        "v": 2.021,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-01 03:14",
+        "v": 16.578,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-01 09:31",
+        "v": -1.363,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-01 16:00",
+        "v": 15.843,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-01 21:52",
+        "v": 1.653,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-02 03:50",
+        "v": 16.018,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-02 10:02",
+        "v": -0.702,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-02 16:28",
+        "v": 16.04,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-02 22:30",
+        "v": 1.457,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-31 02:40",
+        "v": 16.83,
+        "type": "H",
+        "dateKey": "2026-07-31",
+        "dateLabel": "July 31, 2026",
+        "timeLabel": "2:40 AM"
+      },
+      "lowest": {
+        "t": "2026-07-31 09:01",
+        "v": -1.628,
+        "type": "L",
+        "dateKey": "2026-07-31",
+        "dateLabel": "July 31, 2026",
+        "timeLabel": "9:01 AM"
+      },
+      "rangeFt": 18.458,
+      "thresholdFt": 19.521,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null
+  },
+  "creative": {
+    "postId": "2026-07-27-alaska-weekly-tide",
+    "contentType": "weekly-tide",
+    "temporalFrame": "upcoming",
+    "headline": "Alaska: your tide week ahead",
+    "eyebrow": "PERIGEE TIDES · WEEK AHEAD",
+    "stationName": "Juneau",
+    "caption": "Juneau, Alaska tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 16.83 ft above local MLLW at 2:40 AM on July 31, 2026. The lowest is -1.63 ft, a predicted range of 18.46 ft at NOAA station 9452210.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Juneau. Which Alaska coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #JuneauAK #JuneauTides #AlaskaCoast #TideTimes #CoastalPlanning #NOAA",
+    "captions": {
+      "instagram": "Juneau, Alaska tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 16.83 ft above local MLLW at 2:40 AM on July 31, 2026. The lowest is -1.63 ft, a predicted range of 18.46 ft at NOAA station 9452210.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Juneau. Which Alaska coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #JuneauAK #JuneauTides #AlaskaCoast #TideTimes #CoastalPlanning #NOAA",
+      "facebook": "Juneau, Alaska tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 16.83 ft above local MLLW at 2:40 AM on July 31, 2026. The lowest is -1.63 ft, a predicted range of 18.46 ft at NOAA station 9452210.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/alaska/juneau-9452210?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-27-alaska-weekly-tide\n\nSave this chart for coastal planning around Juneau. Which Alaska coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #JuneauAK #JuneauTides #AlaskaCoast #TideTimes #CoastalPlanning #NOAA"
+    },
+    "discovery": {
+      "market": {
+        "locality": "Juneau",
+        "region": "Alaska",
+        "label": "Juneau, Alaska"
+      },
+      "keywords": [
+        "Juneau tide predictions",
+        "Juneau tide times",
+        "Alaska coastal planning"
+      ],
+      "hashtags": [
+        "#PerigeeTides",
+        "#JuneauAK",
+        "#JuneauTides",
+        "#AlaskaCoast",
+        "#TideTimes",
+        "#CoastalPlanning",
+        "#NOAA"
+      ],
+      "localHashtags": [
+        "#JuneauAK",
+        "#JuneauTides",
+        "#AlaskaCoast"
+      ],
+      "engagementPrompt": "Save this chart for coastal planning around Juneau. Which Alaska coast station should Perigee cover next?",
+      "locationTag": {
+        "suggestedName": "Juneau, Alaska",
+        "latitude": 58.2988,
+        "longitude": -134.4106,
+        "instagramLocationId": null,
+        "delivery": "manual-existing-place",
+        "status": "manual-required-after-publish"
+      }
+    },
+    "ctaUrl": "https://perigeetides.com/tides/alaska/juneau-9452210?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-27-alaska-weekly-tide",
+    "ctaUrls": {
+      "instagram": "https://perigeetides.com/tides/alaska/juneau-9452210?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-07-27-alaska-weekly-tide",
+      "facebook": "https://perigeetides.com/tides/alaska/juneau-9452210?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-07-27-alaska-weekly-tide"
+    },
+    "ctaDisplay": "perigeetides.com/tides/alaska/juneau-9452210",
+    "disclaimer": "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+    "altTexts": [
+      "Perigee Tides week-ahead title card for Juneau, NOAA station 9452210.",
+      "Highest predicted tide card: 16.83 feet above local MLLW at 2:40 AM on July 31, 2026.",
+      "Seven-day high and low tide prediction chart for Juneau, based on matched NOAA and Perigee data.",
+      "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9452210.",
+      "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast."
+    ],
+    "designSystemVersion": "perigee-feed-v2-full-generation",
+    "generationBrief": "generation-brief.json",
+    "slides": [
+      {
+        "order": 1,
+        "role": "hook",
+        "file": "content/posts/2026-07-27-alaska-weekly-tide/slides/01-cover.jpg",
+        "altText": "Perigee Tides week-ahead title card for Juneau, NOAA station 9452210.",
+        "sha256": "228dc828f7a13e3f1089aeb1503abc6d271bb9ca1ae0a2817c6c58451744ee34",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "302df554681d2022f24cbe171f33582b7fda0ad3558ab32ae0bd458b452f90a6",
+        "sourceSha256": "61901dd6844b24001534c195ce592286db87493b1a1488ddcc0f93257b756e29",
+        "sourceFormat": "png",
+        "sourceWidth": 1122,
+        "sourceHeight": 1402,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-27T13:19:33.080Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-27-alaska-weekly-tide/01-cover.jpg"
+      },
+      {
+        "order": 2,
+        "role": "primary-fact",
+        "file": "content/posts/2026-07-27-alaska-weekly-tide/slides/02-peak.jpg",
+        "altText": "Highest predicted tide card: 16.83 feet above local MLLW at 2:40 AM on July 31, 2026.",
+        "sha256": "3e4b53c6bdc16d12b9a41d3618938d5ffa1547eb712f82d80ff74d0af28cf1b0",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "a0edb7d2a058b088172692a1950f0216049b7dcdb4ef793126c580faafe0ab37",
+        "sourceSha256": "1118237661feb84aeb5c3c9cb1ec1fd218e153b3278124b7dccb5fbd97f3c386",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-27T13:19:33.102Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-27-alaska-weekly-tide/02-peak.jpg"
+      },
+      {
+        "order": 3,
+        "role": "prediction-series",
+        "file": "content/posts/2026-07-27-alaska-weekly-tide/slides/03-curve.jpg",
+        "altText": "Seven-day high and low tide prediction chart for Juneau, based on matched NOAA and Perigee data.",
+        "sha256": "39855e8c2f0b407c656f193b65bc8a940273b5f8271d7b2439c8a4042b1b1360",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "3b3c5383e1e7759cd3beb801aa24f030ff0b03071db89e654fb4dcd376f77c1c",
+        "sourceSha256": "419bfa0f81afa70e1303d3f14d3094014a8697d8f017fde6010b909684e3b644",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-27T13:19:33.120Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-27-alaska-weekly-tide/03-curve.jpg"
+      },
+      {
+        "order": 4,
+        "role": "meaning",
+        "file": "content/posts/2026-07-27-alaska-weekly-tide/slides/04-meaning.jpg",
+        "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 9452210.",
+        "sha256": "a0df324d22145a19a9fb270dabb7fb56b016674652ef3eb98fdb508f96d306c3",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "1d49f83807d0e64d898b3b52d6aa52e06af34480191afa4dc201c5d6287b1a35",
+        "sourceSha256": "576b6cc084af7349875eb79a32c36458e7684fe953682327c0e1033e3beddc08",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-27T13:19:33.143Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-27-alaska-weekly-tide/04-meaning.jpg"
+      },
+      {
+        "order": 5,
+        "role": "source-and-action",
+        "file": "content/posts/2026-07-27-alaska-weekly-tide/slides/05-source.jpg",
+        "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+        "sha256": "af96a906a5a9f3df73e4bbd84a527acbf68e4bf221f1bd5db927c3d679fd1a6c",
+        "generatedBy": "codex",
+        "generator": "openai-imagegen-built-in",
+        "mode": "built-in",
+        "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+        "promptSha256": "91fd708a38e7f53b75d9fb0da07aeafc53203b7237a351426a669661bfda02f8",
+        "sourceSha256": "8fa21620f4df10ba23b360c9b329613392084ede421b5812312bbdb2a7d051d1",
+        "sourceFormat": "png",
+        "sourceWidth": 1003,
+        "sourceHeight": 1568,
+        "embeddedFactualContent": true,
+        "reviewedAgainstBrief": true,
+        "normalization": "orientation-resize-jpeg-only; no overlays or compositing",
+        "attachedAt": "2026-07-27T13:19:33.166Z",
+        "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-07-27-alaska-weekly-tide/05-source.jpg"
+      }
+    ]
+  },
+  "approval": {
+    "policy": "automatic-after-validation",
+    "reason": "Prediction-only content with matched NOAA and Perigee inputs."
+  },
+  "publishing": {
+    "platform": "instagram",
+    "format": "carousel",
+    "accountHandle": "perigeetides",
+    "status": "staged-not-published",
+    "mediaId": null,
+    "permalink": null,
+    "stagedAt": "2026-07-27T13:20:02.113Z"
+  },
+  "validation": {
+    "passed": true,
+    "validatedAt": "2026-07-27T13:19:33.300Z",
+    "report": "content/posts/2026-07-27-alaska-weekly-tide/validation.json"
+  }
+}

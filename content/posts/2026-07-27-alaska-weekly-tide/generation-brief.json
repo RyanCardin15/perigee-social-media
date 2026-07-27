@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-07-27-alaska-weekly-tide",
+  "createdAt": "2026-07-27T13:00:52.931Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "9452210",
+      "name": "Juneau",
+      "displayName": "Juneau",
+      "stateCode": "AK",
+      "stateName": "Alaska",
+      "stateSlug": "alaska",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 19.521,
+      "stationPath": "/tides/alaska/juneau-9452210",
+      "stateCalendarPath": "/king-tides/alaska/2026",
+      "latitude": 58.2988,
+      "longitude": -134.4106
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-07-27 00:05",
+        "v": 15.216,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-27 06:53",
+        "v": 0.338,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-27 13:35",
+        "v": 13.379,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-27 18:58",
+        "v": 4.719,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-28 00:49",
+        "v": 15.899,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-28 07:28",
+        "v": -0.461,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-28 14:08",
+        "v": 14.053,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-28 19:35",
+        "v": 3.903,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-29 01:28",
+        "v": 16.45,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-29 08:01",
+        "v": -1.11,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-29 14:37",
+        "v": 14.638,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-29 20:10",
+        "v": 3.163,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-30 02:04",
+        "v": 16.779,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-30 08:31",
+        "v": -1.525,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-30 15:05",
+        "v": 15.133,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-30 20:44",
+        "v": 2.531,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-31 02:40",
+        "v": 16.83,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-31 09:01",
+        "v": -1.628,
+        "type": "L"
+      },
+      {
+        "t": "2026-07-31 15:33",
+        "v": 15.536,
+        "type": "H"
+      },
+      {
+        "t": "2026-07-31 21:17",
+        "v": 2.021,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-01 03:14",
+        "v": 16.578,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-01 09:31",
+        "v": -1.363,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-01 16:00",
+        "v": 15.843,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-01 21:52",
+        "v": 1.653,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-02 03:50",
+        "v": 16.018,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-02 10:02",
+        "v": -0.702,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-02 16:28",
+        "v": 16.04,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-02 22:30",
+        "v": 1.457,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-07-31 02:40",
+        "v": 16.83,
+        "type": "H",
+        "dateKey": "2026-07-31",
+        "dateLabel": "July 31, 2026",
+        "timeLabel": "2:40 AM"
+      },
+      "lowest": {
+        "t": "2026-07-31 09:01",
+        "v": -1.628,
+        "type": "L",
+        "dateKey": "2026-07-31",
+        "dateLabel": "July 31, 2026",
+        "timeLabel": "9:01 AM"
+      },
+      "rangeFt": 18.458,
+      "thresholdFt": 19.521,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "Alaska: your tide week ahead",
+          "Predicted high · 16.83 ft",
+          "2:40 AM · July 31, 2026",
+          "Juneau · NOAA 9452210",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "16.83 ft",
+          "above local MLLW",
+          "2:40 AM",
+          "July 31, 2026",
+          "Juneau · NOAA 9452210",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Juneau · NOAA 9452210",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "18.46 ft",
+          "Highest prediction · 16.83 ft",
+          "2:40 AM · July 31, 2026",
+          "Lowest prediction · -1.63 ft",
+          "9:01 AM · July 31, 2026",
+          "Station-local time · feet above local MLLW",
+          "Juneau · NOAA 9452210",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/alaska/juneau-9452210",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "1e70d228e0e8bb5c22fa15dadac17a5487b65e73574ba557e68ff55b619cba26",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "Alaska: your tide week ahead",
+        "Predicted high · 16.83 ft",
+        "2:40 AM · July 31, 2026",
+        "Juneau · NOAA 9452210",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-27-alaska-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"Alaska: your tide week ahead\"\n\"Predicted high · 16.83 ft\"\n\"2:40 AM · July 31, 2026\"\n\"Juneau · NOAA 9452210\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "16.83 ft",
+        "above local MLLW",
+        "2:40 AM",
+        "July 31, 2026",
+        "Juneau · NOAA 9452210",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-27-alaska-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"16.83 ft\"\n\"above local MLLW\"\n\"2:40 AM\"\n\"July 31, 2026\"\n\"Juneau · NOAA 9452210\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Juneau · NOAA 9452210",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 27, 2026 | 12:05 AM | high | 15.216 ft MLLW\nJuly 27, 2026 | 6:53 AM | low | 0.338 ft MLLW\nJuly 27, 2026 | 1:35 PM | high | 13.379 ft MLLW\nJuly 27, 2026 | 6:58 PM | low | 4.719 ft MLLW\nJuly 28, 2026 | 12:49 AM | high | 15.899 ft MLLW\nJuly 28, 2026 | 7:28 AM | low | -0.461 ft MLLW\nJuly 28, 2026 | 2:08 PM | high | 14.053 ft MLLW\nJuly 28, 2026 | 7:35 PM | low | 3.903 ft MLLW\nJuly 29, 2026 | 1:28 AM | high | 16.450 ft MLLW\nJuly 29, 2026 | 8:01 AM | low | -1.110 ft MLLW\nJuly 29, 2026 | 2:37 PM | high | 14.638 ft MLLW\nJuly 29, 2026 | 8:10 PM | low | 3.163 ft MLLW\nJuly 30, 2026 | 2:04 AM | high | 16.779 ft MLLW\nJuly 30, 2026 | 8:31 AM | low | -1.525 ft MLLW\nJuly 30, 2026 | 3:05 PM | high | 15.133 ft MLLW\nJuly 30, 2026 | 8:44 PM | low | 2.531 ft MLLW\nJuly 31, 2026 | 2:40 AM | high | 16.830 ft MLLW\nJuly 31, 2026 | 9:01 AM | low | -1.628 ft MLLW\nJuly 31, 2026 | 3:33 PM | high | 15.536 ft MLLW\nJuly 31, 2026 | 9:17 PM | low | 2.021 ft MLLW\nAugust 1, 2026 | 3:14 AM | high | 16.578 ft MLLW\nAugust 1, 2026 | 9:31 AM | low | -1.363 ft MLLW\nAugust 1, 2026 | 4:00 PM | high | 15.843 ft MLLW\nAugust 1, 2026 | 9:52 PM | low | 1.653 ft MLLW\nAugust 2, 2026 | 3:50 AM | high | 16.018 ft MLLW\nAugust 2, 2026 | 10:02 AM | low | -0.702 ft MLLW\nAugust 2, 2026 | 4:28 PM | high | 16.040 ft MLLW\nAugust 2, 2026 | 10:30 PM | low | 1.457 ft MLLW",
+      "dataSeries": [
+        "July 27, 2026 | 12:05 AM | high | 15.216 ft MLLW",
+        "July 27, 2026 | 6:53 AM | low | 0.338 ft MLLW",
+        "July 27, 2026 | 1:35 PM | high | 13.379 ft MLLW",
+        "July 27, 2026 | 6:58 PM | low | 4.719 ft MLLW",
+        "July 28, 2026 | 12:49 AM | high | 15.899 ft MLLW",
+        "July 28, 2026 | 7:28 AM | low | -0.461 ft MLLW",
+        "July 28, 2026 | 2:08 PM | high | 14.053 ft MLLW",
+        "July 28, 2026 | 7:35 PM | low | 3.903 ft MLLW",
+        "July 29, 2026 | 1:28 AM | high | 16.450 ft MLLW",
+        "July 29, 2026 | 8:01 AM | low | -1.110 ft MLLW",
+        "July 29, 2026 | 2:37 PM | high | 14.638 ft MLLW",
+        "July 29, 2026 | 8:10 PM | low | 3.163 ft MLLW",
+        "July 30, 2026 | 2:04 AM | high | 16.779 ft MLLW",
+        "July 30, 2026 | 8:31 AM | low | -1.525 ft MLLW",
+        "July 30, 2026 | 3:05 PM | high | 15.133 ft MLLW",
+        "July 30, 2026 | 8:44 PM | low | 2.531 ft MLLW",
+        "July 31, 2026 | 2:40 AM | high | 16.830 ft MLLW",
+        "July 31, 2026 | 9:01 AM | low | -1.628 ft MLLW",
+        "July 31, 2026 | 3:33 PM | high | 15.536 ft MLLW",
+        "July 31, 2026 | 9:17 PM | low | 2.021 ft MLLW",
+        "August 1, 2026 | 3:14 AM | high | 16.578 ft MLLW",
+        "August 1, 2026 | 9:31 AM | low | -1.363 ft MLLW",
+        "August 1, 2026 | 4:00 PM | high | 15.843 ft MLLW",
+        "August 1, 2026 | 9:52 PM | low | 1.653 ft MLLW",
+        "August 2, 2026 | 3:50 AM | high | 16.018 ft MLLW",
+        "August 2, 2026 | 10:02 AM | low | -0.702 ft MLLW",
+        "August 2, 2026 | 4:28 PM | high | 16.040 ft MLLW",
+        "August 2, 2026 | 10:30 PM | low | 1.457 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-27-alaska-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nJuly 27, 2026 | 12:05 AM | high | 15.216 ft MLLW\nJuly 27, 2026 | 6:53 AM | low | 0.338 ft MLLW\nJuly 27, 2026 | 1:35 PM | high | 13.379 ft MLLW\nJuly 27, 2026 | 6:58 PM | low | 4.719 ft MLLW\nJuly 28, 2026 | 12:49 AM | high | 15.899 ft MLLW\nJuly 28, 2026 | 7:28 AM | low | -0.461 ft MLLW\nJuly 28, 2026 | 2:08 PM | high | 14.053 ft MLLW\nJuly 28, 2026 | 7:35 PM | low | 3.903 ft MLLW\nJuly 29, 2026 | 1:28 AM | high | 16.450 ft MLLW\nJuly 29, 2026 | 8:01 AM | low | -1.110 ft MLLW\nJuly 29, 2026 | 2:37 PM | high | 14.638 ft MLLW\nJuly 29, 2026 | 8:10 PM | low | 3.163 ft MLLW\nJuly 30, 2026 | 2:04 AM | high | 16.779 ft MLLW\nJuly 30, 2026 | 8:31 AM | low | -1.525 ft MLLW\nJuly 30, 2026 | 3:05 PM | high | 15.133 ft MLLW\nJuly 30, 2026 | 8:44 PM | low | 2.531 ft MLLW\nJuly 31, 2026 | 2:40 AM | high | 16.830 ft MLLW\nJuly 31, 2026 | 9:01 AM | low | -1.628 ft MLLW\nJuly 31, 2026 | 3:33 PM | high | 15.536 ft MLLW\nJuly 31, 2026 | 9:17 PM | low | 2.021 ft MLLW\nAugust 1, 2026 | 3:14 AM | high | 16.578 ft MLLW\nAugust 1, 2026 | 9:31 AM | low | -1.363 ft MLLW\nAugust 1, 2026 | 4:00 PM | high | 15.843 ft MLLW\nAugust 1, 2026 | 9:52 PM | low | 1.653 ft MLLW\nAugust 2, 2026 | 3:50 AM | high | 16.018 ft MLLW\nAugust 2, 2026 | 10:02 AM | low | -0.702 ft MLLW\nAugust 2, 2026 | 4:28 PM | high | 16.040 ft MLLW\nAugust 2, 2026 | 10:30 PM | low | 1.457 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Juneau · NOAA 9452210\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "18.46 ft",
+        "Highest prediction · 16.83 ft",
+        "2:40 AM · July 31, 2026",
+        "Lowest prediction · -1.63 ft",
+        "9:01 AM · July 31, 2026",
+        "Station-local time · feet above local MLLW",
+        "Juneau · NOAA 9452210",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-27-alaska-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"18.46 ft\"\n\"Highest prediction · 16.83 ft\"\n\"2:40 AM · July 31, 2026\"\n\"Lowest prediction · -1.63 ft\"\n\"9:01 AM · July 31, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Juneau · NOAA 9452210\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/alaska/juneau-9452210",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-07-27-alaska-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/alaska/juneau-9452210\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}
