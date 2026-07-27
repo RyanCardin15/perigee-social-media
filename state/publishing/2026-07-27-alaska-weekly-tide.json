@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-07-27-alaska-weekly-tide",
+  "status": "live-verified",
+  "accountIdHash": "5e5961c776e13573746642defa75b466ac9b84971f4ca88a16ccb5eb2f67df0d",
+  "manifestSha256": "d6a9393d54a293d02d772c7a0f67618cd3ab1cda3ee1393ceff55a86c659a5cc",
+  "children": [
+    {
+      "order": 1,
+      "id": "18171777685410483"
+    },
+    {
+      "order": 2,
+      "id": "18171777826410483"
+    },
+    {
+      "order": 3,
+      "id": "18171777928410483"
+    },
+    {
+      "order": 4,
+      "id": "18171777979410483"
+    },
+    {
+      "order": 5,
+      "id": "18171778051410483"
+    }
+  ],
+  "carouselId": "18171778087410483",
+  "mediaId": "18429496741132591",
+  "createdAt": "2026-07-27T13:22:07.177Z",
+  "updatedAt": "2026-07-27T13:23:46.127Z",
+  "requestedAt": "2026-07-27T13:23:41.932Z",
+  "receivedAt": "2026-07-27T13:23:45.967Z",
+  "permalink": "https://www.instagram.com/p/DbTED8JlmlH/",
+  "publishedAt": "2026-07-27T13:23:42+0000"
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-07-27-alaska-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-07-27",
   "generatedAt": "2026-07-27T13:00:52.930Z",
@@ -388,10 +388,23 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-07-27T13:20:02.113Z"
+    "status": "published",
+    "mediaId": "18429496741132591",
+    "permalink": "https://www.instagram.com/p/DbTED8JlmlH/",
+    "stagedAt": "2026-07-27T13:20:02.113Z",
+    "publishedAt": "2026-07-27T13:23:42+0000",
+    "instagram": {
+      "status": "published",
+      "mediaId": "18429496741132591",
+      "permalink": "https://www.instagram.com/p/DbTED8JlmlH/",
+      "publishedAt": "2026-07-27T13:23:42+0000"
+    },
+    "facebook": {
+      "status": "published",
+      "mediaId": "1253693981151886_122113711203388773",
+      "permalink": "https://www.facebook.com/122109220539388773/posts/122113711203388773",
+      "publishedAt": "2026-07-27T13:24:03+0000"
+    }
   },
   "validation": {
     "passed": true,
