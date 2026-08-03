@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "postId": "2026-08-03-alabama-weekly-tide",
+  "status": "live-verified",
+  "accountIdHash": "5e5961c776e13573746642defa75b466ac9b84971f4ca88a16ccb5eb2f67df0d",
+  "manifestSha256": "b0361055ff19a3a1107859d728fd481a310c8112f4f9bb8394e64ce0b5be103a",
+  "children": [
+    {
+      "order": 1,
+      "id": "18173939758410483"
+    },
+    {
+      "order": 2,
+      "id": "18173939821410483"
+    },
+    {
+      "order": 3,
+      "id": "18173939836410483"
+    },
+    {
+      "order": 4,
+      "id": "18173939860410483"
+    },
+    {
+      "order": 5,
+      "id": "18173939875410483"
+    }
+  ],
+  "carouselId": "18173939899410483",
+  "mediaId": "18113066315284512",
+  "createdAt": "2026-08-03T13:13:40.020Z",
+  "updatedAt": "2026-08-03T13:14:23.481Z",
+  "requestedAt": "2026-08-03T13:14:17.881Z",
+  "receivedAt": "2026-08-03T13:14:23.225Z",
+  "permalink": "https://www.instagram.com/p/DblElFOkWfc/",
+  "publishedAt": "2026-08-03T13:14:18+0000"
+}

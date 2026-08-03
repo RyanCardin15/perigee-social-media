@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "platform": "facebook",
+  "postId": "2026-08-03-alabama-weekly-tide",
+  "status": "live-verified",
+  "pageIdHash": "c1581032a7f035c412cb68609a648b535399b343021fcc73f78e946cee839cfa",
+  "manifestSha256": "350c1218c293d4e736c5db3495ea62b59f175088c92bac13417ad0d613bab3c2",
+  "photos": [
+    {
+      "order": 1,
+      "id": "122115712215388773"
+    },
+    {
+      "order": 2,
+      "id": "122115712263388773"
+    },
+    {
+      "order": 3,
+      "id": "122115712305388773"
+    },
+    {
+      "order": 4,
+      "id": "122115712365388773"
+    },
+    {
+      "order": 5,
+      "id": "122115712413388773"
+    }
+  ],
+  "mediaId": "1253693981151886_122115712461388773",
+  "createdAt": "2026-08-03T13:14:23.555Z",
+  "updatedAt": "2026-08-03T13:14:34.057Z",
+  "requestedAt": "2026-08-03T13:14:29.851Z",
+  "receivedAt": "2026-08-03T13:14:33.645Z",
+  "permalink": "https://www.facebook.com/122109220539388773/posts/122115712461388773",
+  "publishedAt": "2026-08-03T13:14:29+0000",
+  "pageName": "Perigee Tides"
+}

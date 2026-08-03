@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "id": "2026-08-03-alabama-weekly-tide",
-  "status": "staged",
+  "status": "published",
   "mode": "weekly",
   "requestedDate": "2026-08-03",
   "generatedAt": "2026-08-03T13:01:50.093Z",
@@ -328,10 +328,23 @@
     "platform": "instagram",
     "format": "carousel",
     "accountHandle": "perigeetides",
-    "status": "staged-not-published",
-    "mediaId": null,
-    "permalink": null,
-    "stagedAt": "2026-08-03T13:12:15.440Z"
+    "status": "published",
+    "mediaId": "18113066315284512",
+    "permalink": "https://www.instagram.com/p/DblElFOkWfc/",
+    "stagedAt": "2026-08-03T13:12:15.440Z",
+    "publishedAt": "2026-08-03T13:14:18+0000",
+    "instagram": {
+      "status": "published",
+      "mediaId": "18113066315284512",
+      "permalink": "https://www.instagram.com/p/DblElFOkWfc/",
+      "publishedAt": "2026-08-03T13:14:18+0000"
+    },
+    "facebook": {
+      "status": "published",
+      "mediaId": "1253693981151886_122115712461388773",
+      "permalink": "https://www.facebook.com/122109220539388773/posts/122115712461388773",
+      "publishedAt": "2026-08-03T13:14:29+0000"
+    }
   },
   "validation": {
     "passed": true,
