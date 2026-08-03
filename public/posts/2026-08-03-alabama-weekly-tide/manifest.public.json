@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-08-03-alabama-weekly-tide",
+  "contentType": "weekly-tide",
+  "station": {
+    "id": "8735180",
+    "name": "DAUPHIN ISLAND",
+    "displayName": "Dauphin Island",
+    "stateCode": "AL",
+    "stateName": "Alabama",
+    "stateSlug": "alabama",
+    "datum": "MLLW",
+    "units": "english",
+    "timeZone": "lst_ldt",
+    "kingTideThresholdFt": 1.962,
+    "stationPath": "/tides/alabama/dauphin-island-8735180",
+    "stateCalendarPath": "/king-tides/alabama/2026",
+    "latitude": 30.25,
+    "longitude": -88.07499694824219
+  },
+  "window": {
+    "start": "2026-08-03",
+    "hours": 168
+  },
+  "sourceUrls": [
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=PerigeeSocial&begin_date=20260803&range=168&datum=MLLW&station=8735180&time_zone=lst_ldt&units=english&interval=hilo&format=json",
+    "https://perigeetides.com/api/v1/stations/8735180/predictions?interval=hilo&begin_date=2026-08-03&hours=168&datum=MLLW&units=english&time_zone=lst_ldt"
+  ],
+  "ctaUrl": "https://perigeetides.com/tides/alabama/dauphin-island-8735180?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-08-03-alabama-weekly-tide",
+  "ctaUrls": {
+    "instagram": "https://perigeetides.com/tides/alabama/dauphin-island-8735180?utm_source=instagram&utm_medium=organic_social&utm_campaign=ig_2026-08-03-alabama-weekly-tide",
+    "facebook": "https://perigeetides.com/tides/alabama/dauphin-island-8735180?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-08-03-alabama-weekly-tide"
+  },
+  "captions": {
+    "instagram": "Dauphin Island, Alabama tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.87 ft above local MLLW at 7:45 AM on August 9, 2026. The lowest is -0.30 ft, a predicted range of 2.17 ft at NOAA station 8735180.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart at the link in bio.\n\nSave this chart for coastal planning around Dauphin Island. Which Alabama coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #DauphinIslandAL #DauphinIslandTides #AlabamaCoast #TideTimes #CoastalPlanning #NOAA",
+    "facebook": "Dauphin Island, Alabama tide predictions for the week ahead.\n\nThe highest astronomical tide in this seven-day window is predicted at 1.87 ft above local MLLW at 7:45 AM on August 9, 2026. The lowest is -0.30 ft, a predicted range of 2.17 ft at NOAA station 8735180.\n\nTimes are station-local. Predictions are not observations or a flood forecast.\n\nOpen the full station chart: https://perigeetides.com/tides/alabama/dauphin-island-8735180?utm_source=facebook&utm_medium=organic_social&utm_campaign=fb_2026-08-03-alabama-weekly-tide\n\nSave this chart for coastal planning around Dauphin Island. Which Alabama coast station should Perigee cover next?\n\nNOAA CO-OPS • Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\n\n#PerigeeTides #DauphinIslandAL #DauphinIslandTides #AlabamaCoast #TideTimes #CoastalPlanning #NOAA"
+  },
+  "discovery": {
+    "market": {
+      "locality": "Dauphin Island",
+      "region": "Alabama",
+      "label": "Dauphin Island, Alabama"
+    },
+    "keywords": [
+      "Dauphin Island tide predictions",
+      "Dauphin Island tide times",
+      "Alabama coastal planning"
+    ],
+    "hashtags": [
+      "#PerigeeTides",
+      "#DauphinIslandAL",
+      "#DauphinIslandTides",
+      "#AlabamaCoast",
+      "#TideTimes",
+      "#CoastalPlanning",
+      "#NOAA"
+    ],
+    "localHashtags": [
+      "#DauphinIslandAL",
+      "#DauphinIslandTides",
+      "#AlabamaCoast"
+    ],
+    "engagementPrompt": "Save this chart for coastal planning around Dauphin Island. Which Alabama coast station should Perigee cover next?",
+    "locationTag": {
+      "suggestedName": "Dauphin Island, Alabama",
+      "latitude": 30.25,
+      "longitude": -88.07499694824219,
+      "instagramLocationId": null,
+      "delivery": "manual-existing-place",
+      "status": "manual-required-after-publish"
+    }
+  },
+  "slides": [
+    {
+      "order": 1,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-08-03-alabama-weekly-tide/01-cover.jpg",
+      "altText": "Perigee Tides week-ahead title card for Dauphin Island, NOAA station 8735180.",
+      "sha256": "d712c9a4d191f9b0cb2f811281ebf5e193027ee59da32e09352401ce70ae8798"
+    },
+    {
+      "order": 2,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-08-03-alabama-weekly-tide/02-peak.jpg",
+      "altText": "Highest predicted tide card: 1.87 feet above local MLLW at 7:45 AM on August 9, 2026.",
+      "sha256": "e2f0a88dd26fa80f27bc98505b1f9a88555c52725ebda164fb9e752f97bd703b"
+    },
+    {
+      "order": 3,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-08-03-alabama-weekly-tide/03-curve.jpg",
+      "altText": "Seven-day high and low tide prediction chart for Dauphin Island, based on matched NOAA and Perigee data.",
+      "sha256": "1178b36c8922278d5d2633888943d2a78a24017be62149b0d9054794960de7cc"
+    },
+    {
+      "order": 4,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-08-03-alabama-weekly-tide/04-meaning.jpg",
+      "altText": "Weekly range card showing the highest and lowest astronomical predictions at NOAA station 8735180.",
+      "sha256": "0fbf895d807f7f5b94a693f3adc79f364c9e5c9254ef8b25ce8843f27594176b"
+    },
+    {
+      "order": 5,
+      "publicUrl": "https://raw.githubusercontent.com/RyanCardin15/perigee-social-media/main/public/posts/2026-08-03-alabama-weekly-tide/05-source.jpg",
+      "altText": "Source and limitations card: NOAA CO-OPS astronomical predictions at one station, not observations or a flood forecast.",
+      "sha256": "826c3b2c1535f6392a2dcc06e91f3c6dd1558fa4e5c66d4cb295fad4aaff980f"
+    }
+  ]
+}

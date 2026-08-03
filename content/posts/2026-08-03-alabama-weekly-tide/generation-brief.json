@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 2,
+  "designSystemVersion": "perigee-feed-v2-full-generation",
+  "promptVersion": "perigee-feed-v2-full-generation-carousel-v1",
+  "postId": "2026-08-03-alabama-weekly-tide",
+  "createdAt": "2026-08-03T13:01:50.094Z",
+  "requiredGenerator": {
+    "generatedBy": "codex",
+    "generator": "openai-imagegen-built-in",
+    "mode": "built-in"
+  },
+  "output": {
+    "role": "five-complete-carousel-slides",
+    "count": 5,
+    "targetAspectRatio": "4:5",
+    "targetWidth": 1080,
+    "targetHeight": 1350,
+    "publicationFormat": "jpeg",
+    "generatedContentIncludes": [
+      "background",
+      "typography",
+      "data",
+      "chart",
+      "information-design",
+      "all-visible-copy"
+    ],
+    "deterministicOverlaysAllowed": false
+  },
+  "facts": {
+    "station": {
+      "id": "8735180",
+      "name": "DAUPHIN ISLAND",
+      "displayName": "Dauphin Island",
+      "stateCode": "AL",
+      "stateName": "Alabama",
+      "stateSlug": "alabama",
+      "datum": "MLLW",
+      "units": "english",
+      "timeZone": "lst_ldt",
+      "kingTideThresholdFt": 1.962,
+      "stationPath": "/tides/alabama/dauphin-island-8735180",
+      "stateCalendarPath": "/king-tides/alabama/2026",
+      "latitude": 30.25,
+      "longitude": -88.07499694824219
+    },
+    "contentType": "weekly-tide",
+    "predictions": [
+      {
+        "t": "2026-08-03 03:47",
+        "v": 0.805,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-03 13:00",
+        "v": 0.635,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-03 15:18",
+        "v": 0.645,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-03 18:14",
+        "v": 0.624,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-04 03:36",
+        "v": 1.022,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-04 14:24",
+        "v": 0.399,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-05 03:58",
+        "v": 1.246,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-05 15:29",
+        "v": 0.179,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-06 04:41",
+        "v": 1.453,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-06 16:31",
+        "v": -0.013,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-07 05:38",
+        "v": 1.632,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-07 17:32",
+        "v": -0.165,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-08 06:42",
+        "v": 1.774,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-08 18:33",
+        "v": -0.266,
+        "type": "L"
+      },
+      {
+        "t": "2026-08-09 07:45",
+        "v": 1.868,
+        "type": "H"
+      },
+      {
+        "t": "2026-08-09 19:34",
+        "v": -0.304,
+        "type": "L"
+      }
+    ],
+    "metrics": {
+      "highest": {
+        "t": "2026-08-09 07:45",
+        "v": 1.868,
+        "type": "H",
+        "dateKey": "2026-08-09",
+        "dateLabel": "August 9, 2026",
+        "timeLabel": "7:45 AM"
+      },
+      "lowest": {
+        "t": "2026-08-09 19:34",
+        "v": -0.304,
+        "type": "L",
+        "dateKey": "2026-08-09",
+        "dateLabel": "August 9, 2026",
+        "timeLabel": "7:34 PM"
+      },
+      "rangeFt": 2.172,
+      "thresholdFt": 1.962,
+      "thresholdCrossings": []
+    },
+    "kingTideCluster": null,
+    "slideText": [
+      {
+        "order": 1,
+        "exactText": [
+          "PERIGEE TIDES",
+          "PERIGEE TIDES · WEEK AHEAD",
+          "Alabama: your tide week ahead",
+          "Predicted high · 1.87 ft",
+          "7:45 AM · August 9, 2026",
+          "Dauphin Island · NOAA 8735180",
+          "1 / 5"
+        ]
+      },
+      {
+        "order": 2,
+        "exactText": [
+          "PREDICTED HIGH",
+          "1.87 ft",
+          "above local MLLW",
+          "7:45 AM",
+          "August 9, 2026",
+          "Dauphin Island · NOAA 8735180",
+          "Station-local time · feet above local MLLW",
+          "Astronomical prediction",
+          "2 / 5"
+        ]
+      },
+      {
+        "order": 3,
+        "exactText": [
+          "7-DAY TIDE OUTLOOK",
+          "Dauphin Island · NOAA 8735180",
+          "Matched NOAA + Perigee astronomical predictions",
+          "Station-local time · feet above local MLLW",
+          "3 / 5"
+        ]
+      },
+      {
+        "order": 4,
+        "exactText": [
+          "WEEKLY RANGE",
+          "2.17 ft",
+          "Highest prediction · 1.87 ft",
+          "7:45 AM · August 9, 2026",
+          "Lowest prediction · -0.30 ft",
+          "7:34 PM · August 9, 2026",
+          "Station-local time · feet above local MLLW",
+          "Dauphin Island · NOAA 8735180",
+          "4 / 5"
+        ]
+      },
+      {
+        "order": 5,
+        "exactText": [
+          "SOURCE + LIMITS",
+          "Prediction ≠ observation",
+          "Astronomical prediction at one NOAA station",
+          "Not an observed water level or flood forecast",
+          "Wind, pressure, waves and rain can move observed water",
+          "OPEN THE FULL STATION CHART",
+          "perigeetides.com/tides/alabama/dauphin-island-8735180",
+          "NOAA CO-OPS",
+          "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+          "5 / 5"
+        ]
+      }
+    ]
+  },
+  "factsSha256": "9443cb73939de0bee8728c3ff60cfc026791885572e88264fbe30137de5bc532",
+  "slides": [
+    {
+      "order": 1,
+      "role": "hook",
+      "exactText": [
+        "PERIGEE TIDES",
+        "PERIGEE TIDES · WEEK AHEAD",
+        "Alabama: your tide week ahead",
+        "Predicted high · 1.87 ft",
+        "7:45 AM · August 9, 2026",
+        "Dauphin Island · NOAA 8735180",
+        "1 / 5"
+      ],
+      "direction": "Create a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.",
+      "outputFile": "01-cover.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 1 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-08-03-alabama-weekly-tide; slide 1 of 5.\n\nCreate a cinematic but non-documentary ocean study as part of the complete poster. Make the headline and predicted high the immediate focal points. The water is editorial atmosphere, never evidence of local conditions.\n\nEXACT TEXT — reproduce only these strings:\n\"PERIGEE TIDES\"\n\"PERIGEE TIDES · WEEK AHEAD\"\n\"Alabama: your tide week ahead\"\n\"Predicted high · 1.87 ft\"\n\"7:45 AM · August 9, 2026\"\n\"Dauphin Island · NOAA 8735180\"\n\"1 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 2,
+      "role": "primary-fact",
+      "exactText": [
+        "PREDICTED HIGH",
+        "1.87 ft",
+        "above local MLLW",
+        "7:45 AM",
+        "August 9, 2026",
+        "Dauphin Island · NOAA 8735180",
+        "Station-local time · feet above local MLLW",
+        "Astronomical prediction",
+        "2 / 5"
+      ],
+      "direction": "Build a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.",
+      "outputFile": "02-peak.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 2 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-08-03-alabama-weekly-tide; slide 2 of 5.\n\nBuild a refined data card with the hero value dominating the slide. Integrate subtle generated water texture, contour motifs, and editorial lighting without obscuring a single character.\n\nEXACT TEXT — reproduce only these strings:\n\"PREDICTED HIGH\"\n\"1.87 ft\"\n\"above local MLLW\"\n\"7:45 AM\"\n\"August 9, 2026\"\n\"Dauphin Island · NOAA 8735180\"\n\"Station-local time · feet above local MLLW\"\n\"Astronomical prediction\"\n\"2 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 3,
+      "role": "prediction-series",
+      "exactText": [
+        "7-DAY TIDE OUTLOOK",
+        "Dauphin Island · NOAA 8735180",
+        "Matched NOAA + Perigee astronomical predictions",
+        "Station-local time · feet above local MLLW",
+        "3 / 5"
+      ],
+      "direction": "Create a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nAugust 3, 2026 | 3:47 AM | high | 0.805 ft MLLW\nAugust 3, 2026 | 1:00 PM | low | 0.635 ft MLLW\nAugust 3, 2026 | 3:18 PM | high | 0.645 ft MLLW\nAugust 3, 2026 | 6:14 PM | low | 0.624 ft MLLW\nAugust 4, 2026 | 3:36 AM | high | 1.022 ft MLLW\nAugust 4, 2026 | 2:24 PM | low | 0.399 ft MLLW\nAugust 5, 2026 | 3:58 AM | high | 1.246 ft MLLW\nAugust 5, 2026 | 3:29 PM | low | 0.179 ft MLLW\nAugust 6, 2026 | 4:41 AM | high | 1.453 ft MLLW\nAugust 6, 2026 | 4:31 PM | low | -0.013 ft MLLW\nAugust 7, 2026 | 5:38 AM | high | 1.632 ft MLLW\nAugust 7, 2026 | 5:32 PM | low | -0.165 ft MLLW\nAugust 8, 2026 | 6:42 AM | high | 1.774 ft MLLW\nAugust 8, 2026 | 6:33 PM | low | -0.266 ft MLLW\nAugust 9, 2026 | 7:45 AM | high | 1.868 ft MLLW\nAugust 9, 2026 | 7:34 PM | low | -0.304 ft MLLW",
+      "dataSeries": [
+        "August 3, 2026 | 3:47 AM | high | 0.805 ft MLLW",
+        "August 3, 2026 | 1:00 PM | low | 0.635 ft MLLW",
+        "August 3, 2026 | 3:18 PM | high | 0.645 ft MLLW",
+        "August 3, 2026 | 6:14 PM | low | 0.624 ft MLLW",
+        "August 4, 2026 | 3:36 AM | high | 1.022 ft MLLW",
+        "August 4, 2026 | 2:24 PM | low | 0.399 ft MLLW",
+        "August 5, 2026 | 3:58 AM | high | 1.246 ft MLLW",
+        "August 5, 2026 | 3:29 PM | low | 0.179 ft MLLW",
+        "August 6, 2026 | 4:41 AM | high | 1.453 ft MLLW",
+        "August 6, 2026 | 4:31 PM | low | -0.013 ft MLLW",
+        "August 7, 2026 | 5:38 AM | high | 1.632 ft MLLW",
+        "August 7, 2026 | 5:32 PM | low | -0.165 ft MLLW",
+        "August 8, 2026 | 6:42 AM | high | 1.774 ft MLLW",
+        "August 8, 2026 | 6:33 PM | low | -0.266 ft MLLW",
+        "August 9, 2026 | 7:45 AM | high | 1.868 ft MLLW",
+        "August 9, 2026 | 7:34 PM | low | -0.304 ft MLLW"
+      ],
+      "outputFile": "03-curve.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 3 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-08-03-alabama-weekly-tide; slide 3 of 5.\n\nCreate a precise, legible tide-curve infographic from only the supplied DATA SERIES. Plot every point in chronological order. Distinguish highs and lows by both shape and color; do not invent or smooth away data. Emphasize the weekly range without adding a threshold.\nDATA SERIES — plot exactly:\nAugust 3, 2026 | 3:47 AM | high | 0.805 ft MLLW\nAugust 3, 2026 | 1:00 PM | low | 0.635 ft MLLW\nAugust 3, 2026 | 3:18 PM | high | 0.645 ft MLLW\nAugust 3, 2026 | 6:14 PM | low | 0.624 ft MLLW\nAugust 4, 2026 | 3:36 AM | high | 1.022 ft MLLW\nAugust 4, 2026 | 2:24 PM | low | 0.399 ft MLLW\nAugust 5, 2026 | 3:58 AM | high | 1.246 ft MLLW\nAugust 5, 2026 | 3:29 PM | low | 0.179 ft MLLW\nAugust 6, 2026 | 4:41 AM | high | 1.453 ft MLLW\nAugust 6, 2026 | 4:31 PM | low | -0.013 ft MLLW\nAugust 7, 2026 | 5:38 AM | high | 1.632 ft MLLW\nAugust 7, 2026 | 5:32 PM | low | -0.165 ft MLLW\nAugust 8, 2026 | 6:42 AM | high | 1.774 ft MLLW\nAugust 8, 2026 | 6:33 PM | low | -0.266 ft MLLW\nAugust 9, 2026 | 7:45 AM | high | 1.868 ft MLLW\nAugust 9, 2026 | 7:34 PM | low | -0.304 ft MLLW\n\nEXACT TEXT — reproduce only these strings:\n\"7-DAY TIDE OUTLOOK\"\n\"Dauphin Island · NOAA 8735180\"\n\"Matched NOAA + Perigee astronomical predictions\"\n\"Station-local time · feet above local MLLW\"\n\"3 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 4,
+      "role": "meaning",
+      "exactText": [
+        "WEEKLY RANGE",
+        "2.17 ft",
+        "Highest prediction · 1.87 ft",
+        "7:45 AM · August 9, 2026",
+        "Lowest prediction · -0.30 ft",
+        "7:34 PM · August 9, 2026",
+        "Station-local time · feet above local MLLW",
+        "Dauphin Island · NOAA 8735180",
+        "4 / 5"
+      ],
+      "direction": "Create a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.",
+      "outputFile": "04-meaning.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 4 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-08-03-alabama-weekly-tide; slide 4 of 5.\n\nCreate a clear highest-versus-lowest comparison with the weekly range as the hero number. Use both position and color to distinguish the two predictions.\n\nEXACT TEXT — reproduce only these strings:\n\"WEEKLY RANGE\"\n\"2.17 ft\"\n\"Highest prediction · 1.87 ft\"\n\"7:45 AM · August 9, 2026\"\n\"Lowest prediction · -0.30 ft\"\n\"7:34 PM · August 9, 2026\"\n\"Station-local time · feet above local MLLW\"\n\"Dauphin Island · NOAA 8735180\"\n\"4 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    },
+    {
+      "order": 5,
+      "role": "source-and-action",
+      "exactText": [
+        "SOURCE + LIMITS",
+        "Prediction ≠ observation",
+        "Astronomical prediction at one NOAA station",
+        "Not an observed water level or flood forecast",
+        "Wind, pressure, waves and rain can move observed water",
+        "OPEN THE FULL STATION CHART",
+        "perigeetides.com/tides/alabama/dauphin-island-8735180",
+        "NOAA CO-OPS",
+        "Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.",
+        "5 / 5"
+      ],
+      "direction": "Create a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.",
+      "outputFile": "05-source.jpg",
+      "prompt": "Use case: infographic-diagram\nAsset type: finished Instagram carousel slide 5 of 5, portrait 4:5\nPrimary request: generate the entire finished Perigee Tides slide in one image, including the editorial background, typography, data presentation, chart or information design, hierarchy, spacing, and all visible copy.\nBrand: premium coastal field guide; deep ocean ink #071d2a, warm foam #faf9f4, tide teal #0099a8, signal magenta #c41e6a, threshold brass #a06a0a; sophisticated editorial photography and information design.\nComposition: 1080x1350 portrait intent; keep every critical character and data mark inside 90-pixel side and 100-pixel top/bottom safe areas; generous negative space; strong asymmetry; clear swipe-sequence continuity.\nTypography: elegant high-contrast editorial serif for the main headline or hero value, clean modern sans serif for labels and factual copy; excellent kerning; large mobile-readable type; high contrast.\nAccuracy: render every string in the EXACT TEXT block verbatim, including capitalization, punctuation, decimal precision, station ID, datum, and time. Do not add, omit, paraphrase, or misspell text. If any character is wrong, the image fails review.\nData boundary: depict astronomical predictions only. Do not imply an observation, live condition, flood forecast, safety status, weather event, or recognizable station geography.\nConstraints: no logos other than the words Perigee Tides, no NOAA seal, no provider marks, no map, no watermark, no fake UI, no engagement bait, no sensational weather, no stock-template appearance.\nContinuity key: 2026-08-03-alabama-weekly-tide; slide 5 of 5.\n\nCreate a calm source-and-limitations finish card. Make Prediction ≠ observation and the action line prominent while keeping the full disclaimer comfortably readable.\n\nEXACT TEXT — reproduce only these strings:\n\"SOURCE + LIMITS\"\n\"Prediction ≠ observation\"\n\"Astronomical prediction at one NOAA station\"\n\"Not an observed water level or flood forecast\"\n\"Wind, pressure, waves and rain can move observed water\"\n\"OPEN THE FULL STATION CHART\"\n\"perigeetides.com/tides/alabama/dauphin-island-8735180\"\n\"NOAA CO-OPS\"\n\"Planning aid — not for navigation or a substitute for official advisories, local procedures, or operator judgment.\"\n\"5 / 5\"",
+      "reviewChecklist": [
+        "Every EXACT TEXT string is present verbatim and no other factual text appears.",
+        "Every number, time, date, station identifier, datum label, and chart point agrees with the frozen brief.",
+        "No text or critical data is clipped, warped, illegible, or outside the safe area.",
+        "The image is one complete generated slide with no deterministic overlay or composited background.",
+        "The slide does not imply observed conditions, flooding, weather, safety, or recognizable station geography."
+      ]
+    }
+  ]
+}
